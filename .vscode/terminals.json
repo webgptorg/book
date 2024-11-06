@@ -1,0 +1,259 @@
+{
+    "autokill": true,
+    "terminals": [
+        {
+            "name": "👨‍💻⚪ Run simple-script sample (💸)",
+            "command": "npx ts-node ./samples/usage/simple-script/simple-script.ts",
+            "execute": false,
+            "onlySingle": false,
+            "focus": false
+        },
+        {
+            "name": "👨‍💻🔴 Run logging sample (💸)",
+            "command": "npx ts-node ./samples/usage/logging/logging.ts",
+            "execute": false,
+            "onlySingle": false,
+            "focus": false
+        },
+        {
+            "name": "👨‍💻🔵 Run remote sample (💸)",
+            "command": "npx ts-node ./samples/usage/remote/server.ts",
+            "execute": false,
+            "onlySingle": false,
+            "focus": false
+        },
+        {
+            "name": "👨‍💻🔽 Install promptbook for usage samples",
+            "cwd": "./samples/usage/",
+            "command": "npm i",
+            "execute": false,
+            "onlySingle": false,
+            "focus": false
+        },
+        {
+            "name": "🧪 Lint",
+            "command": "npm run lint",
+            "execute": false,
+            "onlySingle": false,
+            "focus": false
+        },
+        {
+            "name": "🧪 Lint (samples)",
+            "command": "npx eslint samples",
+            "execute": false,
+            "onlySingle": false,
+            "focus": false
+        },
+        {
+            "name": "🧪 Lint (scripts)",
+            "command": "npx eslint scripts",
+            "execute": false,
+            "onlySingle": false,
+            "focus": false
+        },
+        {
+            "name": "🧪 Unit Test",
+            "command": "npm run test",
+            "execute": false,
+            "onlySingle": false,
+            "focus": false
+        },
+        {
+            "name": "🧪 Test types",
+            "command": "npm run test-types",
+            "execute": false,
+            "onlySingle": false,
+            "focus": false
+        },
+        {
+            "name": "🤪 Find fresh emoji tag",
+            "command": "npx ts-node ./scripts/find-fresh-emoji-tag/find-fresh-emoji-tag.ts",
+            "execute": true,
+            "focus": true
+        },
+        {
+            "name": "🏭📦 Generate packages",
+            "commands": ["npx ts-node ./scripts/generate-packages/generate-packages.ts --skip-bundler"],
+            "execute": false,
+            "onlySingle": true,
+            "focus": false
+        },
+        {
+            "name": "🏭📖 Generate samples .ptbk.md -> .ptbk.json (💸) [🍠]",
+            "commands": [
+                "npx ts-node ./scripts/make-promptbook-collection/make-promptbook-collection.ts --verbose",
+                "npx ts-node ./scripts/generate-samples-jsons/generate-samples-jsons.ts --verbose"
+            ],
+            "execute": false,
+            "onlySingle": false,
+            "focus": false
+        },
+        {
+            "name": "🏭📖 Prettify samples and add mermaid graphs -> .ptbk.md",
+            "commands": [
+                "npx ts-node ./scripts/promptbook-cli/promptbook-cli.ts prettify samples/pipelines/**/*.ptbk.md --ignore \"samples/pipelines/errors/**/*.ptbk.md\""
+            ],
+            "execute": false,
+            "onlySingle": false,
+            "focus": false
+        },
+        {
+            "name": "🏭📖 Generate reports .report.json -> .report.md",
+            "commands": ["npx ts-node ./scripts/generate-sample-reports/generate-sample-reports.ts"],
+            "execute": true,
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🏭🩹 Repair imports",
+            "commands": ["npx ts-node ./scripts/repair-imports/repair-imports.ts --organize --organize-all"],
+            "execute": true,
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🧸 Playground (💸)",
+            "command": "npx ts-node ./other/playground/playground.ts",
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🧸 OpenAI playground (💸)",
+            "command": "npx ts-node ./src/llm-providers/openai/playground/playground.ts",
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🧸 Anthropic Claude playground (💸)",
+            "command": "npx ts-node ./src/llm-providers/anthropic-claude/playground/playground.ts",
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🧸 Azure OpenAI playground (💸)",
+            "command": "npx ts-node ./src/llm-providers/azure-openai/playground/playground.ts",
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🧸 Langtail playground (💸)",
+            "command": "npx ts-node ./src/llm-providers/langtail/playground/playground.ts",
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🧸 Multiple LLMs playground (💸)",
+            "command": "npx ts-node ./src/llm-providers/multiple/playground/playground.ts",
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🧸 Remote server playground",
+            "command": "npx ts-node ./src/llm-providers/remote/playground/playground.ts",
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🧸📄💡 Scrape knowledge from Markdown (playground) (💸) [🍠]",
+            "commands": [
+                "npx ts-node ./scripts/make-promptbook-collection/make-promptbook-collection.ts --verbose",
+                "npx ts-node ./src/scrapers/markdown/playground/markdown-scraper-playground.ts"
+            ],
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🧸📃💡 Scrape knowledge from .docx (playground) (💸) [🍠]",
+            "commands": [
+                "npx ts-node ./scripts/make-promptbook-collection/make-promptbook-collection.ts --verbose",
+                "npx ts-node ./src/scrapers/document/playground/document-scraper-playground.ts"
+            ],
+            "onlySingle": true,
+            "focus": true
+        },
+
+        {
+            "name": "🧸📃💡 Scrape knowledge from (legacy) .doc (playground) (💸) [🍠]",
+            "commands": [
+                "npx ts-node ./scripts/make-promptbook-collection/make-promptbook-collection.ts --verbose",
+                "npx ts-node ./src/scrapers/document-legacy/playground/legacy-document-scraper-playground.ts"
+            ],
+            "onlySingle": true,
+            "focus": true
+        },
+
+        {
+            "name": "🧸📃💡 Scrape knowledge from .pdf (playground) (💸) [🍠]",
+            "commands": [
+                "npx ts-node ./scripts/make-promptbook-collection/make-promptbook-collection.ts --verbose",
+                "npx ts-node ./src/scrapers/pdf/playground/pdf-scraper-playground.ts"
+            ],
+            "onlySingle": true,
+            "focus": true
+        },
+
+        {
+            "name": "🧸🌍💡 Scrape knowledge from website (playground) (💸) [🍠]",
+            "commands": [
+                "npx ts-node ./scripts/make-promptbook-collection/make-promptbook-collection.ts --verbose",
+                "npx ts-node ./src/scrapers/website/playground/website-scraper-playground.ts"
+            ],
+            "onlySingle": true,
+            "focus": true
+        },
+
+        {
+            "name": "📖 Make Promptbook collection (💸) [🍠]",
+            "command": "npx ts-node ./scripts/make-promptbook-collection/make-promptbook-collection.ts --verbose --commit",
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🍴🔍 Git list unmerged changes",
+            "commands": ["git branch --no-merged main"],
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🍴🗑️ Git delete merged branches",
+            "commands": [
+                "./scripts/is-main-checked.sh && git branch --merged | egrep -v '(^\\*|main)' | xargs git branch -d",
+                "git remote prune origin",
+                "git gc"
+            ],
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🍴⏫ Git push all branches",
+            "command": "git diff --exit-code && ./scripts/push-all-branches.sh",
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🍴⏬ Git pull all branches",
+            "command": "git diff --exit-code && ./scripts/pull-all-branches.sh",
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🔼🚀 Release minor version (💸)",
+            "command": "npm version minor",
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🔼🧪 Release pre-minor version (💸)",
+            "commands": ["npm version preminor", "npm version prerelease"],
+            "execute": false,
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🔼🩹 Release patch version (💸)",
+            "command": "npm version patch",
+            "onlySingle": true,
+            "focus": true
+        }
+    ]
+}
