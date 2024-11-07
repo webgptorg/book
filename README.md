@@ -1,4 +1,4 @@
-# ![Promptbook logo](https://github.com/webgptorg/promptbook/raw/main/other/design/logo-h1.png) Promptbook language blueprint
+# ![Promptbook logo](https://github.com/webgptorg/promptbook/raw/main/other/design/logo-h1.png) Book language blueprint
 
 Build responsible, controlled and transparent applications on top of LLM models!
 
