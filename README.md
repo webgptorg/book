@@ -4,17 +4,13 @@ Promptbook [pipelines](https://github.com/webgptorg/promptbook/discussions/64) a
 
 Current version of the language is `0.1.0`.
 
-
-
 ## 🔗 Links
 
-- [🤍 Promptbook whitepaper](https://github.com/webgptorg/promptbook?tab=readme-ov-file#-the-promptbook-whitepaper)
-- [✨ Examples](./examples)
-- [🖥 Promptbook typescript project](https://github.com/webgptorg/promptbook?tab=readme-ov-file#-the-promptbook-whitepaper)
+-   [🤍 Promptbook whitepaper](https://github.com/webgptorg/promptbook?tab=readme-ov-file#-the-promptbook-whitepaper)
+-   [✨ Examples](./examples)
+-   [🖥 Promptbook typescript project](https://github.com/webgptorg/promptbook?tab=readme-ov-file#-the-promptbook-whitepaper)
 -   [💫 Misc aspects of language](https://github.com/webgptorg/promptbook/discussions/categories/concepts?discussions_q=is%3Aopen+category%3AConcepts+label%3A%22%F0%9F%90%8A+Concept+working%22+label%3A.ptbk.md)
 -   [💬 Discussion about how to name the book language](https://github.com/webgptorg/promptbook/discussions/162)
-
-
 
 ## 💙 The blueprint
 
@@ -37,17 +33,15 @@ Following is the documentation and blueprint of the Book language.
 -> {article}
 ```
 
-
 ### Goals and principles
 
 File is designed to be easy to read and write. It is strict subset of markdown. It is designed to be understandable by both humans and machines and without specific knowledge of the language.
 
 It has file with `.ptbk.md` or `.book` extension with `UTF-8` non BOM encoding.
 
-As it is source code, it can leverage all the features of version control systems like git and does not suffer from the  problems of binary formats, proprietary formats, or no-code solutions.
+As it is source code, it can leverage all the features of version control systems like git and does not suffer from the problems of binary formats, proprietary formats, or no-code solutions.
 
 But unlike programming languages, it is designed to be understandable by non-programmers and non-technical people.
-
 
 ### Structure
 
