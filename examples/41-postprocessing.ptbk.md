@@ -1,6 +1,6 @@
-# ✨ Sample: Expectations
+# ✨ Example: Postprocessing 2
 
--   PIPELINE URL https://promptbook.studio/samples/expectations.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/postprocessing-2.ptbk.md
 -   INPUT  PARAMETER {yourName} Name of the hero
 -   OUTPUT PARAMETER `{greeting}`
 
@@ -11,7 +11,7 @@
 %% 🔮 Tip: Open this on GitHub or in the VSCode website to see the Mermaid graph visually
 
 flowchart LR
-  subgraph "✨ Sample: Expectations"
+  subgraph "✨ Example: Postprocessing 2"
 
       direction TB
 
@@ -34,13 +34,9 @@ flowchart LR
 
 ## 💬 Question
 
--   MODEL VARIANT Chat
--   MODEL NAME `gpt-3.5-turbo`
--   EXPECT MAX 30 CHARACTERS
--   EXPECT MIN 2 CHARACTERS
--   EXPECT MAX 3 WORDS
--   EXPECT EXACTLY 1 SENTENCE
--   EXPECT EXACTLY 1 LINE
+-   POSTPROCESSING reverse
+-   POSTPROCESSING removeDiacritics
+-   POSTPROCESSING normalizeTo_SCREAMING_CASE
 
 ```markdown
 Hello {yourName}!
@@ -48,14 +44,22 @@ Hello {yourName}!
 
 `-> {greeting}`
 
-### Sample
+### Example 1
 
-Sample must pass the expectations
-
--   SAMPLE
+-   EXAMPLE
 
 ```text
-Hello John!
+NHOJ OLLEH
+```
+
+`-> {greeting}`
+
+### Example 2
+
+-   EXAMPLE
+
+```text
+HSOJ IH
 ```
 
 `-> {greeting}`

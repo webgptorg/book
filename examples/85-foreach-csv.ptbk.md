@@ -2,7 +2,7 @@
 
 Show how to iterate over a table of customers and write an email for each.
 
--   PIPELINE URL https://promptbook.studio/samples/foreach-csv.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/foreach-csv.ptbk.md
 -   INPUT PARAMETER `{customers}` Customer names each customer on each row
 -   OUTPUT PARAMETER `{emails}` Greeting to each customer on each row
 
@@ -47,9 +47,9 @@ Write an email from Coolstore shop to customer "{firstName} {lastName}". Inform 
 
 `-> {emails}`
 
-### Samples of customers
+### Examples of customers
 
--   SAMPLE
+-   EXAMPLE
 
 ```csv
 First name,Last name,Note
@@ -65,7 +65,7 @@ Lives in and loves the Prague, please mention it every communication"
 
 <!--
 
-### Samples of emails
+### Examples of emails
 
 TODO: Write
 

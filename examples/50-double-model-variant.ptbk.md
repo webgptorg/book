@@ -1,4 +1,4 @@
-# ⚠ Sample of non-recommended syntax
+# ⚠ Example of non-recommended syntax
 
 Defining same model variant twice is **not recommended** but it is not an error in case of model variants are same.
 

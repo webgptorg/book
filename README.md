@@ -9,7 +9,7 @@ Current version of the language is `0.1.0`.
 ## 🔗 Links
 
 - [🤍 Promptbook whitepaper](https://github.com/webgptorg/promptbook?tab=readme-ov-file#-the-promptbook-whitepaper)
-- [✨ Samples](./samples)
+- [✨ Examples](./examples)
 - [🖥 Promptbook typescript project](https://github.com/webgptorg/promptbook?tab=readme-ov-file#-the-promptbook-whitepaper)
 -   [💫 Misc aspects of language](https://github.com/webgptorg/promptbook/discussions/categories/concepts?discussions_q=is%3Aopen+category%3AConcepts+label%3A%22%F0%9F%90%8A+Concept+working%22+label%3A.ptbk.md)
 -   [💬 Discussion about how to name the book language](https://github.com/webgptorg/promptbook/discussions/162)
@@ -20,7 +20,7 @@ Current version of the language is `0.1.0`.
 
 Following is the documentation and blueprint of the Book language.
 
-### Sample
+### Example
 
 ```markdown
 # 🌟 My first Book

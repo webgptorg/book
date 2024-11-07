@@ -2,7 +2,7 @@
 
 Show how to pick exact model
 
--   PIPELINE URL https://promptbook.studio/samples/picking-model.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/picking-model.ptbk.md
 -   INPUT  PARAMETER `{word}` Any single word
 -   OUTPUT PARAMETER `{poem}`
 
@@ -50,7 +50,7 @@ Write poem with word "{word}"
 
 ### Simple poem
 
--   SAMPLE
+-   EXAMPLE
 
 ```text
 Roses are red, violets are blue, sugar is sweet, and so are you.
@@ -60,7 +60,7 @@ Roses are red, violets are blue, sugar is sweet, and so are you.
 
 ### Complex poem
 
--   SAMPLE
+-   EXAMPLE
 
 ```text
 The sun is shining, the birds are singing, the flowers are blooming, and the world is smiling.

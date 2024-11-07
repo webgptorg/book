@@ -1,8 +1,8 @@
-# ✨ Sample: Language Capabilities
+# ✨ Example: Language Capabilities
 
 Trying the language capabilities of GPT models.
 
--   PIPELINE URL https://promptbook.studio/samples/advanced.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/advanced.ptbk.md
 -   INPUT  PARAMETER `{word}` The word to use in the prompt.
 -   OUTPUT PARAMETER `{comparisonOfTwoSentences}` Comparison between two sentences
 -   OUTPUT PARAMETER `{summary}` The overall summary of the comparison
@@ -15,7 +15,7 @@ Trying the language capabilities of GPT models.
 %% 🔮 Tip: Open this on GitHub or in the VSCode website to see the Mermaid graph visually
 
 flowchart LR
-  subgraph "✨ Sample: Language Capabilities"
+  subgraph "✨ Example: Language Capabilities"
 
       direction TB
 
@@ -105,9 +105,9 @@ Write sentence with "{word}" and "{wordSynonym}" in it
 
 `-> {sentenceWithTwoSynonyms}` Sentence with word and wordSynonym
 
-### Sample of sentence with word and wordSynonym
+### Example of sentence with word and wordSynonym
 
--   SAMPLE
+-   EXAMPLE
 
 ```text
 I was happy and you were joyful!
@@ -174,9 +174,9 @@ You have entered a word **{word}**. For this word the best synonym is **{wordSyn
 
 `-> {summary}`
 
-### Sample of summary
+### Example of summary
 
--   SAMPLE
+-   EXAMPLE
 
 ```markdown
 You have entered a word **happy**. For this word the best synonym is **joyful**. The sentence with both words is **I was happy and you were joyful!**. The sentence without the original word is **I was and you were joyful!**. And the comparison between the two sentences is:

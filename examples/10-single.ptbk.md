@@ -1,8 +1,8 @@
-# ✨ Sample prompt
+# ✨ Example prompt
 
 Show how to use a simple prompt with one parameter.
 
--   PIPELINE URL https://promptbook.studio/samples/single.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/single.ptbk.md
 -   INPUT  PARAMETER `{word}` Any single word
 -   OUTPUT PARAMETER `{wordSynonym}`
 
@@ -13,7 +13,7 @@ Show how to use a simple prompt with one parameter.
 %% 🔮 Tip: Open this on GitHub or in the VSCode website to see the Mermaid graph visually
 
 flowchart LR
-  subgraph "✨ Sample prompt"
+  subgraph "✨ Example prompt"
 
       direction TB
 

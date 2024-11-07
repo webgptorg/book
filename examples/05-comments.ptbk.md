@@ -1,9 +1,9 @@
-# ✨ Sample prompt with URL
+# ✨ Example prompt with comments
 
-Show how to use a simple prompt with no parameters.
+Show how to use a simple prompt with no parameters and comments that should be ignored.
 
--   PIPELINE URL https://promptbook.studio/samples/simple.ptbk.md
--   OUTPUT PARAMETER `{greetingResponse}`
+-   PIPELINE URL https://promptbook.studio/examples/comments.ptbk.md
+-   OUTPUT PARAMETER `{greeting}`
 
 <!--Graph-->
 <!-- ⚠️ WARNING: This code has been generated so that any manual changes will be overwritten -->
@@ -12,7 +12,7 @@ Show how to use a simple prompt with no parameters.
 %% 🔮 Tip: Open this on GitHub or in the VSCode website to see the Mermaid graph visually
 
 flowchart LR
-  subgraph "✨ Sample prompt with URL"
+  subgraph "✨ Example prompt with comments"
 
       direction TB
 
@@ -38,34 +38,18 @@ flowchart LR
 Hello
 ```
 
-`-> {greetingResponse}`
+<!-- With comment which should be removed + trimmed-->
 
-### Normal response
+`-> {greeting}`
 
--   SAMPLE
+<!--
 
-```text
-Hello, how are you?
-```
-
-`-> {greetingResponse}`
-
-### Formal response
-
--   SAMPLE
+## 💬 Commented Prompt
 
 ```text
-Dear Sir, how may I help you?
+Hello
 ```
 
-`-> {greetingResponse}`
+`-> {greeting}`
 
-### Informal response
-
--   SAMPLE
-
-```text
-Hey, what's up?
-```
-
-`-> {greetingResponse}`
+-->

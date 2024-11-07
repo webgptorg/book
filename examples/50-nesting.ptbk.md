@@ -1,8 +1,8 @@
-# ✨ Sample: Nesting
+# ✨ Example: Nesting
 
 How block are nested in the promptbook
 
--   PIPELINE URL https://promptbook.studio/samples/nesting.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/nesting.ptbk.md
 -   INPUT  PARAMETER `{word}` The word to use in the prompt.
 -   OUTPUT PARAMETER `{poem}`
 
@@ -13,7 +13,7 @@ How block are nested in the promptbook
 %% 🔮 Tip: Open this on GitHub or in the VSCode website to see the Mermaid graph visually
 
 flowchart LR
-  subgraph "✨ Sample: Nesting"
+  subgraph "✨ Example: Nesting"
 
       direction TB
 

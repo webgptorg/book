@@ -1,6 +1,6 @@
-# ✨ Sample: Parsing data to JSON
+# ✨ Example: Parsing data to JSON
 
--   PIPELINE URL https://promptbook.studio/samples/expect-json.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/expect-json.ptbk.md
 -   INPUT  PARAMETER {sentence} Sentence to be processed
 -   OUTPUT PARAMETER `{parsedSentence}`
 
@@ -11,7 +11,7 @@
 %% 🔮 Tip: Open this on GitHub or in the VSCode website to see the Mermaid graph visually
 
 flowchart LR
-  subgraph "✨ Sample: Parsing data to JSON"
+  subgraph "✨ Example: Parsing data to JSON"
 
       direction TB
 
@@ -59,11 +59,11 @@ Dark horse hopping over the fence.
 
 `-> {parsedSentence}`
 
-### Sample
+### Example
 
-Sample must pass the expectations
+Example must pass the expectations
 
--   SAMPLE
+-   EXAMPLE
 
 ```json
 {

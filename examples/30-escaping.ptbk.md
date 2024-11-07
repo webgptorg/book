@@ -1,8 +1,8 @@
-# ✨ Sample of escaping
+# ✨ Example of escaping
 
 Show how to put codeblocks in the prompt _(which is already in the codeblock)_
 
--   PIPELINE URL https://promptbook.studio/samples/escaping.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/escaping.ptbk.md
 -   OUTPUT PARAMETER `{greeting1}`
 -   OUTPUT PARAMETER `{greeting2}`
 
@@ -13,7 +13,7 @@ Show how to put codeblocks in the prompt _(which is already in the codeblock)_
 %% 🔮 Tip: Open this on GitHub or in the VSCode website to see the Mermaid graph visually
 
 flowchart LR
-  subgraph "✨ Sample of escaping"
+  subgraph "✨ Example of escaping"
 
       direction TB
 

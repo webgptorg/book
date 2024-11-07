@@ -1,8 +1,8 @@
-# ✨ Sample: Simple Knowledge
+# ✨ Example: Simple Knowledge
 
 Show how to use knowledge
 
--   PIPELINE URL https://promptbook.studio/samples/simple-knowledge.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/simple-knowledge.ptbk.md
 -   INPUT  PARAMETER `{eventTitle}` The event name
 -   INPUT  PARAMETER `{eventDescription}` The event description
 -   INPUT  PARAMETER `{rules}` Extra rules for writing the bio
@@ -68,7 +68,7 @@ You are writing a bio for Pavol Hejný for the event {eventTitle}.
 
 ### Tech conference
 
--   SAMPLE
+-   EXAMPLE
 
 ```text
 Pavol Hejný is a developer who is passionate about using new tools and technologies. He specialises in creating fully functional user applications using the latest artificial intelligence models. He is a member of the Ainautes consulting group, which supports with the deployment of generative AI around the world. He develops the WebGPT web page generation service. Before the massive emergence of generative AI, he has created the first Czech virtual whiteboard, Collboard, and electronic textbooks, H-edu, which were used by tens of thousands of children. He has also worked on many scientific projects for the Czech Ornithological Society. He regularly gives lectures at conferences, sits on juries, and acts as a mentor in many Czech and international competitions. He has a special heart for this, and he loves open source – you can find many of his things on his GitHub.
@@ -78,7 +78,7 @@ Pavol Hejný is a developer who is passionate about using new tools and technolo
 
 ### Science conference
 
--   SAMPLE
+-   EXAMPLE
 
 ```markdown
 Do you know Pavol Hejný? He is a developer who is passionate about using new tools and technologies. He specialises in creating fully functional user applications using the latest artificial intelligence models. He is a member of the Ainautes consulting group, which supports with the deployment of generative AI around the world. He develops the WebGPT web page generation service. Before the massive emergence of generative AI, he has created the first Czech virtual whiteboard, Collboard, and electronic textbooks, H-edu, which were used by tens of thousands of children. He has also worked on many scientific projects for the Czech Ornithological Society. He regularly gives lectures at conferences, sits on juries, and acts as a mentor in many Czech and international competitions. He has a special heart for this, and he loves open source – you can find many of his things on his GitHub.
@@ -88,7 +88,7 @@ Do you know Pavol Hejný? He is a developer who is passionate about using new to
 
 ### Business conference
 
--   SAMPLE
+-   EXAMPLE
 
 ```markdown
 Mr. Hejný is a enterpreneur in information technology and large language models. He started his career as a developer and has been working in the field for over 10 years. He is a member of the Ainautes consulting group, which supports with the deployment of generative AI around the world. He develops the WebGPT web page generation service. Before the massive emergence of generative AI, he has created the first Czech virtual whiteboard, Collboard, and electronic textbooks, H-edu, which were used by tens of thousands of children. He has also worked on many scientific projects for the Czech Ornithological Society. He regularly gives lectures at conferences, sits on juries, and acts as a mentor in many Czech and international competitions. He has a special heart for this, and he loves open source – you can find many of his things on his GitHub.
@@ -98,7 +98,7 @@ Mr. Hejný is a enterpreneur in information technology and large language models
 
 ### Rock concert
 
--   SAMPLE
+-   EXAMPLE
 
 ```markdown
 Wanna hear something cool? Meet Pavol Hejný, a developer who is passionate about using new tools and technologies. He specialises in creating fully functional user applications using the latest artificial intelligence models. He will show you how to generate your own lyrics using new AI models.

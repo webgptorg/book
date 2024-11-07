@@ -1,10 +1,10 @@
-# ✨ Sample: Postprocessing 1
+# ✨ Example prompt with two consecutive prompts
 
 Show how to use two consecutive prompts with one parameter each.
 
--   PIPELINE URL https://promptbook.studio/samples/postprocessing-1.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/two.ptbk.md
 -   INPUT  PARAMETER `{word}` Any single word
--   OUTPUT PARAMETER `{sentence}` Resulting sentence with two synonyms
+-   OUTPUT PARAMETER `{sentenceWithTwoSynonyms}`
 
 <!--Graph-->
 <!-- ⚠️ WARNING: This code has been generated so that any manual changes will be overwritten -->
@@ -13,7 +13,7 @@ Show how to use two consecutive prompts with one parameter each.
 %% 🔮 Tip: Open this on GitHub or in the VSCode website to see the Mermaid graph visually
 
 flowchart LR
-  subgraph "✨ Sample: Postprocessing 1"
+  subgraph "✨ Example prompt with two consecutive prompts"
 
       direction TB
 
@@ -38,54 +38,14 @@ flowchart LR
 
 <!--/Graph-->
 
-### Sample 1
-
--   SAMPLE
-
-```text
-Happy
-```
-
-`-> {word}`
-
-### Sample 2
-
--   SAMPLE
-
-```text
-Apple
-```
-
-`-> {word}`
-
 ## 💬 Synonym
 
 Synonym for word
 
--   POSTPROCESSING `unwrapResult`
+-   PERSONA Joe, a linguist
 
 ```text
 Write synonym for "{word}"
-```
-
-`-> {wordSynonym}`
-
-### Sample 1
-
--   SAMPLE
-
-```text
-Joyful
-```
-
-`-> {wordSynonym}`
-
-### Sample 2
-
--   SAMPLE
-
-```text
-Fruit
 ```
 
 `-> {wordSynonym}`
@@ -94,31 +54,30 @@ Fruit
 
 Sentence with word and wordSynonym
 
--   POSTPROCESSING `unwrapResult`
--   POSTPROCESSING `spaceTrim`
+-   PERSONA Joe
 
 ```text
 Write sentence with "{word}" and "{wordSynonym}" in it
 ```
 
-`-> {sentence}`
+`-> {sentenceWithTwoSynonyms}`
 
-### Sample 1
+### Simple sentence
 
--   SAMPLE
-
-```text
-I am very happy to see you and joyful to meet you.
-```
-
-`-> {sentence}`
-
-### Sample 2
-
--   SAMPLE
+-   EXAMPLE
 
 ```text
-An apple or another fruit a day keeps the doctor away.
+The quick brown fox jumps over the lazy dog
 ```
 
-`-> {sentence}`
+`-> {sentenceWithTwoSynonyms}`
+
+### Dynamic sentence
+
+-   EXAMPLE
+
+```text
+The brown {word} jumps over the lazy {word}
+```
+
+`-> {sentenceWithTwoSynonyms}`

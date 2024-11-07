@@ -1,8 +1,8 @@
-# ✨ Sample: JSON mode
+# ✨ Example: JSON mode
 
 Trying the language capabilities of GPT models.
 
--   PIPELINE URL https://promptbook.studio/samples/json-mode.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/json-mode.ptbk.md
 -   INPUT  PARAM `{unstructuredContacts}` nestrukturovaný seznam kontaktních údajů
 -   OUTPUT PARAM `{contactlist}` JSON seznam kontaktních údajů
 
@@ -13,7 +13,7 @@ Trying the language capabilities of GPT models.
 %% 🔮 Tip: Open this on GitHub or in the VSCode website to see the Mermaid graph visually
 
 flowchart LR
-  subgraph "✨ Sample: JSON mode"
+  subgraph "✨ Example: JSON mode"
 
       direction TB
 

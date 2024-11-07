@@ -1,10 +1,10 @@
-# ✨ Sample prompt with two consecutive prompts
+# ✨ Example: Postprocessing 1
 
 Show how to use two consecutive prompts with one parameter each.
 
--   PIPELINE URL https://promptbook.studio/samples/two.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/postprocessing-1.ptbk.md
 -   INPUT  PARAMETER `{word}` Any single word
--   OUTPUT PARAMETER `{sentenceWithTwoSynonyms}`
+-   OUTPUT PARAMETER `{sentence}` Resulting sentence with two synonyms
 
 <!--Graph-->
 <!-- ⚠️ WARNING: This code has been generated so that any manual changes will be overwritten -->
@@ -13,7 +13,7 @@ Show how to use two consecutive prompts with one parameter each.
 %% 🔮 Tip: Open this on GitHub or in the VSCode website to see the Mermaid graph visually
 
 flowchart LR
-  subgraph "✨ Sample prompt with two consecutive prompts"
+  subgraph "✨ Example: Postprocessing 1"
 
       direction TB
 
@@ -38,14 +38,54 @@ flowchart LR
 
 <!--/Graph-->
 
+### Example 1
+
+-   EXAMPLE
+
+```text
+Happy
+```
+
+`-> {word}`
+
+### Example 2
+
+-   EXAMPLE
+
+```text
+Apple
+```
+
+`-> {word}`
+
 ## 💬 Synonym
 
 Synonym for word
 
--   PERSONA Joe, a linguist
+-   POSTPROCESSING `unwrapResult`
 
 ```text
 Write synonym for "{word}"
+```
+
+`-> {wordSynonym}`
+
+### Example 1
+
+-   EXAMPLE
+
+```text
+Joyful
+```
+
+`-> {wordSynonym}`
+
+### Example 2
+
+-   EXAMPLE
+
+```text
+Fruit
 ```
 
 `-> {wordSynonym}`
@@ -54,30 +94,31 @@ Write synonym for "{word}"
 
 Sentence with word and wordSynonym
 
--   PERSONA Joe
+-   POSTPROCESSING `unwrapResult`
+-   POSTPROCESSING `spaceTrim`
 
 ```text
 Write sentence with "{word}" and "{wordSynonym}" in it
 ```
 
-`-> {sentenceWithTwoSynonyms}`
+`-> {sentence}`
 
-### Simple sentence
+### Example 1
 
--   SAMPLE
-
-```text
-The quick brown fox jumps over the lazy dog
-```
-
-`-> {sentenceWithTwoSynonyms}`
-
-### Dynamic sentence
-
--   SAMPLE
+-   EXAMPLE
 
 ```text
-The brown {word} jumps over the lazy {word}
+I am very happy to see you and joyful to meet you.
 ```
 
-`-> {sentenceWithTwoSynonyms}`
+`-> {sentence}`
+
+### Example 2
+
+-   EXAMPLE
+
+```text
+An apple or another fruit a day keeps the doctor away.
+```
+
+`-> {sentence}`

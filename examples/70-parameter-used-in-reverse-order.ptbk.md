@@ -1,10 +1,10 @@
-# ✨ Sample of logic error
+# ✨ Example of logic error
 
-Sample of using parameter in reverse order
+Example of using parameter in reverse order
 
 _Note: This is not recommended but it should work_
 
--   PIPELINE URL https://promptbook.studio/samples/parameter-used-in-reverse-order.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/parameter-used-in-reverse-order.ptbk.md
 -   INPUT  PARAMETER `{word}` Any single word
 -   OUTPUT PARAMETER `{sentenceWithTwoSynonyms}`
 
@@ -15,7 +15,7 @@ _Note: This is not recommended but it should work_
 %% 🔮 Tip: Open this on GitHub or in the VSCode website to see the Mermaid graph visually
 
 flowchart LR
-  subgraph "✨ Sample of logic error"
+  subgraph "✨ Example of logic error"
 
       direction TB
 

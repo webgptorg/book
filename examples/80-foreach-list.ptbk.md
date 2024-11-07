@@ -2,7 +2,7 @@
 
 Show how to iterate over a list of customers and write a greeting for each.
 
--   PIPELINE URL https://promptbook.studio/samples/foreach-list.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/foreach-list.ptbk.md
 -   INPUT PARAMETER `{customers}` Customer names each customer on each row
 -   OUTPUT PARAMETER `{greetings}` Greeting to each customer on each row
 
@@ -22,9 +22,9 @@ Write an email greeting for "{customer}"
 
 `-> {greetings}`
 
-### Samples of customers
+### Examples of customers
 
--   SAMPLE
+-   EXAMPLE
 
 ```text
 Paul
@@ -33,9 +33,9 @@ John
 
 `-> {customers}`
 
-### Samples of greetings
+### Examples of greetings
 
--   SAMPLE
+-   EXAMPLE
 
 ```text
 Hello Paul

@@ -1,6 +1,6 @@
-# ✨ Sample: Jokers
+# ✨ Example: Jokers
 
--   PIPELINE URL https://promptbook.studio/samples/jokers.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/jokers.ptbk.md
 -   INPUT  PARAMETER {name1} First name or nothing
 -   INPUT  PARAMETER {name2} Second name or nothing
 -   OUTPUT PARAMETER `{name}`
@@ -12,7 +12,7 @@
 %% 🔮 Tip: Open this on GitHub or in the VSCode website to see the Mermaid graph visually
 
 flowchart LR
-  subgraph "✨ Sample: Jokers"
+  subgraph "✨ Example: Jokers"
 
       direction TB
 
