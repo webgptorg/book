@@ -1,12 +1,12 @@
 # 📚 Dictoniary
 
-## Promptbook specific terms
-
--   Anonymous mode
--   Application mode
--   Pipeline
-
-## General terms
+## General LLM / AI terms 
 
 -   Prompt drift
 -   Pipeline, workflow or chain
+
+
+## (Prompt)book specific terms
+
+-   Pipeline
+
