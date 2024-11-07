@@ -2,6 +2,8 @@
 
 Promptbook [pipelines](https://github.com/webgptorg/promptbook/discussions/64) are written in custom markdown format [_(It it a best solution?!)_](https://github.com/webgptorg/promptbook/discussions/161) in our language called [Book / Shem / _(We need to decide)_](https://github.com/webgptorg/promptbook/discussions/162)
 
+Current version of the language is `0.1.0`.
+
 
 ## 🔗 Links
 
