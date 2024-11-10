@@ -1,17 +1,25 @@
 # 💜 The Promptbook Project
 
-<!-- TODO: [💜] !!!!!! Make some system to sync this section across the repositories dynamically -->
-
 <table>
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Description</th>
+      <th>Repository</th>
+    </tr>
+  </thead>
   <tbody>
+    <!--
     <tr>
       <td>Promptbook whitepaper</td>
       <td>Basic motivations and problems which we are trying to solve</td>
       <td rowspan=3>https://github.com/webgptorg/book</td>
     </tr>
+    -->
     <tr>
-      <td>Promptbook <i>(system)</i></td>
-      <td>Promptbook ...</td>
+      <td>Promptbook</td>
+      <td>Promptbook is a system how to</td>
+      <td rowspan=2>https://github.com/webgptorg/book</td>
     </tr>
     <tr>
       <td>Book language</td>
@@ -20,8 +28,8 @@
       </td>
     </tr>
     <tr>
-      <td>Promptbook implementation</td>
-      <td>Promptbook implementation</td>
+      <td>Promptbook typescript project</td>
+      <td>Implementation of Promptbook in TypeScript published into multiple packages to NPM</td>
       <td>https://github.com/webgptorg/promptbook</td>
     </tr>
     <tr>

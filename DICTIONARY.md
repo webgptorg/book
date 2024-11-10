@@ -1,29 +1,26 @@
 # 📚 Dictoniary
 
-## General LLM / AI terms 
+## General LLM / AI terms
 
 -   Prompt drift
 -   Pipeline, workflow or chain
 
-
 ## Promptbook system
 
-- organization 
-- Jobs
-- Workforce 
-- Knowledge
+-   organization
+-   Jobs
+-   Workforce
+-   Knowledge
 
+## Book language
 
-## Book language 
-
--   Book file 
-- section  
-- heading 
-- description 
-- command
-- block 
-- return statement
-- comment
-- import 
-- scope
-
+-   Book file
+-   section
+-   heading
+-   description
+-   command
+-   block
+-   return statement
+-   comment
+-   import
+-   scope
