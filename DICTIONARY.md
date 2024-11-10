@@ -6,7 +6,24 @@
 -   Pipeline, workflow or chain
 
 
-## (Prompt)book specific terms
+## Promptbook system
 
--   Pipeline
+- organization 
+- Jobs
+- Workforce 
+- Knowledge
+
+
+## Book language 
+
+-   Book file 
+- section  
+- heading 
+- description 
+- command
+- block 
+- return statement
+- comment
+- import 
+- scope
 
