@@ -4,7 +4,15 @@
 
 Promptbook [pipelines](https://github.com/webgptorg/promptbook/discussions/64) are written in custom markdown format [_(It it a best solution?!)_](https://github.com/webgptorg/promptbook/discussions/161) in our language called [Book / Shem / _(We need to decide)_](https://github.com/webgptorg/promptbook/discussions/162)
 
-Current version of the language is `0.1.0`.
+<!--/Import ./WHITEPAPER.md-->
+
+<!--Import book/BLUEPRINT.md-->
+<!--⚠️ WARNING: This section was imported, make changes in source -->
+<!-- <- TODO: [💜] Actually implement the system for auto-imports -->
+
+## !!!! Whitepaper
+
+<!--/Import ./WHITEPAPER.md-->
 
 <!--
 TODO: !!!!!! Remove
@@ -64,7 +72,7 @@ TODO: !!!!!! Remove
 <!--⚠️ WARNING: This section was imported, make changes in source -->
 <!-- <- TODO: [💜] Actually implement the system for auto-imports -->
 
-# 💙 Core !!!
+## 💙 Core !!!
 
 <!--/Import ./CORE.md-->
 
@@ -72,7 +80,7 @@ TODO: !!!!!! Remove
 <!--⚠️ WARNING: This section was imported, make changes in source -->
 <!-- <- TODO: [💜] Actually implement the system for auto-imports -->
 
-# 💙 The blueprint of book language
+## 💙 The blueprint of book language
 
 <!--/Import ./BLUEPRINT.md-->
 
