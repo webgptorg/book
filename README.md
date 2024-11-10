@@ -12,7 +12,15 @@ Current version of the language is `0.1.0`.
 -   [💫 Misc aspects of language](https://github.com/webgptorg/promptbook/discussions/categories/concepts?discussions_q=is%3Aopen+category%3AConcepts+label%3A%22%F0%9F%90%8A+Concept+working%22+label%3A.ptbk.md)
 -   [💬 Discussion about how to name the book language](https://github.com/webgptorg/promptbook/discussions/162)
 
-## 💙 The blueprint
+
+## 💜 The Promptbook Project
+
+<!-- TODO: [💜] Make some system to sync this section across the repositories -->
+
+<!-- !!!!!! -->
+
+
+## 💙 The blueprint of book language
 
 Following is the documentation and blueprint of the Book language.
 
