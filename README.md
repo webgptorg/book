@@ -8,7 +8,7 @@ Promptbook [pipelines](https://github.com/webgptorg/promptbook/discussions/64) a
 -->
 
 
-<!--Import book/WHITEPAPER.md-->
+<!--Import ./WHITEPAPER.md-->
 <!--⚠️ WARNING: This section was imported, make changes in source -->
 <!-- <- TODO: [💜] Actually implement the system for auto-imports -->
 
@@ -104,7 +104,7 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
 
 <!--/Import ./SIGNPOST.md-->
 
-<!--Import book/CORE.md-->
+<!--Import ./CORE.md-->
 <!--⚠️ WARNING: This section was imported, make changes in source -->
 <!-- <- TODO: [💜] Actually implement the system for auto-imports -->
 
@@ -120,7 +120,7 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
 
 <!--/Import ./CORE.md-->
 
-<!--Import book/BLUEPRINT.md-->
+<!--Import ./BLUEPRINT.md-->
 <!--⚠️ WARNING: This section was imported, make changes in source -->
 <!-- <- TODO: [💜] Actually implement the system for auto-imports -->
 
@@ -204,7 +204,7 @@ Foo bar
 
 
 
-<!--Import book/DICTIONARY.md-->
+<!--Import ./DICTIONARY.md-->
 <!--⚠️ WARNING: This section was imported, make changes in source -->
 <!-- <- TODO: [💜] Actually implement the system for auto-imports -->
 
