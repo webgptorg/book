@@ -20,7 +20,7 @@ Following is the documentation and blueprint of the Book language.
 -> {article}
 ```
 
-### Goals and principles
+### Goals and principles of book language
 
 File is designed to be easy to read and write. It is strict subset of markdown. It is designed to be understandable by both humans and machines and without specific knowledge of the language.
 
