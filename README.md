@@ -114,6 +114,8 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
 
 *(legacy name collection)* group jobs, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources (= import resources from each other).
 
+> !!!!!! Not finished
+
 
 
 <!--/Import ./CORE.md-->
