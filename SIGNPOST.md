@@ -21,7 +21,7 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
     <tr>
       <td>Core</td>
       <td>Promptbook core is a description and documentation of basic innerworkings how should be Promptbook implemented and defines which fetures must be descriable by book language</td>
-      <td rowspan=2>httos://ptbk.io<br/>https://github.com/webgptorg/book</td>
+      <td rowspan=2>https://ptbk.io<br/>https://github.com/webgptorg/book</td>
     </tr>
     <tr>
       <td>Book language</td>
@@ -37,7 +37,7 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
     <tr>
       <td>Promptbook studio</td>
       <td>No-code studio to write book without need to write even the markdown</td>
-      <td rowspan=2>httos://promptbook.studio<br/>https://github.com/hejny/promptbook-studio</td>
+      <td rowspan=2>https://promptbook.studio<br/>https://github.com/hejny/promptbook-studio</td>
     </tr>
     <tr>
       <td>Promptbook miniapps</td>
