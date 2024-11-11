@@ -1,12 +1,10 @@
 # ![Promptbook logo](https://github.com/webgptorg/promptbook/raw/main/other/design/logo-h1.png) Book language
 
-
 <!--
 !!!!!!! Better text
 
 Promptbook [pipelines](https://github.com/webgptorg/promptbook/discussions/64) are written in custom markdown format [_(It it a best solution?!)_](https://github.com/webgptorg/promptbook/discussions/161) in our language called [Book / Shem / _(We need to decide)_](https://github.com/webgptorg/promptbook/discussions/162)
 -->
-
 
 <!--Import ./WHITEPAPER.md-->
 <!--⚠️ WARNING: This section was imported, make changes in source -->
@@ -33,7 +31,6 @@ In all of these situations, but especially in 3., the **✨ Promptbook can make 
 -   Sometimes even the best prompts with the best framework like Promptbook `:)` can't avoid the problems. In this case, the library has built-in **[anomaly detection](https://github.com/webgptorg/promptbook/discussions/40) and logging** to help you find and fix the problems.
 -   Versioning is build in. You can test multiple **A/B versions** of pipelines and see which one works best.
 -   Promptbook is designed to use [**RAG** (Retrieval-Augmented Generation)](https://github.com/webgptorg/promptbook/discussions/41) and other advanced techniques to bring the context of your business to generic LLM. You can use **knowledge** to improve the quality of the output.
-
 
 <!--/Import ./WHITEPAPER.md-->
 
@@ -101,7 +98,6 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
   </tbody>
 </table>
 
-
 <!--/Import ./SIGNPOST.md-->
 
 <!--Import ./CORE.md-->
@@ -112,18 +108,15 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
 
 ### Organization
 
-*(legacy name collection)* group jobs, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources (= import resources from each other).
+_(legacy name collection)_ group jobs, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources (= import resources from each other).
 
 > !!!!!! Not finished
-
-
 
 <!--/Import ./CORE.md-->
 
 <!--Import ./BLUEPRINT.md-->
 <!--⚠️ WARNING: This section was imported, make changes in source -->
 <!-- <- TODO: [💜] Actually implement the system for auto-imports -->
-
 
 ## 💙 The blueprint of book language
 
@@ -134,11 +127,11 @@ Following is the documentation and blueprint of the Book language.
 ```markdown
 # 🌟 My first Book
 
-- PERSONA Jane, marketing specialist with prior experience in writing articles about technology and artificial intelligence
-- KNOWLEDGE https://ptbk.io
-- KNOWLEDGE ./promptbook.pdf
-- EXPECT MIN 1 Sentence
-- EXPECT MAX 1 Paragraph
+-   PERSONA Jane, marketing specialist with prior experience in writing articles about technology and artificial intelligence
+-   KNOWLEDGE https://ptbk.io
+-   KNOWLEDGE ./promptbook.pdf
+-   EXPECT MIN 1 Sentence
+-   EXPECT MAX 1 Paragraph
 
 > Write an article about the future of artificial intelligence in the next 10 years and how metalanguages will change the way AI is used in the world.
 > Look specifically at the impact of Promptbook on the AI industry.
@@ -172,13 +165,13 @@ Foo bar
 
 Reserved words:
 
-- _each command_ like `PERSONA`, `EXPECT`, `KNOWLEDGE`, etc.
-- `content`
-- `context`
-- `knowledge`
-- `examples`
-- `modelName`
-- `currentDate`
+-   _each command_ like `PERSONA`, `EXPECT`, `KNOWLEDGE`, etc.
+-   `content`
+-   `context`
+-   `knowledge`
+-   `examples`
+-   `modelName`
+-   `currentDate`
 
 #### Parameter notation
 
@@ -198,11 +191,7 @@ Foo bar
 
 ### Examples
 
-
 <!--/Import ./BLUEPRINT.md-->
-
-
-
 
 <!--Import ./DICTIONARY.md-->
 <!--⚠️ WARNING: This section was imported, make changes in source -->
@@ -212,8 +201,7 @@ Foo bar
 
 ### General LLM / AI terms
 
-*Note: Following is not complete dictionary, more list of general AI / LLM terms that has connection with Promptbook*
-
+_Note: Following is not complete dictionary, more list of general AI / LLM terms that has connection with Promptbook_
 
 -   **Prompt drift** is a phenomenon where the AI model starts to generate outputs that are not aligned with the original prompt. This can happen due to the model's training data, the prompt's wording, or the model's architecture.
 -   **Pipeline, workflow or chain** is a sequence of tasks that are executed in a specific order. In the context of AI, a pipeline can refer to a sequence of AI models that are used to process data.
@@ -221,40 +209,37 @@ Foo bar
 -   **Zero-shot learning** is a machine learning paradigm where a model is trained to perform a task without any labeled examples. Instead, the model is provided with a description of the task and is expected to generate the correct output.
 -   **Few-shot learning** is a machine learning paradigm where a model is trained to perform a task with only a few labeled examples. This is in contrast to traditional machine learning, where models are trained on large datasets.
 -   **Meta-learning** is a machine learning paradigm where a model is trained on a variety of tasks and is able to learn new tasks with minimal additional training. This is achieved by learning a set of meta-parameters that can be quickly adapted to new tasks.
--  **Retrieval-augmented generation** is a machine learning paradigm where a model generates text by retrieving relevant information from a large database of text. This approach combines the benefits of generative models and retrieval models.
+-   **Retrieval-augmented generation** is a machine learning paradigm where a model generates text by retrieving relevant information from a large database of text. This approach combines the benefits of generative models and retrieval models.
 
 <!-- <- TODO: Better -->
 
-
 ### Promptbook core
 
-- **Organization** *(legacy name collection)* group jobs, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources (= import resources from each other).
-    - **Jobs** 
-        - **Task**
-        - **Subtask**
-    - **Workforce** 
-        - **Persona**
-        - **Team**
-        - **Role**
-    - **Knowledge**
-        - **P**
-        - **Role**
-    - **Instruments**
-    - **Actions**
+-   **Organization** _(legacy name collection)_ group jobs, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources (= import resources from each other).
+    -   **Jobs**
+        -   **Task**
+        -   **Subtask**
+    -   **Workforce**
+        -   **Persona**
+        -   **Team**
+        -   **Role**
+    -   **Knowledge**
+        -   **P**
+        -   **Role**
+    -   **Instruments**
+    -   **Actions**
 
 ### Book language
 
-- **Book file**
-    - **Section**  
-        - **Heading** 
-        - **Description** 
-        - **Command**
-        - **Block** 
-        - **Return statement**
-    - **Comment**
-    - **Import** 
-    - **Scope**
-
-
+-   **Book file**
+    -   **Section**
+        -   **Heading**
+        -   **Description**
+        -   **Command**
+        -   **Block**
+        -   **Return statement**
+    -   **Comment**
+    -   **Import**
+    -   **Scope**
 
 <!--/Import ./DICTIONARY.md-->
