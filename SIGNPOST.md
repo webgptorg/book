@@ -1,6 +1,6 @@
 # 💜 The Promptbook Project
 
-Promptboo
+Promptbook project is ecosystem of multiple projects and tools, following is a list of most important pieces of the project:
 
 <table>
   <thead>

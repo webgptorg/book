@@ -1,16 +1,39 @@
 # ![Promptbook logo](https://github.com/webgptorg/promptbook/raw/main/other/design/logo-h1.png) Book language
 
+
+<!--
 !!!!!!! Better text
 
 Promptbook [pipelines](https://github.com/webgptorg/promptbook/discussions/64) are written in custom markdown format [_(It it a best solution?!)_](https://github.com/webgptorg/promptbook/discussions/161) in our language called [Book / Shem / _(We need to decide)_](https://github.com/webgptorg/promptbook/discussions/162)
+-->
 
-<!--/Import ./WHITEPAPER.md-->
 
-<!--Import book/BLUEPRINT.md-->
+<!--Import book/WHITEPAPER.md-->
 <!--⚠️ WARNING: This section was imported, make changes in source -->
 <!-- <- TODO: [💜] Actually implement the system for auto-imports -->
 
-## !!!! Whitepaper
+## 🤍 The Promptbook Whitepaper
+
+<!-- TODO: [💜] !!!!!! Make some system to sync this section across the repositories dynamically -->
+
+When you have a simple, single prompt for ChatGPT, GPT-4, Anthropic Claude, Google Gemini, Llama 3, or whatever, it doesn't matter how you integrate it. Whether it's calling a REST API directly, using the SDK, hardcoding the prompt into the source code, or importing a text file, the process remains the same.
+
+But often you will struggle with the **limitations of LLMs**, such as **hallucinations, off-topic responses, poor quality output, language and prompt drift, word repetition repetition repetition repetition or misuse, lack of context, or just plain w𝒆𝐢rd resp0nses**. When this happens, you generally have three options:
+
+1. **Fine-tune** the model to your specifications or even train your own.
+2. **Prompt-engineer** the prompt to the best shape you can achieve.
+3. Orchestrate **multiple prompts** in a [pipeline](https://github.com/webgptorg/promptbook/discussions/64) to get the best result.
+
+In all of these situations, but especially in 3., the **✨ Promptbook can make your life waaaaaaaaaay easier**.
+
+-   [**Separates concerns**](https://github.com/webgptorg/promptbook/discussions/32) between prompt-engineer and programmer, between code files and prompt files, and between prompts and their execution logic. For this purpose, it introduces a new language called [the **💙 Book**](https://github.com/webgptorg/book).
+-   Book allows you to **focus on the business** logic without having to write code or deal with the technicalities of LLMs.
+-   **Forget** about **low-level details** like choosing the right model, tokens, context size, `temperature`, `top-k`, `top-p`, or kernel sampling. **Just write your intent** and [**persona**](https://github.com/webgptorg/promptbook/discussions/22) who should be responsible for the task and let the library do the rest.
+-   We have built-in **orchestration** of [pipeline](https://github.com/webgptorg/promptbook/discussions/64) execution and many tools to make the process easier, more reliable, and more efficient, such as caching, [compilation+preparation](https://github.com/webgptorg/promptbook/discussions/78), [just-in-time fine-tuning](https://github.com/webgptorg/promptbook/discussions/33), [expectation-aware generation](https://github.com/webgptorg/promptbook/discussions/37), [agent adversary expectations](https://github.com/webgptorg/promptbook/discussions/39), and more.
+-   Sometimes even the best prompts with the best framework like Promptbook `:)` can't avoid the problems. In this case, the library has built-in **[anomaly detection](https://github.com/webgptorg/promptbook/discussions/40) and logging** to help you find and fix the problems.
+-   Versioning is build in. You can test multiple **A/B versions** of pipelines and see which one works best.
+-   Promptbook is designed to use [**RAG** (Retrieval-Augmented Generation)](https://github.com/webgptorg/promptbook/discussions/41) and other advanced techniques to bring the context of your business to generic LLM. You can use **knowledge** to improve the quality of the output.
+
 
 <!--/Import ./WHITEPAPER.md-->
 
@@ -32,39 +55,52 @@ TODO: !!!!!! Remove
 
 ## 💜 The Promptbook Project
 
+Promptbook project is ecosystem of multiple projects and tools, following is a list of most important pieces of the project:
+
 <table>
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Description</th>
+      <th>Link</th>
+    </tr>
+  </thead>
   <tbody>
+    <!--
     <tr>
       <td>Promptbook whitepaper</td>
       <td>Basic motivations and problems which we are trying to solve</td>
       <td rowspan=3>https://github.com/webgptorg/book</td>
     </tr>
+    -->
     <tr>
-      <td>Promptbook <i>(system)</i></td>
-      <td>Promptbook ...</td>
+      <td>Core</td>
+      <td>Promptbook core is a description and documentation of basic innerworkings how should be Promptbook implemented and defines which fetures must be descriable by book language</td>
+      <td rowspan=2>httos://ptbk.io<br/>https://github.com/webgptorg/book</td>
     </tr>
     <tr>
       <td>Book language</td>
       <td>
-          Book is a markdown-like language to define projects, pipelines, knowledge,... in the Promptbook system. It is designed to be understandable by non-programmers and non-technical people
+          Book is a markdown-like language to define core entities like projects, pipelines, knowledge,.... It is designed to be understandable by non-programmers and non-technical people
       </td>
     </tr>
     <tr>
       <td>Promptbook typescript project</td>
       <td>Implementation of Promptbook in TypeScript published into multiple packages to NPM</td>
-      <td>https://github.com/webgptorg/promptbook</td>
+      <td>https://github.com/webgptorg/promptbook + Multiple packages on NPM</td>
     </tr>
     <tr>
       <td>Promptbook studio</td>
-      <td>Promptbook studio</td>
-      <td rowspan=2>https://github.com/hejny/promptbook-studio</td>
+      <td>No-code studio to write book without need to write even the markdown</td>
+      <td rowspan=2>httos://promptbook.studio<br/>https://github.com/hejny/promptbook-studio</td>
     </tr>
     <tr>
       <td>Promptbook miniapps</td>
-      <td>Promptbook miniapps</td>
+      <td>Builder of LLM miniapps from book notation</td>
     </tr>
   </tbody>
 </table>
+
 
 <!--/Import ./SIGNPOST.md-->
 
@@ -72,7 +108,13 @@ TODO: !!!!!! Remove
 <!--⚠️ WARNING: This section was imported, make changes in source -->
 <!-- <- TODO: [💜] Actually implement the system for auto-imports -->
 
-## 💙 Core !!!
+## 💙 Core of the Promptbook
+
+### Organization
+
+*(legacy name collection)* group jobs, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources (= import resources from each other).
+
+
 
 <!--/Import ./CORE.md-->
 

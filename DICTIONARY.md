@@ -27,8 +27,9 @@
         - **Team**
         - **Role**
     - **Knowledge**
-        - **P**
-        - **Role**
+        - **Public**
+        - **Private**
+        - **Protected**
     - **Instruments**
     - **Actions**
 
