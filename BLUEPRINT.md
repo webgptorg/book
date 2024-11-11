@@ -1,4 +1,3 @@
-
 # 💙 The blueprint of book language
 
 Following is the documentation and blueprint of the Book language.
@@ -8,11 +7,11 @@ Following is the documentation and blueprint of the Book language.
 ```markdown
 # 🌟 My first Book
 
-- PERSONA Jane, marketing specialist with prior experience in writing articles about technology and artificial intelligence
-- KNOWLEDGE https://ptbk.io
-- KNOWLEDGE ./promptbook.pdf
-- EXPECT MIN 1 Sentence
-- EXPECT MAX 1 Paragraph
+-   PERSONA Jane, marketing specialist with prior experience in writing articles about technology and artificial intelligence
+-   KNOWLEDGE https://ptbk.io
+-   KNOWLEDGE ./promptbook.pdf
+-   EXPECT MIN 1 Sentence
+-   EXPECT MAX 1 Paragraph
 
 > Write an article about the future of artificial intelligence in the next 10 years and how metalanguages will change the way AI is used in the world.
 > Look specifically at the impact of Promptbook on the AI industry.
@@ -46,13 +45,13 @@ Foo bar
 
 Reserved words:
 
-- _each command_ like `PERSONA`, `EXPECT`, `KNOWLEDGE`, etc.
-- `content`
-- `context`
-- `knowledge`
-- `examples`
-- `modelName`
-- `currentDate`
+-   _each command_ like `PERSONA`, `EXPECT`, `KNOWLEDGE`, etc.
+-   `content`
+-   `context`
+-   `knowledge`
+-   `examples`
+-   `modelName`
+-   `currentDate`
 
 #### Parameter notation
 
