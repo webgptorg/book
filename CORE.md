@@ -1,0 +1,3 @@
+# 💙 Core of the Promptbook
+
+!!!!!!

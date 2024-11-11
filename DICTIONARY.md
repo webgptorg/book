@@ -1,6 +1,6 @@
 # 📚 Dictoniary
 
-## General LLM / AI terms 
+## General LLM / AI terms
 
 *Note: Following is not complete dictionary, more list of general AI / LLM terms that has connection with Promptbook*
 
@@ -32,8 +32,7 @@
     - **Instruments**
     - **Actions**
 
-
-## Book language 
+## Book language
 
 - **Book file**
     - **Section**  
