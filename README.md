@@ -123,7 +123,7 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
 <!-- <- TODO: [💜] Actually implement the system for auto-imports -->
 
 
-# 💙 The blueprint of book language
+## 💙 The blueprint of book language
 
 Following is the documentation and blueprint of the Book language.
 
