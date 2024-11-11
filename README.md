@@ -206,9 +206,9 @@ Foo bar
 <!--⚠️ WARNING: This section was imported, make changes in source -->
 <!-- <- TODO: [💜] Actually implement the system for auto-imports -->
 
-# 📚 Dictoniary
+## 📚 Dictoniary
 
-## General LLM / AI terms
+### General LLM / AI terms
 
 *Note: Following is not complete dictionary, more list of general AI / LLM terms that has connection with Promptbook*
 
@@ -224,7 +224,7 @@ Foo bar
 <!-- <- TODO: Better -->
 
 
-## Promptbook core
+### Promptbook core
 
 - **Organization** *(legacy name collection)* group jobs, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources (= import resources from each other).
     - **Jobs** 
@@ -240,7 +240,7 @@ Foo bar
     - **Instruments**
     - **Actions**
 
-## Book language
+### Book language
 
 - **Book file**
     - **Section**  
