@@ -1,4 +1,4 @@
-import spaceTrim from 'spacetrim';
+import { spaceTrim } from 'spacetrim';
 import { GENERATOR_WARNING, IMPORT_REGEX } from '../config';
 import { removeComments } from './removeComments';
 
@@ -21,15 +21,13 @@ export async function placeImports(
         const importPath = importMatch.groups!.importPath;
         const importStatement = importMatch[0];
 
-        console.log({ importPath, importStatement });
-
         if (!importPath) {
             throw new Error(`Invalid import statement: ${importStatement}`);
         }
 
         let importedContent = await getFileContent(importPath);
 
-        // Recursively process imports in the imported content
+        // Note: Recursively process imports in the imported content
         importedContent = await placeImports(importedContent, getFileContent);
 
         importedContent = removeComments(importedContent);

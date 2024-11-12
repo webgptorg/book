@@ -1,4 +1,4 @@
-#!/usr/bin/env -S deno run --allow-env --allow-read --allow-sys
+#!/usr/bin/env -S deno run --allow-env --allow-read --allow-write --allow-sys --unstable-sloppy-imports
 
 /**
  * This script itterates over all markdown files in cwd
@@ -8,16 +8,16 @@
 
 import colors from 'colors';
 import { walk } from 'https://deno.land/std/fs/mod.ts';
-import { readFile } from 'node:fs/promises';
-import { join } from 'node:path';
-import { placeImports } from './placeImports.ts';
+import { readFile, writeFile } from 'node:fs/promises';
+import { dirname, join } from 'node:path';
+import { placeImports } from './placeImports';
 
 const cwd = process.cwd();
 
 const files = walk(cwd, {
     includeDirs: false,
     exts: ['.md'],
-    // <- TODO: Exclude `node_modules`
+    skip: ['node_modules'],
 });
 
 for await (const file of files) {
@@ -29,11 +29,15 @@ for await (const file of files) {
         continue;
     }
 
-    console.log(colors.gray(file.path));
-    //console.log(file);
-
     const content = await readFile(file.path, 'utf-8');
-    const newContent = placeImports(content, async (importPath: string) =>
-        readFile(join(file.path, importPath), 'utf-8'),
+    const newContent = await placeImports(content, async (importPath: string) =>
+        readFile(join(dirname(file.path), importPath), 'utf-8'),
     );
+
+    if (content === newContent) {
+        console.info(colors.gray(file.path));
+    } else {
+        await writeFile(file.path, newContent);
+        console.info(colors.green(file.path));
+    }
 }
