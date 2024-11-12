@@ -7,7 +7,7 @@ Build responsible, controlled and transparent applications on top of LLM models 
 
 ## 🤍 The Promptbook Whitepaper
 
-If you have a simple, single prompt for ChatGPT, GPT-4, Anthropic Claude, Google Gemini, Llama 3, or whatever, it doesn't matter how you integrate it. Whether it's calling a REST API directly, using the SDK, hardcoding the prompt into the source code, or importing a text file, the process remains the same.
+When you have a simple, single prompt for ChatGPT, GPT-4, Anthropic Claude, Google Gemini, Llama 3, or whatever, it doesn't matter how you integrate it. Whether it's calling a REST API directly, using the SDK, hardcoding the prompt into the source code, or importing a text file, the process remains the same.
 
 But often you will struggle with the **limitations of LLMs**, such as **hallucinations, off-topic responses, poor quality output, language and prompt drift, word repetition repetition repetition repetition or misuse, lack of context, or just plain w𝒆𝐢rd resp0nses**. When this happens, you generally have three options:
 
@@ -207,9 +207,9 @@ Foo bar
 
 ## 📚 Dictoniary
 
-### General LLM / AI terms
+The following glossary is used to clarify certain concepts:
 
-_Note: Following is not complete dictionary, more list of general AI / LLM terms that has connection with Promptbook_
+### General LLM / AI terms
 
 -   **Prompt drift** is a phenomenon where the AI model starts to generate outputs that are not aligned with the original prompt. This can happen due to the model's training data, the prompt's wording, or the model's architecture.
 -   **Pipeline, workflow or chain** is a sequence of tasks that are executed in a specific order. In the context of AI, a pipeline can refer to a sequence of AI models that are used to process data.
@@ -218,7 +218,11 @@ _Note: Following is not complete dictionary, more list of general AI / LLM terms
 -   **Few-shot learning** is a machine learning paradigm where a model is trained to perform a task with only a few labeled examples. This is in contrast to traditional machine learning, where models are trained on large datasets.
 -   **Meta-learning** is a machine learning paradigm where a model is trained on a variety of tasks and is able to learn new tasks with minimal additional training. This is achieved by learning a set of meta-parameters that can be quickly adapted to new tasks.
 -   **Retrieval-augmented generation** is a machine learning paradigm where a model generates text by retrieving relevant information from a large database of text. This approach combines the benefits of generative models and retrieval models.
--   longtail
+-   **Longtail** refers to non-common or rare events, items, or entities that are not well-represented in the training data of machine learning models. Longtail items are often challenging for models to predict accurately.
+
+
+
+_Note: Thos section is not complete dictionary, more list of general AI / LLM terms that has connection with Promptbook_
 
 ### Promptbook core
 
@@ -249,5 +253,33 @@ _Note: Following is not complete dictionary, more list of general AI / LLM terms
     -   **Comment**
     -   **Import**
     -   **Scope**
+
+### 💯 Core concepts
+
+-   [📚 Collection of pipelines](https://github.com/webgptorg/promptbook/discussions/65)
+-   [📯 Pipeline](https://github.com/webgptorg/promptbook/discussions/64)
+-   [🎺 Pipeline templates](https://github.com/webgptorg/promptbook/discussions/88)
+-   [🤼 Personas](https://github.com/webgptorg/promptbook/discussions/22)
+-   [⭕ Parameters](https://github.com/webgptorg/promptbook/discussions/83)
+-   [🚀 Pipeline execution](https://github.com/webgptorg/promptbook/discussions/84)
+-   [🧪 Expectations](https://github.com/webgptorg/promptbook/discussions/30)
+-   [✂️ Postprocessing](https://github.com/webgptorg/promptbook/discussions/31)
+-   [🔣 Words not tokens](https://github.com/webgptorg/promptbook/discussions/29)
+-   [☯ Separation of concerns](https://github.com/webgptorg/promptbook/discussions/32)
+
+#### Advanced concepts
+
+-   [📚 Knowledge (Retrieval-augmented generation)](https://github.com/webgptorg/promptbook/discussions/41)
+-   [🌏 Remote server](https://github.com/webgptorg/promptbook/discussions/89)
+-   [🃏 Jokers (conditions)](https://github.com/webgptorg/promptbook/discussions/66)
+-   [🔳 Metaprompting](https://github.com/webgptorg/promptbook/discussions/35)
+-   [🌏 Linguistically typed languages](https://github.com/webgptorg/promptbook/discussions/53)
+-   [🌍 Auto-Translations](https://github.com/webgptorg/promptbook/discussions/42)
+-   [📽 Images, audio, video, spreadsheets](https://github.com/webgptorg/promptbook/discussions/54)
+-   [🔙 Expectation-aware generation](https://github.com/webgptorg/promptbook/discussions/37)
+-   [⏳ Just-in-time fine-tuning](https://github.com/webgptorg/promptbook/discussions/33)
+-   [🔴 Anomaly detection](https://github.com/webgptorg/promptbook/discussions/40)
+-   [👮 Agent adversary expectations](https://github.com/webgptorg/promptbook/discussions/39)
+-   [view more](https://github.com/webgptorg/promptbook/discussions/categories/concepts)
 
 <!--/Import ./DICTIONARY.md-->
