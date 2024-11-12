@@ -1,7 +1,7 @@
 /**
  * The regular expression to match the import statement in the markdown files
  */
-export const IMPORT_REGEX = /<!--\s*Import\s+(?<path>.*)\s*-->/i;
+export const IMPORT_REGEX = /<!--\s*Import\s+(?<importPath>.*)\s*-->.*<!--\s*\/Import\s+\k<importPath>\s*-->/gis;
 
 /**
  * Warning message for the generated sections and files files

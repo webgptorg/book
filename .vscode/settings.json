@@ -1,5 +1,6 @@
 {
     "files.eol": "\n",
+    "jestrunner.jestCommand": "npx jest",
     "editor.formatOnSave": true,
     "prettier.configPath": ".prettierrc",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -8,5 +9,8 @@
     "npm.autoDetect": "on",
     "debug.allowBreakpointsEverywhere": true,
     "html.autoClosingTags": false,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
     "grammarly.domain": "technical"
 }
