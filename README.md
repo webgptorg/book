@@ -61,7 +61,6 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
     </tr>
   </thead>
   <tbody>
-    
     <tr>
       <td>Core</td>
       <td>Promptbook core is a description and documentation of basic innerworkings how should be Promptbook implemented and defines which fetures must be descriable by book language</td>

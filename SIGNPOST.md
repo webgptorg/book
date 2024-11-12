@@ -10,8 +10,7 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
       <th>Link</th>
     </tr>
   </thead>
-  <tbody>
-    <!--
+  <tbody><!--
     <tr>
       <td>Promptbook whitepaper</td>
       <td>Basic motivations and problems which we are trying to solve</td>
