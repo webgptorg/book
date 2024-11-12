@@ -7,14 +7,11 @@ Promptbook [pipelines](https://github.com/webgptorg/promptbook/discussions/64) a
 -->
 
 <!--Import ./WHITEPAPER.md-->
-<!--⚠️ WARNING: This section was imported, make changes in source -->
-<!-- <- TODO: [💜] Actually implement the system for auto-imports -->
+<!--⚠️ WARNING: This section was imported, make changes in source; any manual changes here will be overwritten-->
 
 ## 🤍 The Promptbook Whitepaper
 
-<!-- TODO: [💜] !!!!!! Make some system to sync this section across the repositories dynamically -->
-
-When you have a simple, single prompt for ChatGPT, GPT-4, Anthropic Claude, Google Gemini, Llama 3, or whatever, it doesn't matter how you integrate it. Whether it's calling a REST API directly, using the SDK, hardcoding the prompt into the source code, or importing a text file, the process remains the same.
+If you have a simple, single prompt for ChatGPT, GPT-4, Anthropic Claude, Google Gemini, Llama 3, or whatever, it doesn't matter how you integrate it. Whether it's calling a REST API directly, using the SDK, hardcoding the prompt into the source code, or importing a text file, the process remains the same.
 
 But often you will struggle with the **limitations of LLMs**, such as **hallucinations, off-topic responses, poor quality output, language and prompt drift, word repetition repetition repetition repetition or misuse, lack of context, or just plain w𝒆𝐢rd resp0nses**. When this happens, you generally have three options:
 
@@ -47,8 +44,7 @@ TODO: !!!!!! Remove
 -->
 
 <!--Import ./SIGNPOST.md-->
-<!--⚠️ WARNING: This section was imported, make changes in source -->
-<!-- <- TODO: [💜] Actually implement the system for auto-imports -->
+<!--⚠️ WARNING: This section was imported, make changes in source; any manual changes here will be overwritten-->
 
 ## 💜 The Promptbook Project
 
@@ -63,13 +59,7 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
     </tr>
   </thead>
   <tbody>
-    <!--
-    <tr>
-      <td>Promptbook whitepaper</td>
-      <td>Basic motivations and problems which we are trying to solve</td>
-      <td rowspan=3>https://github.com/webgptorg/book</td>
-    </tr>
-    -->
+
     <tr>
       <td>Core</td>
       <td>Promptbook core is a description and documentation of basic innerworkings how should be Promptbook implemented and defines which fetures must be descriable by book language</td>
@@ -95,14 +85,14 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
       <td>Promptbook miniapps</td>
       <td>Builder of LLM miniapps from book notation</td>
     </tr>
+
   </tbody>
 </table>
 
 <!--/Import ./SIGNPOST.md-->
 
 <!--Import ./CORE.md-->
-<!--⚠️ WARNING: This section was imported, make changes in source -->
-<!-- <- TODO: [💜] Actually implement the system for auto-imports -->
+<!--⚠️ WARNING: This section was imported, make changes in source; any manual changes here will be overwritten-->
 
 ## 💙 Core of the Promptbook
 
@@ -110,22 +100,59 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
 
 _(legacy name collection)_ group jobs, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources (= import resources from each other).
 
-> !!!!!! Not finished
+### Jobs
+
+Aaaa
+
+#### Task
+
+Aaaa
+
+#### Subtask
+
+Aaaa
+
+### Workforce
+
+Aaaa
+
+#### Persona
+
+Aaaa
+
+#### Team
+
+Aaaa
+
+#### Role
+
+Aaaa
+
+### Knowledge
+
+Aaaa
+
+### Instruments
+
+Aaaa
+
+### Actions
+
+Aaaa
 
 <!--/Import ./CORE.md-->
 
 <!--Import ./BLUEPRINT.md-->
-<!--⚠️ WARNING: This section was imported, make changes in source -->
-<!-- <- TODO: [💜] Actually implement the system for auto-imports -->
+<!--⚠️ WARNING: This section was imported, make changes in source; any manual changes here will be overwritten-->
 
 ## 💙 The blueprint of book language
 
 Following is the documentation and blueprint of the Book language.
 
-### Example
+#### Example
 
 ```markdown
-# 🌟 My first Book
+## 🌟 My first Book
 
 -   PERSONA Jane, marketing specialist with prior experience in writing articles about technology and artificial intelligence
 -   KNOWLEDGE https://ptbk.io
@@ -139,7 +166,7 @@ Following is the documentation and blueprint of the Book language.
 -> {article}
 ```
 
-### Goals and principles of book language
+#### Goals and principles of book language
 
 File is designed to be easy to read and write. It is strict subset of markdown. It is designed to be understandable by both humans and machines and without specific knowledge of the language.
 
@@ -149,19 +176,19 @@ As it is source code, it can leverage all the features of version control system
 
 But unlike programming languages, it is designed to be understandable by non-programmers and non-technical people.
 
-### Structure
+#### Structure
 
 Book is divided into sections. Each section starts with heading. The language itself is not sensitive to the type of heading _(`h1`, `h2`, `h3`, ...)_ but it is recommended to use `h1` for header section and `h2` for other sections.
 
-### Header
+#### Header
 
 Header is the first section of the book. It contains metadata about the pipeline. It is recommended to use `h1` heading for header section but it is not required.
 
-### Parameter
+#### Parameter
 
 Foo bar
 
-#### Parameter names
+##### Parameter names
 
 Reserved words:
 
@@ -173,29 +200,30 @@ Reserved words:
 -   `modelName`
 -   `currentDate`
 
-#### Parameter notation
+##### Parameter notation
 
-### Template
-
-Foo bar
-
-### Command
+#### Template
 
 Foo bar
 
-### Block
+#### Command
 
 Foo bar
 
-### Return parameter
+#### Block
 
-### Examples
+Foo bar
+
+#### Return parameter
+
+#### Examples
+
+---
 
 <!--/Import ./BLUEPRINT.md-->
 
 <!--Import ./DICTIONARY.md-->
-<!--⚠️ WARNING: This section was imported, make changes in source -->
-<!-- <- TODO: [💜] Actually implement the system for auto-imports -->
+<!--⚠️ WARNING: This section was imported, make changes in source; any manual changes here will be overwritten-->
 
 ## 📚 Dictoniary
 
@@ -211,8 +239,6 @@ _Note: Following is not complete dictionary, more list of general AI / LLM terms
 -   **Meta-learning** is a machine learning paradigm where a model is trained on a variety of tasks and is able to learn new tasks with minimal additional training. This is achieved by learning a set of meta-parameters that can be quickly adapted to new tasks.
 -   **Retrieval-augmented generation** is a machine learning paradigm where a model generates text by retrieving relevant information from a large database of text. This approach combines the benefits of generative models and retrieval models.
 
-<!-- <- TODO: Better -->
-
 ### Promptbook core
 
 -   **Organization** _(legacy name collection)_ group jobs, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources (= import resources from each other).
@@ -224,8 +250,9 @@ _Note: Following is not complete dictionary, more list of general AI / LLM terms
         -   **Team**
         -   **Role**
     -   **Knowledge**
-        -   **P**
-        -   **Role**
+        -   **Public**
+        -   **Private**
+        -   **Protected**
     -   **Instruments**
     -   **Actions**
 

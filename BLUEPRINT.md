@@ -2,7 +2,7 @@
 
 Following is the documentation and blueprint of the Book language.
 
-### Example
+## Example
 
 ```markdown
 # 🌟 My first Book
@@ -19,7 +19,7 @@ Following is the documentation and blueprint of the Book language.
 -> {article}
 ```
 
-### Goals and principles of book language
+## Goals and principles of book language
 
 File is designed to be easy to read and write. It is strict subset of markdown. It is designed to be understandable by both humans and machines and without specific knowledge of the language.
 
@@ -29,19 +29,19 @@ As it is source code, it can leverage all the features of version control system
 
 But unlike programming languages, it is designed to be understandable by non-programmers and non-technical people.
 
-### Structure
+## Structure
 
 Book is divided into sections. Each section starts with heading. The language itself is not sensitive to the type of heading _(`h1`, `h2`, `h3`, ...)_ but it is recommended to use `h1` for header section and `h2` for other sections.
 
-### Header
+## Header
 
 Header is the first section of the book. It contains metadata about the pipeline. It is recommended to use `h1` heading for header section but it is not required.
 
-### Parameter
+## Parameter
 
 Foo bar
 
-#### Parameter names
+### Parameter names
 
 Reserved words:
 
@@ -53,24 +53,22 @@ Reserved words:
 -   `modelName`
 -   `currentDate`
 
-#### Parameter notation
+### Parameter notation
 
-### Template
-
-Foo bar
-
-### Command
+## Template
 
 Foo bar
 
-### Block
+## Command
 
 Foo bar
 
-### Return parameter
+## Block
 
-### Examples
+Foo bar
 
----
+## Return parameter
+
+## Examples
 
 <!-- GRM 2024-11 -->
