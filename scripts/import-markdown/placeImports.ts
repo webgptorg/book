@@ -22,6 +22,9 @@ export async function placeImports(
 
         let importedContent = await getFileContent(importPath);
 
+        // Recursively process imports in the imported content
+        importedContent = await placeImports(importedContent, getFileContent);
+
         importedContent = removeComments(importedContent);
 
         // TODO: !!!!!! Increase header levels in imported content

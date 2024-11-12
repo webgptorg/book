@@ -137,6 +137,9 @@ describe('how replacing imports works', () => {
 
                     Second level
 
+
+
+
                     Third level
                     with multiple lines
 
