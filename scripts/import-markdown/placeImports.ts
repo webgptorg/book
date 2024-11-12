@@ -1,5 +1,6 @@
 import { spaceTrim } from 'spacetrim';
 import { GENERATOR_WARNING, IMPORT_REGEX } from '../config';
+import { increaseHeadings } from './increaseHeadings';
 import { removeComments } from './removeComments';
 
 /**
@@ -31,10 +32,7 @@ export async function placeImports(
         importedContent = await placeImports(importedContent, getFileContent);
 
         importedContent = removeComments(importedContent);
-
-        importedContent = importedContent.replace(/^(#{1,6})/gm, (match) => {
-            return '#'.repeat(match.length + 1);
-        });
+        importedContent = increaseHeadings(importedContent);
 
         const placedContent = spaceTrim(
             (block) => `
