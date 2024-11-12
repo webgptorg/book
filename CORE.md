@@ -2,21 +2,34 @@
 
 ## Organization
 
-_(legacy name collection)_ group jobs, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources (= import resources from each other).
+_(legacy name collection)_ group together jobs, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources (= import resources from each other).
 
-## Jobs
+## Workflow
 
-Aaaa
+
+
+
 
 ### Task
 
 Aaaa
 
+
+#### Task job
+
+#### Task check
+
+<!--
 ### Subtask
 
 Aaaa
+-->
 
 ## Workforce
+
+Aaaa
+
+### Team
 
 Aaaa
 
@@ -24,9 +37,6 @@ Aaaa
 
 Aaaa
 
-### Team
-
-Aaaa
 
 ### Role
 
