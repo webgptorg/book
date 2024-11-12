@@ -32,7 +32,9 @@ export async function placeImports(
 
         importedContent = removeComments(importedContent);
 
-        // TODO: !!!!!! Increase header levels in imported content
+        importedContent = importedContent.replace(/^(#{1,6})/gm, (match) => {
+            return '#'.repeat(match.length + 1);
+        });
 
         const placedContent = spaceTrim(
             (block) => `
@@ -50,3 +52,7 @@ export async function placeImports(
 
     return newContent;
 }
+
+/**
+ * TODO: Maybe add links to the imported content [read more](./path/to/file.md)
+ */
