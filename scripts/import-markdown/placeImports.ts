@@ -2,6 +2,13 @@ import spaceTrim from 'spacetrim';
 import { GENERATOR_WARNING, IMPORT_REGEX } from '../config';
 import { removeComments } from './removeComments';
 
+/**
+ * Place the imports in the markdown content
+ *
+ * @param content The markdown content
+ * @param getFileContent The function to get imported content
+ * @returns The markdown content with the imports placed
+ */
 export async function placeImports(
     content: string,
     getFileContent: (importPath: string) => Promise<string>,
