@@ -1,6 +1,6 @@
 # 🤍 Claims for the Promptbook
 
-<!-- TODO: [🐊] Pick the best claim -->
+TODO: [🐊] Pick the best claim
 
 > Build responsible, controlled and transparent applications on top of LLM models!
 
