@@ -1,5 +1,5 @@
 import spaceTrim from 'spacetrim';
-import { IMPORT_REGEX } from '../config';
+import { GENERATOR_WARNING, IMPORT_REGEX } from '../config';
 import { removeComments } from './removeComments';
 
 export async function placeImports(
