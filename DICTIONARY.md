@@ -1,4 +1,4 @@
-# 📚 Dictoniary
+# 📚 Dictionary
 
 The following glossary is used to clarify certain concepts:
 
