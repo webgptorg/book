@@ -2,18 +2,17 @@
 
 ## Organization
 
-_(legacy name collection)_ group together jobs, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources (= import resources from each other).
+_(legacy name collection)_ group together workflows, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources (= import resources from each other).
 
 ## Workflow
 
+Represents a piece of work that has exact imput and output.
 
-
-
+As a programmer, you can imagine workflow as async function.
 
 ### Task
 
-Aaaa
-
+Task is one step in a workflow
 
 #### Task job
 
@@ -36,7 +35,6 @@ Aaaa
 ### Persona
 
 Aaaa
-
 
 ### Role
 
