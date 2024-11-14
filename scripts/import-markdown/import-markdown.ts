@@ -29,6 +29,15 @@ for await (const file of files) {
         continue;
     }
 
+    if (
+        file.path.includes('/.') ||
+        file.path.includes('\\.') ||
+        file.path.includes('/_') ||
+        file.path.includes('\\_')
+    ) {
+        continue;
+    }
+
     const content = await readFile(file.path, 'utf-8');
     const newContent = await placeImports(content, async (importPath: string) =>
         readFile(join(dirname(file.path), importPath), 'utf-8'),
