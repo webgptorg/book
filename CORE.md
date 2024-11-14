@@ -2,7 +2,7 @@
 
 ## Organization
 
-Organization groups together workflows, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources _(= import resources from each other)_.
+Organization groups together workflows, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources _(i.e. import workflows, teams, personas, knowledge, instruments and actions from each other)_.
 
 Each organization has unique URL, for example `https://promptbook.studio/my-cool-project/`.
 
