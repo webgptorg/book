@@ -1,12 +1,12 @@
 # 💙 Core of the Promptbook
 
-## Organization
+## 🏛 Organization
 
 Organization groups together workflows, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources _(i.e. import workflows, teams, personas, knowledge, instruments and actions from each other)_.
 
 Each organization has unique URL, for example `https://promptbook.studio/my-cool-project/`.
 
-## Workflow
+## 🏗 Workflow
 
 Represents a piece of work that has exact input and output.
 
@@ -43,7 +43,7 @@ After task job is done, result can be checked if it is correct. If it is not cor
 -   **Result** is in expected range, for example **between 1 sentence and 2 paragraphs**
 -   **Advesarial check** by another persona to approve the result
 
-## Workforce
+## 🏋️‍♂️ Workforce
 
 Workforce an abstraction above LLM models, tokens, temperature, top-k, top-p, and other model parameters.
 You can describe what you desire in human language like `Jane, creative writer with sence of sharp humor` instead of `gpt-4-2024-13-31, temperature 1.2, top-k 40, STOP token ".\n",...`.
@@ -68,7 +68,7 @@ Each team can have access to different knowledge, instruments, and actions.
 Role is a ad-hoc modification of persona. Role can be defined for specific task, for example `Jane (email writer)`.
 Rolehave access to same knowledge, instruments, and actions as its parent persona.
 
-## Knowledge
+## 💡 Knowledge
 
 Knowledge is external information that is used in task jobs. Knowledge can be:
 
@@ -83,7 +83,7 @@ Knowledge is external information that is used in task jobs. Knowledge can be:
 
 Knowledge piece is a smallest unit of knowledge which makes sense by its own. Every type of knowledge explicit, file, or website is parsed/scraperd and divided into knowledge pieces. These pieces are indexed, put into knowledgebase, and can be used in task jobs via techniques like Retrieval-augmented generation.
 
-## Instruments
+## 🛠 Instruments
 
 Instruments are external information that cannot be pre-scraped but needs to be fetched at the moment of task job. For example:
 
@@ -99,7 +99,7 @@ Instruments are external information that cannot be pre-scraped but needs to be 
 
 This is an abstraction above function calling and API calling in models.
 
-## Actions
+## ☎ Actions
 
 Actions are similar to instruments but they can change the state of the world. For example:
 
