@@ -57,15 +57,15 @@ Reserved words:
 
 ## Template
 
-Foo bar
+Todo todo
 
 ## Command
 
-Foo bar
+Todo todo
 
 ## Block
 
-Foo bar
+Todo todo
 
 ## Return parameter
 
