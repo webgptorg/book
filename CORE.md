@@ -14,7 +14,7 @@ Private workflows can be imported within the organization, while public workflow
 
 As a programmer, you can imagine a workflow as an async function that can be used inside your code. It exposes an interface with a record of input and output parameters but hides the internal implementation.
 
-You can use workflows in other workflows, use it in classic programming languages as async functions that can be called, [run workflow in CLI](#!!!!!!), or use Promptbook Studio to **create instant miniapps**.
+You can use workflows in other workflows, use it in classic programming languages as async functions that can be called, [run workflow in CLI](https://github.com/webgptorg/hello-world), or use Promptbook Studio to **create instant miniapps**.
 
 ### Task
 
