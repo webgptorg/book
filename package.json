@@ -17,5 +17,6 @@
             "type": "github",
             "url": "https://github.com/webgptorg/book/blob/main/README.md#%EF%B8%8F-contributing"
         }
-    ]
+    ],
+    "description": "Build responsible, controlled and transparent applications on top of LLM models written in the next-generation language - the Book!"
 }
