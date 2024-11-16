@@ -8,6 +8,62 @@ Show how to use knowledge
 -   INPUT  PARAMETER `{rules}` Extra rules for writing the bio
 -   OUTPUT PARAMETER `{bio}` Bio of Pavol Hejný - speaker at the event
 
+## Sample event
+
+-   SAMPLE
+
+```
+LinuxDays
+```
+
+`-> {eventTitle}`
+
+## Sample event
+
+-   SAMPLE
+
+```
+OpenAlt
+```
+
+`-> {eventTitle}`
+
+## Sample event
+
+-   SAMPLE
+
+```
+LinuxDays…
+
+LinuxDays je česká linuxová konference, která se odehrává každoročně první říjnový víkend v Praze. Akce vznikla v roce 2012 jako místo pro setkání lidí se zájem o počítače, sítě, Linux a jiné technologie. V průběhu let se z LinuxDays stala největších akce svého druhu v Česku.
+
+Komunita…
+
+Nápad na každoroční velkou konferenci vznikl v linuxové komunitě na začátku roku 2012. Rozhodli jsme se udělat si vlastní velkou konferenci po svém. Kdo je součástí této komunity? Začali jsme jako skupina lidí, která se vídá na různých konferencích v Čechách a díky tomu jsou mezi organizátory konference LinuxDays zástupci různých otevřených komunit.
+
+Lidé…
+
+Máme mezi sebou lidi, kteří se podíleli na organizaci konferencí InstallFest, CryptoFest a SUT nebo zaměstnance a studenty FIT ČVUT v Praze. Co se pokrytí v médiích týče, máme ve svých řadách šéfredaktora zpravodajského serveru Root.cz. Z distribucí máme lidi zastupující Fedoru a openSUSE. Jsme tedy velmi různorodá skupina lidí a společně zastupujeme zájmy mnohých komunit.
+
+Sobě…
+
+Nejsme závislí na finanční podpoře komerčních subjektů, proto si velmi pečlivě vybíráme, s kým budeme spolupracovat. Jednoduše nám taková spolupráce musí „dávat smysl“ z hlediska ideového záměru, posluchačů i nás samotných. Protože nás nikdo do ničeho netlačí, zůstáváme otevření a nezávislí. Tvoříme komunitní konferenci pro komunitu. Od lidí pro lidi.
+```
+
+`-> {eventDescription}`
+
+## Sample event
+
+-   SAMPLE
+
+```
+Konference OpenAlt vznikla v roce 2014 jako výsledek spojení konferencí LinuxAlt a Openmobility. LinuxAlt jako konference s dlouhodobou tradicí se již od roku 2006 věnovala otevřenému softwaru a technologiím. Záhy se LinuxAlt s více jak 500 návštěvníky stal největší akcí tohoto typu v České republice. Openmobility konference vznikla v roce 2010 a přinesla českým a slovenským návštěvníkům témata otevřených mobilních platforem a otevřeného hardware formou klasických přednášek a praktických workshopů.
+
+OpenAlt vychází z toho nejlepšího na LinuxAltu a Openmobility a rozšiřuje oblast svého zájmu o témata otevřených dat ve státní správě a soukromém sektoru (Open Data) a otevřeného přístupu k vědeckým informacím (Open Access). OpenAlt se věnuje také participativní a svobodné kultuře, zejména online spolupráci, učícím se komunitám a v souvislosti s tím i alternativnímu vzdělávání. Na své si přijdou i novodobí kutilové (Makers) řídící se pravidlem „Udělej si sám“ (DIY).
+```
+
+`-> {eventDescription}`
+
 ## Pavol Hejný (Website)
 
 -   KNOWLEDGE
