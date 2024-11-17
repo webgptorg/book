@@ -23,7 +23,7 @@ Following is the documentation and blueprint of the Book language.
 
 File is designed to be easy to read and write. It is strict subset of markdown. It is designed to be understandable by both humans and machines and without specific knowledge of the language.
 
-It has file with `.ptbk.md` or `.book` extension with `UTF-8` non BOM encoding.
+It has file with `.book.md` or `.book` extension with `UTF-8` non BOM encoding.
 
 As it is source code, it can leverage all the features of version control systems like git and does not suffer from the problems of binary formats, proprietary formats, or no-code solutions.
 

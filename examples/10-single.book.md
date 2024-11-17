@@ -1,10 +1,10 @@
-# ✨ Pick the model
+# ✨ Example prompt
 
-Show how to pick exact model
+Show how to use a simple prompt with one parameter.
 
--   PIPELINE URL https://promptbook.studio/examples/picking-model.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/single.book.md
 -   INPUT  PARAMETER `{word}` Any single word
--   OUTPUT PARAMETER `{poem}`
+-   OUTPUT PARAMETER `{wordSynonym}`
 
 <!--Graph-->
 <!-- ⚠️ WARNING: This code has been generated so that any manual changes will be overwritten -->
@@ -13,7 +13,7 @@ Show how to pick exact model
 %% 🔮 Tip: Open this on GitHub or in the VSCode website to see the Mermaid graph visually
 
 flowchart LR
-  subgraph "✨ Pick the model"
+  subgraph "✨ Example prompt"
 
       direction TB
 
@@ -21,7 +21,7 @@ flowchart LR
       templateSynonym("💬 Synonym")
       input--"{word}"-->templateSynonym
 
-      templateSynonym--"{poem}"-->output
+      templateSynonym--"{wordSynonym}"-->output
       output((Output)):::output
 
       click templateSynonym href "#synonym" "💬 Synonym";
@@ -36,34 +36,14 @@ flowchart LR
 
 ## 💬 Synonym
 
--   PERSONA Jane, a poet
--   MODEL VARIANT Chat
--   MODEL NAME `gpt-4-1106-preview`
-
 Synonym for word
 
-```text
-Write poem with word "{word}"
-```
-
-`-> {poem}`
-
-### Simple poem
-
--   EXAMPLE
+-   PERSONA Joe, a linguist
+-   EXPECT MIN 1 WORD <!-- <- TODO: [🧠] Allow expectations to be relative to "EXPECT MIN countWords({word})" or simpler "EXPECT +-20% OF {word}" -->
+-   EXPECT MAX 5 WORDS
 
 ```text
-Roses are red, violets are blue, sugar is sweet, and so are you.
+Write synonym for "{word}"
 ```
 
-`-> {poem}`
-
-### Complex poem
-
--   EXAMPLE
-
-```text
-The sun is shining, the birds are singing, the flowers are blooming, and the world is smiling.
-```
-
-`-> {poem}`
+`-> {wordSynonym}`

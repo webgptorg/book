@@ -2,7 +2,7 @@
 
 Show how to use knowledge
 
--   PIPELINE URL https://promptbook.studio/examples/simple-knowledge.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/simple-knowledge.book.md
 -   INPUT  PARAMETER `{eventTitle}` The event name
 -   INPUT  PARAMETER `{eventDescription}` The event description
 -   INPUT  PARAMETER `{rules}` Extra rules for writing the bio

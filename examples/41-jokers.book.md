@@ -1,6 +1,6 @@
 # ✨ Example: Jokers
 
--   PIPELINE URL https://promptbook.studio/examples/jokers.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/jokers.book.md
 -   INPUT  PARAMETER {name1} First name or nothing
 -   INPUT  PARAMETER {name2} Second name or nothing
 -   OUTPUT PARAMETER `{name}`

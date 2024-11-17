@@ -25,7 +25,7 @@ for await (const file of files) {
         continue;
     }
 
-    if (file.path.endsWith('.ptbk.md')) {
+    if (file.path.endsWith('.book.md')) {
         continue;
     }
 

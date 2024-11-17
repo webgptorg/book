@@ -2,7 +2,7 @@
 
 Show how to use two consecutive prompts with one parameter each.
 
--   PIPELINE URL https://promptbook.studio/examples/two.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/two.book.md
 -   INPUT  PARAMETER `{word}` Any single word
 -   OUTPUT PARAMETER `{sentenceWithTwoSynonyms}`
 

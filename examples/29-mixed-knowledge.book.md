@@ -2,7 +2,7 @@
 
 Show how to use knowledge
 
--   PIPELINE URL https://promptbook.studio/examples/mixed-knowledge.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/mixed-knowledge.book.md
 -   INPUT  PARAMETER `{eventTitle}` The event name
 -   OUTPUT PARAMETER `{bio}` Bio of Pavol Hejný - speaker at the event
 

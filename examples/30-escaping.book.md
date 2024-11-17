@@ -2,7 +2,7 @@
 
 Show how to put codeblocks in the prompt _(which is already in the codeblock)_
 
--   PIPELINE URL https://promptbook.studio/examples/escaping.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/escaping.book.md
 -   OUTPUT PARAMETER `{greeting1}`
 -   OUTPUT PARAMETER `{greeting2}`
 

@@ -2,7 +2,7 @@
 
 Trying the language capabilities of GPT models.
 
--   PIPELINE URL https://promptbook.studio/examples/json-mode.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/json-mode.book.md
 -   INPUT  PARAM `{unstructuredContacts}` nestrukturovaný seznam kontaktních údajů
 -   OUTPUT PARAM `{contactlist}` JSON seznam kontaktních údajů
 

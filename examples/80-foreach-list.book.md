@@ -2,7 +2,7 @@
 
 Show how to iterate over a list of customers and write a greeting for each.
 
--   PIPELINE URL https://promptbook.studio/examples/foreach-list.ptbk.md
+-   PIPELINE URL https://promptbook.studio/examples/foreach-list.book.md
 -   INPUT PARAMETER `{customers}` Customer names each customer on each row
 -   OUTPUT PARAMETER `{greetings}` Greeting to each customer on each row
 
