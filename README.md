@@ -361,9 +361,11 @@ _Note: Thos section is not complete dictionary, more list of general AI / LLM te
 
 ## ✨ Partners
 
+
 <a href="https://webgpt.cz/?partner=ph&utm_medium=referral&utm_source=github-readme&utm_campaign=partner-ph" title="WebGPT"><img src="https://webgpt.cz/_next/static/media/webgpt-black.8d958d25.png#gh-light-mode-only" alt="WebGPT" height="60"/></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/webgptorg/promptbook" title="Promptbook"><img src="https://raw.githubusercontent.com/webgptorg/promptbook/main/other/design/logo.png#gh-light-mode-only" alt="Promptbook" height="60"/></a>
+
 
 [Become a partner](https://www.pavolhejny.com/contact/)
 
