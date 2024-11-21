@@ -27,6 +27,8 @@ For the time being we do not treat AI agents at all, for example.
 | [Replit Ghostwriter](https://replit.com/site/ghostwriter) | 🟠 Moderate               | AI-assisted coding                  | ✅              | ✅                        | Incremental improvement    | Developers                | No          | ✅                        |
 | [CodeT5](https://huggingface.co/transformers/v4.0.0/model_doc/codet5.html) | 🟠 Moderate               | Code summarization, generation      | ✅              | ✅                        | Augment existing paradigms | Researchers, Devs         | Yes         | ✅                        |
 | [Cursor](https://www.cursor.com) | 🟠 Moderate               | AI-powered code editor              | ✅              | ✅                        | Augment existing paradigms | Developers                | No          | ✅                        |
+| [Streamlit](https://streamlit.io) | 🟠 Moderate               | Data app development framework      | ✅              | ✅                        | Augment existing paradigms | Developers                | Yes         | ✅                        |
+
 
 # Other sources
 
