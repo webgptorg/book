@@ -2,6 +2,10 @@
 
 TODO: [🐊] Pick the best claim
 
+> It's time for a paradigm shift. The future of software is in plain English, French or Latin... not Python, JavaScript or C.
+
+> It's time for a paradigm shift. The future of software in plain English, French or Latin...
+
 > Build responsible, controlled and transparent applications on top of LLM models!
 
 > Supercharge your use of large language models
