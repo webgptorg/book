@@ -11,8 +11,3 @@ The incredible growth in power of microprocessors and the Moore's Law have been 
 This shift is going to happen, whether we are ready for it or not. Our mission is to make it excellently, not just good.
 
 > **Join us in this journey!**
-
-<!--
-TODO: !!!!!! Add links
-TODO: !!!!!! Change `ABSTRACT` -> `ABSTRACT.md`
--->
