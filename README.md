@@ -5,7 +5,7 @@
 
 ## 🤍 The Book Abstract
 
-> It's time for a paradigm shift! **The future of software is in plain English**, French or Latin.
+**It's time for a paradigm shift! The future of software is in plain English, French or Latin.**
 
 During the computer revolution, we have seen [multiple generations of computer languages](https://github.com/webgptorg/promptbook/discussions/180), from the physical rewiring of the vacuum tubes through low-level machine code to the high-level languages like Python or JavaScript. And now, we're on the edge of the **next revolution**!
 
@@ -15,7 +15,7 @@ The incredible growth in power of microprocessors and the Moore's Law have been 
 
 This shift is going to happen, whether we are ready for it or not. Our mission is to make it excellently, not just good.
 
-> **Join us in this journey!**
+**Join us in this journey!**
 
 <!--/Import ./ABSTRACT.md-->
 
@@ -37,7 +37,7 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
   <tbody>
     <tr>
       <td>Core</td>
-      <td>Promptbook core is a description and documentation of basic innerworkings how should be Promptbook implemented and defines which fetures must be descriable by book language</td>
+      <td>Promptbook Core is a description and documentation of the basic concepts, ideas and inner workings of how Promptbook should be implemented, and defines what features must be describable by book language.</td>
       <td rowspan=2>https://ptbk.io<br/>https://github.com/webgptorg/book</td>
     </tr>
     <tr>
@@ -48,17 +48,26 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
     </tr>
     <tr>
       <td>Promptbook typescript project</td>
-      <td>Implementation of Promptbook in TypeScript published into multiple packages to NPM</td>
+      <td>Promptbook implementation in TypeScript released as multiple NPM packages</td>
       <td>https://github.com/webgptorg/promptbook + Multiple packages on NPM</td>
     </tr>
     <tr>
       <td>Promptbook studio</td>
-      <td>No-code studio to write book without need to write even the markdown</td>
-      <td rowspan=2>https://promptbook.studio<br/>https://github.com/hejny/promptbook-studio</td>
-    </tr>
+      <td>Studio to write Books and instantly publish them as miniapps</td>
+      
+      <td>
+        https://promptbook.studio<br/>
+        https://github.com/hejny/promptbook-studio</td>
+      </tr>
+    
     <tr>
-      <td>Promptbook miniapps</td>
-      <td>Builder of LLM miniapps from book notation</td>
+      <td>Hello World</td>
+      <td>Simple starter kit with Books integrated into the sample applications</td>
+       <td>
+          https://github.com/webgptorg/hello-world<br/>
+          https://github.com/webgptorg/hello-world-node-js<br/>
+          https://github.com/webgptorg/hello-world-next-js
+       </td>
     </tr>
   </tbody>
 </table>
@@ -274,6 +283,8 @@ The following glossary is used to clarify certain concepts:
 -   **Meta-learning** is a machine learning paradigm where a model is trained on a variety of tasks and is able to learn new tasks with minimal additional training. This is achieved by learning a set of meta-parameters that can be quickly adapted to new tasks.
 -   **Retrieval-augmented generation** is a machine learning paradigm where a model generates text by retrieving relevant information from a large database of text. This approach combines the benefits of generative models and retrieval models.
 -   **Longtail** refers to non-common or rare events, items, or entities that are not well-represented in the training data of machine learning models. Longtail items are often challenging for models to predict accurately.
+
+
 
 _Note: Thos section is not complete dictionary, more list of general AI / LLM terms that has connection with Promptbook_
 

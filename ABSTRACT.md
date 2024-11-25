@@ -1,6 +1,6 @@
 # 🤍 The Book Abstract
 
-> It's time for a paradigm shift! **The future of software is in plain English**, French or Latin.<!-- .. not Python, JavaScript or C. -->
+**It's time for a paradigm shift! The future of software is in plain English, French or Latin.<!-- .. not Python, JavaScript or C. -->**
 
 During the computer revolution, we have seen [multiple generations of computer languages](https://github.com/webgptorg/promptbook/discussions/180), from the physical rewiring of the vacuum tubes through low-level machine code to the high-level languages like Python or JavaScript. And now, we're on the edge of the **next revolution**!
 
@@ -10,4 +10,4 @@ The incredible growth in power of microprocessors and the Moore's Law have been 
 
 This shift is going to happen, whether we are ready for it or not. Our mission is to make it excellently, not just good.
 
-> **Join us in this journey!**
+**Join us in this journey!**
