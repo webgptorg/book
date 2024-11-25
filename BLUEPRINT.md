@@ -55,7 +55,9 @@ Reserved words:
 
 ### Parameter notation
 
-## Template
+## Task
+
+## Task type
 
 Todo todo
 
