@@ -75,9 +75,9 @@
         "npm:@jest/globals@29.7.0",
         "npm:@types/node@22.9.0",
         "npm:colors@1.4.0",
-        "npm:jest@^29.7.0",
+        "npm:jest@29.7.0",
         "npm:spacetrim@0.11.60",
-        "npm:ts-jest@^29.2.5"
+        "npm:ts-jest@29.2.5"
       ]
     }
   }

@@ -38,15 +38,20 @@ for await (const file of files) {
         continue;
     }
 
-    const content = await readFile(file.path, 'utf-8');
-    const newContent = await placeImports(content, async (importPath: string) =>
-        readFile(join(dirname(file.path), importPath), 'utf-8'),
-    );
+    try {
+        const content = await readFile(file.path, 'utf-8');
+        const newContent = await placeImports(content, async (importPath: string) =>
+            readFile(join(dirname(file.path), importPath), 'utf-8'),
+        );
 
-    if (content === newContent) {
-        console.info(colors.gray(file.path));
-    } else {
-        await writeFile(file.path, newContent);
-        console.info(colors.green(file.path));
+        if (content === newContent) {
+            console.info(colors.gray(file.path));
+        } else {
+            await writeFile(file.path, newContent);
+            console.info(colors.green(file.path));
+        }
+    } catch (error) {
+        console.error(colors.red(file.path));
+        throw error;
     }
 }
