@@ -13,6 +13,7 @@ For the time being we do not treat AI agents at all, for example.
 # A simple comparison
 
 :TODO: https://www.qodo.ai/
+:TODO: https://srcbook.com/
 
 
 | Tool/Platform       | Scope of Ambition          | Primary Functionality               | Execution Ready | Natural Language Support | Abstraction Focus          | Target Audience           | Open Source | Demos/Examples Available |
