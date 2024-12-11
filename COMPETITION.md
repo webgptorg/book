@@ -8,14 +8,9 @@ One of the key goals of this analysis is to assess Promptbook’s fitness in the
 
 # What is missing:
 
-For the time being we do not treat AI agents at all, for example.
+For the time being we do not treat AI agents systematiclly at all, for example. However, there are some exceptions like https://www.wordware.ai/ that declares to be a natural language IDE also for agents.
 
 # A simple comparison
-
-:TODO: add and compare the following
-- https://www.qodo.ai/
-- https://srcbook.com/
-- https://poolside.ai/
 
 
 | Tool/Platform       | Scope of Ambition          | Primary Functionality               | Execution Ready | Natural Language Support | Abstraction Focus          | Target Audience           | Open Source | Demos/Examples Available |
@@ -34,6 +29,11 @@ For the time being we do not treat AI agents at all, for example.
 | [Cursor](https://www.cursor.com) | 🟠 Moderate               | AI-powered code editor              | ✅              | ✅                        | Augment existing paradigms | Developers                | No          | ✅                        |
 | [Streamlit](https://streamlit.io) | 🟠 Moderate               | Data app development framework      | ✅              | ✅                        | Augment existing paradigms | Developers                | Yes         | ✅                        |
 | [Bolt.new](https://bolt.new) | 🟠 Moderate               | AI-powered full-stack web development | ✅              | ✅                        | Augment existing paradigms | Developers                | No          | ✅                        |
+| [Qodo](https://www.qodo.ai) | 🟠 Moderate               | AI code generation, testing, and review | ✅              | ✅                        | Incremental improvement    | Developers                | No          | ✅                        |
+| [Srcbook](https://srcbook.com) | 🟠 Moderate               | AI-powered TypeScript app development | ✅              | ✅                        | Incremental improvement    | Developers                | Yes         | ✅                        |
+| [Poolside](https://poolside.ai) | 🟢 High                   | AI models and assistant for software engineering | ❌              | ✅                        | Redefine programming       | Developers, Enterprises   | No          | ❌                        |
+| [Wordware](https://www.wordware.ai) | 🟠 Moderate               | AI agent and application development | ✅              | ✅                        | Incremental improvement    | Developers, Non-Technical Users | No          | ✅                        |
+
 
 
 # Other sources
