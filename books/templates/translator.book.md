@@ -3,13 +3,21 @@
 <!-- TODO: !!!!!! Implement -->
 
 -   URL https://github.com/webgptorg/book/blob/main/books/templates/translator.book.md
+-   INPUT PARAMETER {inputMessage} English
+-   OUTPUT PARAMETER {outputMessage} Esperanto
 
-## Write a letter
+## Translate
 
--   PERSONA Jane, linguist and computer scientist
--   EXPECT MIN 3 Words
--   EXPECT MAX 1 Page
+-   PERSONA Jane, linguist and Esperantist
 
-> Write a letter for {yourName}
+```markdown
+Translate text to Esperanto
 
--> {letter} Letter for you
+> {inputMessage}
+
+# Rules
+
+-   Write only the translated text
+```
+
+-> {outputMessage}
