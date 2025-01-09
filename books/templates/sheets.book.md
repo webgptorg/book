@@ -1,4 +1,4 @@
-# 🧮 Sheets
+# 🧮  Spreadsheet processing
 
 <!--
 <- TODO: This is a hack to show filename in left panel instead of "Write email for each customer"
