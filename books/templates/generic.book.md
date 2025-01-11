@@ -6,7 +6,7 @@
 TODO: !!!!!! Make this flat - no nested sections
 -->
 
-## Write a letter
+## Write a joke
 
 > Write joke about {topic}
 
