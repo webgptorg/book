@@ -82,11 +82,38 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
   </tbody>
 </table>
 
-Also we have a community of developers and users:
+We also have a community of developers and users of **Promptbook**:
 
--   [Discord](https://discord.gg/x3QWNaa89N)
--   [Landing page](https://ptbk.io)
+-   [Discord community](https://discord.gg/x3QWNaa89N)
+-   [Landing page `ptbk.io`](https://ptbk.io)
 -   [Github discussions](https://github.com/webgptorg/promptbook/discussions)
+-   [LinkedIn `Promptbook`](https://linkedin.com/company/promptbook)
+-   [Facebook `Promptbook`](https://www.facebook.com/61560776453536) 
+
+And **Promptbook.studio** branded socials:
+
+
+
+-   [Instagram `@promptbook.studio`](https://www.instagram.com/promptbook.studio/)
+
+
+
+And **Promptujeme** sub-brand:
+
+*/Subbrand for Czech clients/*
+
+
+
+-   [Promptujeme.cz](https://www.promptujeme.cz/)
+-   [Facebook `Promptujeme`](https://www.facebook.com/promptujeme/)
+
+
+And **Promptbook.city** branded socials:
+
+*/Sub-brand for images and graphics generated via Promptbook prompting/*
+
+-   [Instagram `@promptbook.city`](https://www.instagram.com/promptbook.city/)
+-   [Facebook `Promptbook City`](https://www.facebook.com/61565718625569) 
 
 <!--/Import ./SIGNPOST.md-->
 

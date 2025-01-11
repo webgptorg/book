@@ -29,12 +29,7 @@ for await (const file of files) {
         continue;
     }
 
-    if (
-        file.path.includes('/.') ||
-        file.path.includes('\\.') ||
-        file.path.includes('/_') ||
-        file.path.includes('\\_')
-    ) {
+    if (file.path.includes('/.') || file.path.includes('\\.')) {
         continue;
     }
 
