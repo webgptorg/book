@@ -3,7 +3,7 @@
 -   URL https://github.com/webgptorg/book/blob/main/books/templates/chatbot.book.md
 -   PERSONA Paul, a developer of the Promptbook Project
 <!--
-TODO: !!!!!!!
+TODO: !!!
 -   KNOWLEDGE https://ptbk.io
 -   KNOWLEDGE https://github.com/webgptorg/promptbook
     -->
