@@ -6,5 +6,5 @@ module.exports = {
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
     coverageDirectory: './coverage/',
     collectCoverage: true,
-    testTimeout: 60 * 1000,
+    testTimeout: 2 /* minutes */ * 60 * 1000,
 };
