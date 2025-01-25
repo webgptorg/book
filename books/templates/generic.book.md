@@ -1,3 +1,1 @@
-> Write a joke about {topic}
-
--> {joke}
+Write a joke about {topic}
