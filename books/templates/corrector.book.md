@@ -18,6 +18,7 @@ Correct the text
 
 -   Fix the grammar, spelling, and punctuation
 -   Enhance stylistic elements
+-   Preserve the language of the text
 -   Write only the corrected text
 ```
 
