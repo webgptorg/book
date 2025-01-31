@@ -142,7 +142,7 @@ You can use workflows in other workflows, use it in classic programming language
 
 A task is one step in a workflow. Each task is divided into two parts: the actual task job and a check that the result of the job is correct.
 
-Each task can use results from previous tasks. Tasks in a workflow form a directed acyclic graph.
+Each task can use results from previous tasks. Tasks in a workflow form a [directed acyclic graph.](https://santanub.medium.com/directed-acyclic-graphs-the-backbone-of-modern-multi-agent-ai-d9a0fe842780)
 
 ##### Task job
 
