@@ -136,13 +136,13 @@ Private workflows can be imported within the organization, while public workflow
 
 As a programmer, you can imagine a workflow as an async function that can be used inside your code. It exposes an interface with a record of input and output parameters but hides the internal implementation.
 
-You can use workflows in other workflows, use it in classic programming languages as async functions that can be called, [run workflow in CLI](https://github.com/webgptorg/hello-world), or use Promptbook Studio to **create instant miniapps**.
+You can use workflows in other workflows, use it in classic programming languages as async functions that can be called, [run workflow in CLI](https://github.com/webgptorg/hello-world), or use [Promptbook Studio](https://promptbook.studio/) to **create instant miniapps**.
 
 #### Task
 
 A task is one step in a workflow. Each task is divided into two parts: the actual task job and a check that the result of the job is correct.
 
-Each task can use results from previous tasks. Tasks in a workflow form a directed acyclic graph.
+Each task can use results from previous tasks. Tasks in a workflow form a [directed acyclic graph.](https://santanub.medium.com/directed-acyclic-graphs-the-backbone-of-modern-multi-agent-ai-d9a0fe842780)
 
 ##### Task job
 
