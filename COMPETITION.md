@@ -11,6 +11,7 @@ One of the key goals of this analysis is to assess Promptbook’s fitness in the
 1. For the time being we do not treat AI agents systematiclly at all, for example. However, there are some exceptions like https://www.wordware.ai/ that declares to be a natural language IDE also for agents.
 2. TODO: https://github.com/ruvnet/fireflies-webook
 3. TODO: add https://www.agno.com/ as a potential competitor.
+4. TODO: https://lovable.dev (?)
 
 # A simple comparison
 
