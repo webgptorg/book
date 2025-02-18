@@ -19,9 +19,9 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
        <td>https://github.com/webgptorg/book</td>
     </tr>
     <tr>
-      <td>Promptbook typescript project</td>
-      <td>Promptbook implementation in TypeScript released as multiple NPM packages</td>
-      <td>https://github.com/webgptorg/promptbook + <a href="https://www.npmjs.com/package/@promptbook/core#-packages-for-developers">Multiple packages published on NPM</a></td>
+      <td>Promptbook Engine</td>
+      <td>Promptbook implementation in TypeScript released as <a href="https://www.npmjs.com/package/@promptbook/core#-packages-for-developers">multiple NPM packages</a> and <a href="https://hub.docker.com/r/hejny/promptbook">Docker HUB</a></td>
+      <td>https://github.com/webgptorg/promptbook</td>
     </tr>
     <tr>
       <td>Promptbook studio</td>
