@@ -22,7 +22,9 @@
 
 During the computer revolution, we have seen [multiple generations of computer languages](https://github.com/webgptorg/promptbook/discussions/180), from the physical rewiring of the vacuum tubes through low-level machine code to the high-level languages like Python or JavaScript. And now, we're on the edge of the **next revolution**!
 
-It's a revolution of writing software in plain human language that is understandable and executable by both humans and machines – and it's going to change everything!
+
+
+It's a revolution of writing software in **plain human language** that is understandable and executable by both humans and machines – and it's going to change everything!
 
 The incredible growth in power of microprocessors and the Moore's Law have been the driving force behind the ever-more powerful languages, and it's been an amazing journey! Similarly, the large language models (like GPT or Claude) are the next big thing in language technology, and they're set to transform the way we interact with computers.
 
@@ -43,41 +45,24 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
   <thead>
     <tr>
       <th>Project</th>
-      <th>Description</th>
-      <th>Link</th>
+      <th>About</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Core</td>
-      <td>Promptbook Core is a description and documentation of the basic concepts, ideas and inner workings of how Promptbook should be implemented, and defines what features must be describable by book language.</td>
-      <td rowspan=2>https://github.com/webgptorg/book</td>
-    </tr>
-    <tr>
-      <td>Book language</td>
+      <td><a href="https://github.com/webgptorg/book">Book language</a></td>
       <td>
-          Book is a markdown-like language to define core entities like projects, pipelines, knowledge,.... It is designed to be understandable by non-programmers and non-technical people
+          Book is a markdown-like language to define core entities like personas, knowledge, tasks,.... It is designed to be understandable by non-programmers and non-technical people<hr>
+          There is also <a href="https://github.com/webgptorg/book-extension">a plugin for VSCode</a> to support <code>.book</code> file extension
       </td>
     </tr>
     <tr>
-      <td>Promptbook typescript project</td>
-      <td>Promptbook implementation in TypeScript released as multiple NPM packages</td>
-      <td>https://github.com/webgptorg/promptbook + <a href="https://www.npmjs.com/package/@promptbook/core#-packages-for-developers">Multiple packages published on NPM</a></td>
+      <td><a href="https://github.com/webgptorg/promptbook">Promptbook Engine</a></td>
+      <td>Promptbook implementation in TypeScript released as <a href="https://www.npmjs.com/package/@promptbook/core#-packages-for-developers">multiple NPM packages</a> and <a href="https://hub.docker.com/r/hejny/promptbook">Docker HUB</a></td>
     </tr>
     <tr>
-      <td>Promptbook studio</td>
+      <td><a href="https://promptbook.studio">Promptbook Studio</a></td>
       <td>Studio to write Books and instantly publish them as miniapps</td>
-      <td>
-        https://promptbook.studio<br/>
-        https://github.com/hejny/promptbook-studio</td>
-      </tr><tr>
-      <td>Hello World</td>
-      <td>Simple starter kit with Books integrated into the sample applications</td>
-       <td>
-          https://github.com/webgptorg/hello-world<br/>
-          https://github.com/webgptorg/hello-world-node-js<br/>
-          https://github.com/webgptorg/hello-world-next-js
-       </td>
     </tr>
   </tbody>
 </table>
@@ -136,13 +121,13 @@ Private workflows can be imported within the organization, while public workflow
 
 As a programmer, you can imagine a workflow as an async function that can be used inside your code. It exposes an interface with a record of input and output parameters but hides the internal implementation.
 
-You can use workflows in other workflows, use it in classic programming languages as async functions that can be called, [run workflow in CLI](https://github.com/webgptorg/hello-world), or use [Promptbook Studio](https://promptbook.studio/) to **create instant miniapps**.
+You can use workflows in other workflows, use it in classic programming languages as async functions that can be called, [run workflow in CLI](https://github.com/webgptorg/hello-world), or use Promptbook Studio to **create instant miniapps**.
 
 #### Task
 
 A task is one step in a workflow. Each task is divided into two parts: the actual task job and a check that the result of the job is correct.
 
-Each task can use results from previous tasks. Tasks in a workflow form a [directed acyclic graph.](https://santanub.medium.com/directed-acyclic-graphs-the-backbone-of-modern-multi-agent-ai-d9a0fe842780)
+Each task can use results from previous tasks. Tasks in a workflow form a directed acyclic graph.
 
 ##### Task job
 
