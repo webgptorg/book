@@ -6,37 +6,24 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
   <thead>
     <tr>
       <th>Project</th>
-      <th>Description</th>
-      <th>Link</th>
+      <th>About</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Book language</td>
+      <td><a href="https://github.com/webgptorg/book">Book language</a></td>
       <td>
-          Book is a markdown-like language to define core entities like projects, pipelines, knowledge,.... It is designed to be understandable by non-programmers and non-technical people
+          Book is a markdown-like language to define core entities like personas, knowledge, tasks,.... It is designed to be understandable by non-programmers and non-technical people<hr>
+          There is also <a href="https://github.com/webgptorg/book-extension">a plugin for VSCode</a> to support <code>.book</code> file extension
       </td>
-       <td>https://github.com/webgptorg/book</td>
     </tr>
     <tr>
-      <td>Promptbook Engine</td>
+      <td><a href="https://github.com/webgptorg/promptbook">Promptbook Engine</a></td>
       <td>Promptbook implementation in TypeScript released as <a href="https://www.npmjs.com/package/@promptbook/core#-packages-for-developers">multiple NPM packages</a> and <a href="https://hub.docker.com/r/hejny/promptbook">Docker HUB</a></td>
-      <td>https://github.com/webgptorg/promptbook</td>
     </tr>
     <tr>
-      <td>Promptbook studio</td>
+      <td><a href="https://promptbook.studio">Promptbook Studio</a></td>
       <td>Studio to write Books and instantly publish them as miniapps</td>
-      <td>
-        https://promptbook.studio<br/>
-        https://github.com/hejny/promptbook-studio</td>
-      </tr><tr>
-      <td>Hello World</td>
-      <td>Simple starter kit with Books integrated into the sample applications</td>
-       <td>
-          https://github.com/webgptorg/hello-world<br/>
-          https://github.com/webgptorg/hello-world-node-js<br/>
-          https://github.com/webgptorg/hello-world-next-js
-       </td>
     </tr>
   </tbody>
 </table>
