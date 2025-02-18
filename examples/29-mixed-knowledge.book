@@ -1,8 +1,8 @@
-# ✨ Example: Markdown Knowledge
+# ✨ Example: Markdown knowledge with external links
 
 Show how to use knowledge
 
--   PIPELINE URL https://promptbook.studio/examples/markdown-knowledge.book.md
+-   PIPELINE URL https://promptbook.studio/examples/mixed-knowledge.book
 -   INPUT  PARAMETER `{eventTitle}` The event name
 -   OUTPUT PARAMETER `{bio}` Bio of Pavol Hejný - speaker at the event
 
@@ -11,7 +11,7 @@ Show how to use knowledge
 -   KNOWLEDGE
 
 ```markdown
-I'm Pavol, a developer who is passionate about using new tools and technologies.
+I'm [Pavol](https://www.pavolhejny.com/), a developer who is passionate about using new tools and technologies.
 
 I specialise in creating fully functional user applications using the latest artificial intelligence models.
 
@@ -24,6 +24,12 @@ Before the massive emergence of generative AI, I have created the first Czech vi
 I have also worked on many scientific projects for the [Czech Ornithological Society](https://www.birdlife.cz/en/).
 I regularly give lectures at conferences, sit on juries, and act as a mentor in many Czech and international competitions.
 I have a special heart for this, and I love **open source** – you can find many of my things on my GitHub.
+
+---
+
+Also look at document ./27-document-knowledge.pdf
+
+But be aware that [Pavol Hejný](https://www.pavolhejny.com/) is someone else than [Pavel Hejný](https://pavelhejny.com/)
 ```
 
 ## Writing bio
