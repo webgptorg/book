@@ -2,7 +2,7 @@
 
 Show how to use a simple prompt with one parameter.
 
--   PIPELINE URL https://promptbook.studio/examples/single.book.md
+-   PIPELINE URL https://promptbook.studio/examples/single.book
 -   INPUT  PARAMETER `{word}` Any single word
 -   OUTPUT PARAMETER `{wordSynonym}`
 
