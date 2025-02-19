@@ -7,9 +7,9 @@
  */
 
 import colors from 'colors';
-import { readFile, writeFile } from 'fs/promises';
 import { walk } from 'https://deno.land/std/fs/mod.ts';
-import { dirname, join } from 'path';
+import { readFile, writeFile } from 'node:fs/promises';
+import { dirname, join } from 'node:path';
 import { placeImports } from './placeImports';
 
 const cwd = process.cwd();
