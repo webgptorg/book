@@ -73,7 +73,7 @@ We also have a community of developers and users of **Promptbook**:
 -   [Landing page `ptbk.io`](https://ptbk.io)
 -   [Github discussions](https://github.com/webgptorg/promptbook/discussions)
 -   [LinkedIn `Promptbook`](https://linkedin.com/company/promptbook)
--   [Facebook `Promptbook`](https://www.facebook.com/61560776453536)
+-   [Facebook `Promptbook`](https://www.facebook.com/61560776453536) 
 
 And **Promptbook.studio** branded socials:
 
@@ -98,7 +98,7 @@ And **Promptbook.city** branded socials:
 */Sub-brand for images and graphics generated via Promptbook prompting/*
 
 -   [Instagram `@promptbook.city`](https://www.instagram.com/promptbook.city/)
--   [Facebook `Promptbook City`](https://www.facebook.com/61565718625569)
+-   [Facebook `Promptbook City`](https://www.facebook.com/61565718625569) 
 
 <!--/Import ./SIGNPOST.md-->
 
@@ -115,6 +115,11 @@ Following is the documentation and blueprint of the Book language.
 ```markdown
 # 🌟 My first Book
 
+-   BOOK VERSION 1.0.0
+-   URL https://promptbook.studio/my-first-book/
+
+# Write an article
+
 -   PERSONA Jane, marketing specialist with prior experience in writing articles about technology and artificial intelligence
 -   KNOWLEDGE https://ptbk.io
 -   KNOWLEDGE ./promptbook.pdf
@@ -127,59 +132,31 @@ Following is the documentation and blueprint of the Book language.
 -> {article}
 ```
 
-### Goals and principles of book language
+### **What:** Workflows, Tasks and Parameters
 
-File is designed to be easy to read and write. It is strict subset of markdown. It is designed to be understandable by both humans and machines and without specific knowledge of the language.
+-   [PARAMETER](https://github.com/webgptorg/promptbook/blob/main/documents/commands/PARAMETER.md)
 
-It has file with `.book.md` or `.book` extension with `UTF-8` non BOM encoding.
+### **Who:** Personas
+
+-   [PERSONA](https://github.com/webgptorg/promptbook/blob/main/documents/commands/PERSONA.md)
+
+### **How:** Knowledge, Instruments and Actions
+
+-   [KNOWLEDGE](https://github.com/webgptorg/promptbook/blob/main/documents/commands/KNOWLEDGE.md)
+-   [INSTRUMENT](https://github.com/webgptorg/promptbook/blob/main/documents/commands/INSTRUMENT.md)
+-   [ACTION](https://github.com/webgptorg/promptbook/blob/main/documents/commands/ACTION.md)
+
+### General principles of book language
+
+Book language is based on markdown. It is subset of markdown. It is designed to be easy to read and write. It is designed to be understandable by both humans and machines and without specific knowledge of the language.
+
+The file has `.book` extension. It uses `UTF-8` non BOM encoding.
+
+Book has two variants: flat - which is just a prompt with no structure, and full - which has a structure with tasks, commands and prompts.
 
 As it is source code, it can leverage all the features of version control systems like git and does not suffer from the problems of binary formats, proprietary formats, or no-code solutions.
 
 But unlike programming languages, it is designed to be understandable by non-programmers and non-technical people.
-
-### Structure
-
-Book is divided into sections. Each section starts with heading. The language itself is not sensitive to the type of heading _(`h1`, `h2`, `h3`, ...)_ but it is recommended to use `h1` for header section and `h2` for other sections.
-
-### Header
-
-Header is the first section of the book. It contains metadata about the pipeline. It is recommended to use `h1` heading for header section but it is not required.
-
-### Parameter
-
-Foo bar
-
-#### Parameter names
-
-Reserved words:
-
--   _each command_ like `PERSONA`, `EXPECT`, `KNOWLEDGE`, etc.
--   `content`
--   `context`
--   `knowledge`
--   `examples`
--   `modelName`
--   `currentDate`
-
-#### Parameter notation
-
-### Task
-
-### Task type
-
-Todo todo
-
-### Command
-
-Todo todo
-
-### Block
-
-Todo todo
-
-### Return parameter
-
-### Examples
 
 <!--/Import ./BLUEPRINT.md-->
 
