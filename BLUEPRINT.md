@@ -7,6 +7,11 @@ Following is the documentation and blueprint of the Book language.
 ```markdown
 # 🌟 My first Book
 
+-   BOOK VERSION 1.0.0
+-   URL https://promptbook.studio/my-first-book/
+
+# Write an article
+
 -   PERSONA Jane, marketing specialist with prior experience in writing articles about technology and artificial intelligence
 -   KNOWLEDGE https://ptbk.io
 -   KNOWLEDGE ./promptbook.pdf
@@ -19,16 +24,33 @@ Following is the documentation and blueprint of the Book language.
 -> {article}
 ```
 
-## Goals and principles of book language
+## **What:** Workflows, Tasks and Parameters
 
-File is designed to be easy to read and write. It is strict subset of markdown. It is designed to be understandable by both humans and machines and without specific knowledge of the language.
+-   [PARAMETER](https://github.com/webgptorg/promptbook/blob/main/documents/commands/PARAMETER.md)
 
-It has file with `.book.md` or `.book` extension with `UTF-8` non BOM encoding.
+## **Who:** Personas
+
+-   [PERSONA](https://github.com/webgptorg/promptbook/blob/main/documents/commands/PERSONA.md)
+
+## **How:** Knowledge, Instruments and Actions
+
+-   [KNOWLEDGE](https://github.com/webgptorg/promptbook/blob/main/documents/commands/KNOWLEDGE.md)
+-   [INSTRUMENT](https://github.com/webgptorg/promptbook/blob/main/documents/commands/INSTRUMENT.md)
+-   [ACTION](https://github.com/webgptorg/promptbook/blob/main/documents/commands/ACTION.md)
+
+## General principles of book language
+
+Book language is based on markdown. It is subset of markdown. It is designed to be easy to read and write. It is designed to be understandable by both humans and machines and without specific knowledge of the language.
+
+The file has `.book` extension. It uses `UTF-8` non BOM encoding.
+
+Book has two variants: flat - which is just a prompt with no structure, and full - which has a structure with tasks, commands and prompts.
 
 As it is source code, it can leverage all the features of version control systems like git and does not suffer from the problems of binary formats, proprietary formats, or no-code solutions.
 
 But unlike programming languages, it is designed to be understandable by non-programmers and non-technical people.
 
+<!--
 ## 🏛 Organization
 
 Organization groups together workflows, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources _(i.e. import workflows, teams, personas, knowledge, instruments and actions from each other)_.
