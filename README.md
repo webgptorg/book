@@ -106,7 +106,7 @@ And **Promptbook.city** branded socials:
 <!--Import ./BLUEPRINT.md-->
 <!--⚠️ WARNING: This section was imported, make changes in source; any manual changes here will be overwritten-->
 
-## 💙 The blueprint of book language
+## 💙 The Book language
 
 Following is the documentation and blueprint of the Book language.
 
