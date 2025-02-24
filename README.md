@@ -108,6 +108,8 @@ And **Promptbook.city** branded socials:
 
 ## 💙 The Book language
 
+
+
 Following is the documentation and blueprint of the Book language.
 
 ### Example
