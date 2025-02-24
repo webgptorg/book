@@ -1,5 +1,7 @@
 # 💙 The Book language
 
+<!-- Nonce: 1 -->
+
 Following is the documentation and blueprint of the Book language.
 
 ## Example
