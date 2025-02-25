@@ -1,4 +1,4 @@
-# 🔼
+# 🔼 Inline or block
 
 ## Proposal
 
