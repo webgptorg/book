@@ -22,8 +22,9 @@ jobs:
               run: npm i ptbk
 
             - name: Test Books
-              env:
-                  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-                  ANTHROPIC_CLAUDE_API_KEY: ${{ secrets.ANTHROPIC_CLAUDE_API_KEY }}
-                  GOOGLE_GENERATIVE_AI_API_KEY: ${{ secrets.GOOGLE_GENERATIVE_AI_API_KEY }}
-              run: npx ptbk test "./**/*.book" --verbose
+              #  TODO: [🐯] In future maybe remove `--no-prepare`
+              #> env:
+              #>     OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+              #>     ANTHROPIC_CLAUDE_API_KEY: ${{ secrets.ANTHROPIC_CLAUDE_API_KEY }}
+              #>     GOOGLE_GENERATIVE_AI_API_KEY: ${{ secrets.GOOGLE_GENERATIVE_AI_API_KEY }}
+              run: npx ptbk test --no-prepare "./**/*.book" --verbose
