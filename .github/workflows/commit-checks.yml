@@ -22,4 +22,4 @@ jobs:
               run: npm i ptbk
 
             - name: Test Books
-              run: npx ptbk test --verbose
+              run: npx ptbk test "./**/*.book" --verbose
