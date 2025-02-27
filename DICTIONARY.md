@@ -17,6 +17,10 @@ The following glossary is used to clarify certain concepts:
 
 _Note: Thos section is not complete dictionary, more list of general AI / LLM terms that has connection with Promptbook_
 
+<!--
+
+TODO: Make this better, according to the new structure of BLUEPRINT.md and probbably in flat structure
+
 ## Promptbook core
 
 -   **Organization** _(legacy name collection)_ group jobs, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources (= import resources from each other).
@@ -46,6 +50,8 @@ _Note: Thos section is not complete dictionary, more list of general AI / LLM te
     -   **Comment**
     -   **Import**
     -   **Scope**
+
+-->
 
 ## 💯 Core concepts
 
