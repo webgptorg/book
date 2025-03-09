@@ -33,6 +33,14 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
   </tbody>
 </table>
 
+Hello world examples:
+
+-   [Hello world](https://github.com/webgptorg/hello-world)
+-   [Hello world in Node.js](https://github.com/webgptorg/hello-world-node-js)
+-   [Hello world in Next.js](https://github.com/webgptorg/hello-world-next-js)
+
+
+
 We also have a community of developers and users of **Promptbook**:
 
 -   [Discord community](https://discord.gg/x3QWNaa89N)

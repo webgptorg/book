@@ -15,7 +15,7 @@ The following glossary is used to clarify certain concepts:
 
 <!-- <- TODO: Better -->
 
-_Note: Thos section is not complete dictionary, more list of general AI / LLM terms that has connection with Promptbook_
+_Note: This section is not complete dictionary, more list of general AI / LLM terms that has connection with Promptbook_
 
 <!--
 
