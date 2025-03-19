@@ -33,7 +33,7 @@ Each part of the book defines one of 3 circles:
 
 ## **What:** Workflows, Tasks and Parameters
 
-What work needs to be done. Each book defines a workflow, which is one or more tasks. Each workflow has a fixed input and output. For example, you have a book that generates an article from a topic. Once it generates an article about AI, once about marketing, once about cooking. The workflow (= your AI program) is the same, only the input and output change.
+What work needs to be done. Each book defines a [workflow *(scenario or pipeline)*](https://github.com/webgptorg/promptbook/discussions/88), which is one or more tasks. Each workflow has a fixed input and output. For example, you have a book that generates an article from a topic. Once it generates an article about AI, once about marketing, once about cooking. The workflow (= your AI program) is the same, only the input and output change.
 
 **Related commands:**
 
