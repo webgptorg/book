@@ -27,4 +27,4 @@ jobs:
               #>     OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
               #>     ANTHROPIC_CLAUDE_API_KEY: ${{ secrets.ANTHROPIC_CLAUDE_API_KEY }}
               #>     GOOGLE_GENERATIVE_AI_API_KEY: ${{ secrets.GOOGLE_GENERATIVE_AI_API_KEY }}
-              run: npx ptbk test --no-prepare "./**/*.book" --ignore "./pips/**/*" --verbose
+              run: npx ptbk test --no-prepare "./**/*.book" --ignore "./pips/**/*" --verbose --no-interactive
