@@ -2,6 +2,8 @@
 
 state full agents
 
+https://github.com/webgptorg/promptbook/discussions/252
+
 
 ## Proposal
 
