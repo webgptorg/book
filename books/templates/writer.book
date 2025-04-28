@@ -28,3 +28,5 @@ Continue given Text
 > {inputText}
 
 ```
+
+-> `{followingText}`
