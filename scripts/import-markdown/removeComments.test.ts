@@ -113,9 +113,29 @@ describe('removeComments', () => {
         );
     });
 
-    /*
-    TODO:
     it('should not remove confusing non-comments', () => {
+        expect(
+            removeComments(
+                spaceTrim(`
+                    This is < not a comment >
+                    Here is some code: \`<!-- This is not a comment, but code -->\`
+                    And a code block:
+                    \`\`\`html
+                    <!-- This is HTML code, not a comment to be removed -->
+                    <div>Some content</div>
+                    \`\`\`
+                `),
+            ),
+        ).toBe(
+            spaceTrim(`
+                    This is < not a comment >
+                    Here is some code: \`<!-- This is not a comment, but code -->\`
+                    And a code block:
+                    \`\`\`html
+                    <!-- This is HTML code, not a comment to be removed -->
+                    <div>Some content</div>
+                    \`\`\`
+            `),
+        );
     });
-    */
 });
