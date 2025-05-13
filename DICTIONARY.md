@@ -17,7 +17,7 @@ _Note: This section is not complete dictionary, more list of general AI / LLM te
 
 <!--
 
-TODO: Make this better, according to the new structure of BLUEPRINT.md and probbably in flat structure
+TODO: Make this better, according to the new structure of BLUEPRINT.md and probably in flat structure
 
 ## Promptbook core
 
