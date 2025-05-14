@@ -39,40 +39,98 @@ Hello world examples:
 -   [Hello world in Node.js](https://github.com/webgptorg/hello-world-node-js)
 -   [Hello world in Next.js](https://github.com/webgptorg/hello-world-next-js)
 
+## 🌐 Community & Social Media
 
+Join our growing community of developers and users:
 
-We also have a community of developers and users of **Promptbook**:
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://discord.gg/x3QWNaa89N">💬 Discord</a></td>
+      <td>Join our active developer community for discussions and support</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/webgptorg/promptbook/discussions">🗣️ GitHub Discussions</a></td>
+      <td>Technical discussions, feature requests, and community Q&A</td>
+    </tr>
+    <tr>
+      <td><a href="https://linkedin.com/company/promptbook">👔 LinkedIn</a></td>
+      <td>Professional updates and industry insights</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.facebook.com/61560776453536">📱 Facebook</a></td>
+      <td>General announcements and community engagement</td>
+    </tr>
+    <tr>
+      <td><a href="https://ptbk.io">🔗 ptbk.io</a></td>
+      <td>Official landing page with project information</td>
+    </tr>
+  </tbody>
+</table>
 
--   [Discord community](https://discord.gg/x3QWNaa89N)
--   [Landing page `ptbk.io`](https://ptbk.io)
--   [Github discussions](https://github.com/webgptorg/promptbook/discussions)
--   [LinkedIn `Promptbook`](https://linkedin.com/company/promptbook)
--   [Facebook `Promptbook`](https://www.facebook.com/61560776453536) <!-- <- TODO: Change to named link when possible -->
+## 🖼️ Product & Brand Channels
 
-And **Promptbook.studio** branded socials:
+### Promptbook.studio
 
-<!-- TODO: Make Facebook equivalent -->
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://www.instagram.com/promptbook.studio/">📸 Instagram @promptbook.studio</a></td>
+      <td>Visual updates, UI showcases, and design inspiration</td>
+    </tr>
+    <!-- TODO: Create and link Facebook page for Promptbook.studio -->
+  </tbody>
+</table>
 
--   [Instagram `@promptbook.studio`](https://www.instagram.com/promptbook.studio/)
-
-And **Promptujeme** sub-brand:
-
-_/Subbrand for Czech clients/_
-
-<!-- TODO: Make Instagram equivalent -->
-<!-- TODO: Maybe make Linkedin equivalent -->
-
--   [Promptujeme.cz](https://www.promptujeme.cz/)
--   [Facebook `Promptujeme`](https://www.facebook.com/promptujeme/)
-
-And **Promptbook.city** branded socials:
-
-_/Sub-brand for images and graphics generated via Promptbook prompting/_
-
--   [Instagram `@promptbook.city`](https://www.instagram.com/promptbook.city/)
--   [Facebook `Promptbook City`](https://www.facebook.com/61565718625569)
-<!-- <- TODO: Change to named link when possible -->
 
 <!--
-<- TODO: Establish some newsletter
+
+
+### Promptujeme
+
+<p><em>Czech-language brand for local clients and community</em></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://www.promptujeme.cz/">🌐 Promptujeme.cz</a></td>
+      <td>Czech language resources and information</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.facebook.com/promptujeme/">📱 Facebook</a></td>
+      <td>Czech community engagement and local events</td>
+    </tr>
+    <!-- TODO: Create Instagram for the Czech community -- >
+    <!-- TODO: Consider creating LinkedIn for professional Czech connections -- >
+  </tbody>
+</table>
 -->
+
+
+<!--
+### Promptbook.city
+
+<p><em>Showcase of AI-generated images and graphics created with Promptbook</em></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://www.instagram.com/promptbook.city/">📸 Instagram @promptbook.city</a></td>
+      <td>Gallery of AI-generated visuals and creative prompts</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.facebook.com/61565718625569">📱 Facebook</a></td>
+      <td>Sharing generated content and community creations</td>
+    </tr>
+  </tbody>
+</table>
+
+-->
+
+<!-- TODO: Establish newsletter subscription for regular updates and announcements -->

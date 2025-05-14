@@ -233,32 +233,79 @@ _Note: This section is not complete dictionary, more list of general AI / LLM te
 -   [🤼 Personas](https://github.com/webgptorg/promptbook/discussions/22)
 -   [⭕ Parameters](https://github.com/webgptorg/promptbook/discussions/83)
 -   [🚀 Pipeline execution](https://github.com/webgptorg/promptbook/discussions/84)
--   [🧪 Expectations](https://github.com/webgptorg/promptbook/discussions/30)
--   [✂️ Postprocessing](https://github.com/webgptorg/promptbook/discussions/31)
--   [🔣 Words not tokens](https://github.com/webgptorg/promptbook/discussions/29)
--   [☯ Separation of concerns](https://github.com/webgptorg/promptbook/discussions/32)
+-   [🧪 Expectations](https://github.com/webgptorg/promptbook/discussions/30) - Define what outputs should look like and how they're validated
+-   [✂️ Postprocessing](https://github.com/webgptorg/promptbook/discussions/31) - How outputs are refined after generation
+-   [🔣 Words not tokens](https://github.com/webgptorg/promptbook/discussions/29) - The human-friendly way to think about text generation
+-   [☯ Separation of concerns](https://github.com/webgptorg/promptbook/discussions/32) - How Book language organizes different aspects of AI workflows
 
 #### Advanced concepts
 
--   [📚 Knowledge (Retrieval-augmented generation)](https://github.com/webgptorg/promptbook/discussions/41)
--   [🌏 Remote server](https://github.com/webgptorg/promptbook/discussions/89)
--   [🃏 Jokers (conditions)](https://github.com/webgptorg/promptbook/discussions/66)
--   [🔳 Metaprompting](https://github.com/webgptorg/promptbook/discussions/35)
--   [🌏 Linguistically typed languages](https://github.com/webgptorg/promptbook/discussions/53)
--   [🌍 Auto-Translations](https://github.com/webgptorg/promptbook/discussions/42)
--   [📽 Images, audio, video, spreadsheets](https://github.com/webgptorg/promptbook/discussions/54)
--   [🔙 Expectation-aware generation](https://github.com/webgptorg/promptbook/discussions/37)
--   [⏳ Just-in-time fine-tuning](https://github.com/webgptorg/promptbook/discussions/33)
--   [🔴 Anomaly detection](https://github.com/webgptorg/promptbook/discussions/40)
--   [👮 Agent adversary expectations](https://github.com/webgptorg/promptbook/discussions/39)
--   [view more](https://github.com/webgptorg/promptbook/discussions/categories/concepts)
+<table>
+  <tr>
+    <th>Data & Knowledge Management</th>
+    <th>Pipeline Control</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li><a href="https://github.com/webgptorg/promptbook/discussions/41">📚 Knowledge (RAG)</a> - Retrieve and use external information</li>
+        <li><a href="https://github.com/webgptorg/promptbook/discussions/54">📽 Media handling</a> - Working with images, audio, video, spreadsheets</li>
+        <li><a href="https://github.com/webgptorg/promptbook/discussions/40">🔴 Anomaly detection</a> - Identifying unusual patterns or outputs</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li><a href="https://github.com/webgptorg/promptbook/discussions/89">🌏 Remote server</a> - Executing workflows on remote infrastructure</li>
+        <li><a href="https://github.com/webgptorg/promptbook/discussions/66">🃏 Jokers (conditions)</a> - Adding conditional logic to workflows</li>
+        <li><a href="https://github.com/webgptorg/promptbook/discussions/35">🔳 Metaprompting</a> - Creating prompts that generate other prompts</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <th>Language & Output Control</th>
+    <th>Advanced Generation</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li><a href="https://github.com/webgptorg/promptbook/discussions/53">🌏 Linguistically typed languages</a> - Type systems for natural language</li>
+        <li><a href="https://github.com/webgptorg/promptbook/discussions/42">🌍 Auto-Translations</a> - Automatic multilingual support</li>
+        <li><a href="https://github.com/webgptorg/promptbook/discussions/39">👮 Agent adversary expectations</a> - Safety and control mechanisms</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li><a href="https://github.com/webgptorg/promptbook/discussions/37">🔙 Expectation-aware generation</a> - Outputs that meet defined criteria</li>
+        <li><a href="https://github.com/webgptorg/promptbook/discussions/33">⏳ Just-in-time fine-tuning</a> - Dynamic model adaptation</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<p align="center"><a href="https://github.com/webgptorg/promptbook/discussions/categories/concepts">🔍 View more concepts</a></p>
 
 <!--/Import ./DICTIONARY.md-->
 
 ## 📜 License
 
-This project is licensed under [BUSL 1.1](./LICENSE.md).
+This project is licensed under [BUSL 1.1](./LICENSE.md) (Business Source License 1.1).
 
-## 🆘 Support
+The BUSL 1.1 license allows:
 
-For help and resources, please see our [signpost](./SIGNPOST.md).
+-   Free use for research, evaluation, and development purposes
+-   Contributions to the project under the same license
+-   A clear path to commercialization
+
+For commercial use, please contact us for licensing options. The license automatically converts to an open-source license after the change date specified in the license file.
+
+## 🆘 Support & Community
+
+Need help with Book language? We're here for you!
+
+-   💬 [Join our Discord community](https://discord.gg/x3QWNaa89N) for real-time support
+-   📝 [Browse our GitHub discussions](https://github.com/webgptorg/promptbook/discussions) for FAQs and community knowledge
+-   🐛 [Report issues](https://github.com/webgptorg/book/issues) for bugs or feature requests
+-   📚 Visit [ptbk.io](https://ptbk.io) for more resources and documentation
+-   📧 Contact us directly through the channels listed in our [signpost](./SIGNPOST.md)
+
+We welcome contributions and feedback to make Book language better for everyone!
