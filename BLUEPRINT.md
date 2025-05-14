@@ -1,5 +1,11 @@
 # 💙 The Book language
 
+## 📑 Table of Contents
+- [**What:** Workflows, Tasks and Parameters](#what-workflows-tasks-and-parameters)
+- [**Who:** Personas](#who-personas)
+- [**How:** Knowledge, Instruments and Actions](#how-knowledge-instruments-and-actions)
+- [General principles of book language](#general-principles-of-book-language)
+
 <!-- Nonce: 1 -->
 
 Following is the documentation and blueprint of the [Book language](https://github.com/webgptorg/book).
