@@ -2,7 +2,9 @@
 
 _A concise, Markdown-based DSL for crafting AI workflows and automations._
 
----
+
+<!--
+TODO: [🥗][🧠] How to handle table of contents for imported markdowns
 
 ## 📑 Table of Contents
 
@@ -12,6 +14,8 @@ _A concise, Markdown-based DSL for crafting AI workflows and automations._
 -   [2. Who: Personas](#2-who-personas)
 -   [3. How: Knowledge, Instruments & Actions](#3-how-knowledge-instruments-and-actions)
 -   [General Principles](#general-principles)
+
+-->
 
 ## Introduction
 
