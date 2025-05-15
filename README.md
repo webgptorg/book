@@ -159,16 +159,8 @@ Join our growing community of developers and users:
 
 _A concise, Markdown-based DSL for crafting AI workflows and automations._
 
----
 
-### 📑 Table of Contents
 
--   [Introduction](#introduction)
--   [Example](#example)
--   [1. What: Workflows, Tasks & Parameters](#1-what-workflows-tasks--parameters)
--   [2. Who: Personas](#2-who-personas)
--   [3. How: Knowledge, Instruments & Actions](#3-how-knowledge-instruments-and-actions)
--   [General Principles](#general-principles)
 
 ### Introduction
 
