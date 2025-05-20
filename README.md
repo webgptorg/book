@@ -28,7 +28,7 @@ TODO: [🥗][🧠] Maybe do table of contents in both `book` and `promptbook`
 
 ## 🤍 The Book Abstract
 
-**It's time for a paradigm shift! The future of software is in plain English, French or Latin.**
+**It's time for a paradigm shift! The future of software is written in plain English, French, or Latin.**
 
 During the computer revolution, we have seen [multiple generations of computer languages](https://github.com/webgptorg/promptbook/discussions/180), from the physical rewiring of the vacuum tubes through low-level machine code to the high-level languages like Python or JavaScript. And now, we're on the edge of the **next revolution**!
 
@@ -38,7 +38,7 @@ It's a revolution of writing software in **plain human language** that is unders
 
 The incredible growth in power of microprocessors and the Moore's Law have been the driving force behind the ever-more powerful languages, and it's been an amazing journey! Similarly, the large language models (like GPT or Claude) are the next big thing in language technology, and they're set to transform the way we interact with computers.
 
-This shift is going to happen, whether we are ready for it or not. Our mission is to make it excellently, not just good.
+This shift will happen whether we're ready or not. Our mission is to make it excellent, not just good.
 
 **Join us in this journey!**
 
@@ -161,7 +161,6 @@ _A concise, Markdown-based DSL for crafting AI workflows and automations._
 
 
 
-
 ### Introduction
 
 Book is a Markdown-based language that simplifies the creation of AI applications, workflows, and automations. With human-readable commands, you can define inputs, outputs, personas, knowledge sources, and actions—without needing model-specific details.
@@ -189,7 +188,7 @@ Book is a Markdown-based language that simplifies the creation of AI application
 → {article}
 ```
 
-Each part of the book defines one of 3 circles:
+Each part of the book defines one of three circles:
 
 ### **1. What:** Workflows, Tasks and Parameters
 
@@ -227,9 +226,9 @@ The resources used by the personas are used to do the work.
 
 Book language is based on markdown. It is subset of markdown. It is designed to be easy to read and write. It is designed to be understandable by both humans and machines and without specific knowledge of the language.
 
-The file has `.book` extension. It uses `UTF-8` non BOM encoding.
+The file has a `.book` extension and uses UTF-8 encoding without BOM.
 
-Book has two variants: flat - which is just a prompt with no structure, and full - which has a structure with tasks, commands and prompts.
+Books have two variants: flat — just a prompt without structure, and full — with tasks, commands, and prompts.
 
 As it is source code, it can leverage all the features of version control systems like git and does not suffer from the problems of binary formats, proprietary formats, or no-code solutions.
 
@@ -255,7 +254,7 @@ The following glossary is used to clarify certain concepts:
 -   **Retrieval-augmented generation** is a machine learning paradigm where a model generates text by retrieving relevant information from a large database of text. This approach combines the benefits of generative models and retrieval models.
 -   **Longtail** refers to non-common or rare events, items, or entities that are not well-represented in the training data of machine learning models. Longtail items are often challenging for models to predict accurately.
 
-_Note: This section is not complete dictionary, more list of general AI / LLM terms that has connection with Promptbook_
+_Note: This section is not a complete dictionary, more list of general AI / LLM terms that has connection with Promptbook_
 
 
 
