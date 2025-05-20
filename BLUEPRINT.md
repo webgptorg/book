@@ -2,7 +2,6 @@
 
 _A concise, Markdown-based DSL for crafting AI workflows and automations._
 
-
 <!--
 TODO: [🥗][🧠] How to handle table of contents for imported markdowns
 
@@ -44,7 +43,7 @@ Book is a Markdown-based language that simplifies the creation of AI application
 → {article}
 ```
 
-Each part of the book defines one of 3 circles:
+Each part of the book defines one of three circles:
 
 ## **1. What:** Workflows, Tasks and Parameters
 
@@ -84,9 +83,9 @@ The resources used by the personas are used to do the work.
 
 Book language is based on markdown. It is subset of markdown. It is designed to be easy to read and write. It is designed to be understandable by both humans and machines and without specific knowledge of the language.
 
-The file has `.book` extension. It uses `UTF-8` non BOM encoding.
+The file has a `.book` extension and uses UTF-8 encoding without BOM.
 
-Book has two variants: flat - which is just a prompt with no structure, and full - which has a structure with tasks, commands and prompts.
+Books have two variants: flat — just a prompt without structure, and full — with tasks, commands, and prompts.
 
 As it is source code, it can leverage all the features of version control systems like git and does not suffer from the problems of binary formats, proprietary formats, or no-code solutions.
 
