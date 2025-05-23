@@ -50,3 +50,7 @@ for await (const file of files) {
         throw error;
     }
 }
+
+/**
+ * TODO: [🥗][🧠] How to handle table of contents for imported markdowns
+ */

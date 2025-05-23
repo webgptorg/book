@@ -1,24 +1,38 @@
-# 💙 The Book language
+# 📘 Book Language Blueprint
 
-<!-- Nonce: 1 -->
+_A concise, Markdown-based DSL for crafting AI workflows and automations._
 
-Following is the documentation and blueprint of the [Book language](https://github.com/webgptorg/book).
+<!--
+TODO: [🥗][🧠] How to handle table of contents for imported markdowns
 
-Book is a language that can be used to write AI applications, agents, workflows, automations, knowledgebases, translators, sheet processors, email automations and more. It allows you to harness the power of AI models in human-like terms, without the need to know the specifics and technicalities of the models.
+## 📑 Table of Contents
+
+-   [Introduction](#introduction)
+-   [Example](#example)
+-   [1. What: Workflows, Tasks & Parameters](#1-what-workflows-tasks--parameters)
+-   [2. Who: Personas](#2-who-personas)
+-   [3. How: Knowledge, Instruments & Actions](#3-how-knowledge-instruments-and-actions)
+-   [General Principles](#general-principles)
+
+-->
+
+## Introduction
+
+Book is a Markdown-based language that simplifies the creation of AI applications, workflows, and automations. With human-readable commands, you can define inputs, outputs, personas, knowledge sources, and actions—without needing model-specific details.
 
 ## Example
 
-```markdown
-# 🌟 My first Book
+```book
+# 🌟 My First Book
 
 -   BOOK VERSION 1.0.0
 -   URL https://promptbook.studio/hello.book
 -   INPUT PARAMETER {topic}
 -   OUTPUT PARAMETER {article}
 
-# Write an article
+# Write an Article
 
--   PERSONA Jane, marketing specialist with prior experience in writing articles about technology and artificial intelligence
+-   PERSONA Jane, marketing specialist with prior experience in tech and AI writing
 -   KNOWLEDGE https://wikipedia.org/
 -   KNOWLEDGE ./journalist-ethics.pdf
 -   EXPECT MIN 1 Sentence
@@ -26,20 +40,20 @@ Book is a language that can be used to write AI applications, agents, workflows,
 
 > Write an article about {topic}
 
--> {article}
+→ {article}
 ```
 
-Each part of the book defines one of 3 circles:
+Each part of the book defines one of three circles:
 
-## **What:** Workflows, Tasks and Parameters
+## **1. What:** Workflows, Tasks and Parameters
 
-What work needs to be done. Each book defines a [workflow *(scenario or pipeline)*](https://github.com/webgptorg/promptbook/discussions/88), which is one or more tasks. Each workflow has a fixed input and output. For example, you have a book that generates an article from a topic. Once it generates an article about AI, once about marketing, once about cooking. The workflow (= your AI program) is the same, only the input and output change.
+What work needs to be done. Each book defines a [workflow _(scenario or pipeline)_](https://github.com/webgptorg/promptbook/discussions/88), which is one or more tasks. Each workflow has a fixed input and output. For example, you have a book that generates an article from a topic. Once it generates an article about AI, once about marketing, once about cooking. The workflow (= your AI program) is the same, only the input and output change.
 
 **Related commands:**
 
 -   [PARAMETER](https://github.com/webgptorg/promptbook/blob/main/documents/commands/PARAMETER.md)
 
-## **Who:** Personas
+## **2. Who:** Personas
 
 Who does the work. Each task is performed by a persona. A persona is a description of your virtual employee. It is a higher abstraction than the model, tokens, temperature, top-k, top-p and other model parameters.
 
@@ -55,7 +69,7 @@ Personas can have access to different knowledge, tools and actions. They can als
 <- Note: Not mentioning MODEL command, as it is low-level and not recommended to use directly
 -->
 
-## **How:** Knowledge, Instruments and Actions
+## **3. How:** Knowledge, Instruments and Actions
 
 The resources used by the personas are used to do the work.
 
@@ -65,13 +79,13 @@ The resources used by the personas are used to do the work.
 -   [INSTRUMENT](https://github.com/webgptorg/promptbook/blob/main/documents/commands/INSTRUMENT.md) for real-time data like time, location, weather, stock prices, searching the internet, calculations, etc.
 -   [ACTION](https://github.com/webgptorg/promptbook/blob/main/documents/commands/ACTION.md) for actions like sending emails, creating files, ending a workflow, etc.
 
-## General principles of book language
+## General Principles
 
 Book language is based on markdown. It is subset of markdown. It is designed to be easy to read and write. It is designed to be understandable by both humans and machines and without specific knowledge of the language.
 
-The file has `.book` extension. It uses `UTF-8` non BOM encoding.
+The file has a `.book` extension and uses UTF-8 encoding without BOM.
 
-Book has two variants: flat - which is just a prompt with no structure, and full - which has a structure with tasks, commands and prompts.
+Books have two variants: flat — just a prompt without structure, and full — with tasks, commands, and prompts.
 
 As it is source code, it can leverage all the features of version control systems like git and does not suffer from the problems of binary formats, proprietary formats, or no-code solutions.
 
