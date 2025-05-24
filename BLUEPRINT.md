@@ -1,47 +1,28 @@
 # 📘 Book Language Blueprint
 
-_A concise, Markdown-based DSL for crafting AI workflows and automations._
-
-<!--
-TODO: [🥗][🧠] How to handle table of contents for imported markdowns
-
-## 📑 Table of Contents
-
--   [Introduction](#introduction)
--   [Example](#example)
--   [1. What: Workflows, Tasks & Parameters](#1-what-workflows-tasks--parameters)
--   [2. Who: Personas](#2-who-personas)
--   [3. How: Knowledge, Instruments & Actions](#3-how-knowledge-instruments-and-actions)
--   [General Principles](#general-principles)
-
--->
-
 ## Introduction
 
+Book is a prompt with commitments !!!!
+
+<!--
 Book is a Markdown-based language that simplifies the creation of AI applications, workflows, and automations. With human-readable commands, you can define inputs, outputs, personas, knowledge sources, and actions—without needing model-specific details.
+-->
 
 ## Example
 
 ```book
-# 🌟 My First Book
+Write an article about {topic}
 
--   BOOK VERSION 1.0.0
--   URL https://promptbook.studio/hello.book
--   INPUT PARAMETER {topic}
--   OUTPUT PARAMETER {article}
-
-# Write an Article
-
--   PERSONA Jane, marketing specialist with prior experience in tech and AI writing
--   KNOWLEDGE https://wikipedia.org/
--   KNOWLEDGE ./journalist-ethics.pdf
--   EXPECT MIN 1 Sentence
--   EXPECT MAX 5 Pages
-
-> Write an article about {topic}
-
-→ {article}
+PERSONA Jane, marketing specialist with prior experience in tech and AI writing
+KNOWLEDGE https://wikipedia.org/
+KNOWLEDGE ./journalist-ethics.pdf
+EXPECT 1 Sentence - 5 Pages
+RESULT {article}
 ```
+
+!!!!
+
+<!--
 
 Each part of the book defines one of three circles:
 
@@ -65,9 +46,6 @@ Personas can have access to different knowledge, tools and actions. They can als
 
 -   [PERSONA](https://github.com/webgptorg/promptbook/blob/main/documents/commands/PERSONA.md)
 
-<!--
-<- Note: Not mentioning MODEL command, as it is low-level and not recommended to use directly
--->
 
 ## **3. How:** Knowledge, Instruments and Actions
 
