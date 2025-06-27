@@ -23,7 +23,7 @@ This is something entirely new. We are exploring an entire new world of personal
 >
 > They better pay for it.
 
-This is a preliminary list of our competitors:
+This is a preliminary list of our competitors. Gimme more, gimme more!
 
 | Name                       | URL                         | Pros                                                         | Cons                                                           | Fit with Promptbook Vision                                |
 |----------------------------|-----------------------------|--------------------------------------------------------------|----------------------------------------------------------------|------------------------------------------------------------|
