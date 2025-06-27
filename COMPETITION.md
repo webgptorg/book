@@ -6,6 +6,41 @@ We recognize that new categories or dimensions may emerge as the field evolves, 
 
 One of the key goals of this analysis is to assess Promptbook’s fitness in the competitive landscape. By understanding its strengths relative to other projects, we aim to identify opportunities to partner with competing projects for strategic alliances, leveraging synergies to amplify impact and accelerate innovation.
 
+# Promptbook 2.0 - a potential pivot
+
+This is something entirely new. We are exploring an entire new world of personal "avatars/replikas/clones", your own chief executive officers that work only for you, 24/7. Your time is precious:
+
+> They told you to post more. Engage more. Be more.
+>
+> But they needed your attention more than you needed their platform.
+>
+> We say: Enough.
+>
+> With Promptbook Digital Avatars, you don’t have to spread yourself thin.
+> You don’t have to be there—you can send yourself.
+>
+> And if a platform wants the real you?
+>
+> They better pay for it.
+
+This is a preliminary list of our competitors:
+
+| Name                       | URL                         | Pros                                                         | Cons                                                           | Fit with Promptbook Vision                                |
+|----------------------------|-----------------------------|--------------------------------------------------------------|----------------------------------------------------------------|------------------------------------------------------------|
+| **Personal.ai**            | https://personal.ai         | - Authentic AI “clone” trained on your data<br>- Simple setup<br>- Strong privacy & ownership | - Early stage<br>- No built-in monetization features          | Closely aligns: personal agent for scaling time & memory   |
+| **Delphi**                 | https://delphi.ai           | - Verified expert “digital minds”<br>- Subscription monetization<br>- High-quality conversation | - Targets high-profile creators<br>- Content-heavy onboarding  | Very strong: monetizable AI clones for public interaction  |
+| **AI.XYZ (AI Foundation) -> Acquired by 1Mind** | https://ai.xyz -> https://www.1mind.com/              | - Deep customization (purpose, personality, face/voice)<br>- Productivity boost<br>- Ethics focus | - Primarily an assistant, not external avatar<br>- No direct monetization | Partial: strong personal AI, less external representation  |
+| **2wai**                   | https://2wai.app            | - 3-minute holoavatar creation<br>- Mobile-optimized<br>- User-owned likeness | - Quality & scope of knowledge may be limited<br>- New MVP stage | Strong MVP: “avatar in minutes” with ownership narrative   |
+| **Metaphysic**             | https://metaphysic.ai       | - Hollywood-level realism<br>- Legal/rights management<br>- Celebrity clients | - Enterprise focus (not consumer)<br>- High cost/complexity   | Partial: top-tier avatars & monetization, not self-serve   |
+| **Forever Voices**         | (n/a – service model)       | - Proven revenue per minute<br>- Rapid fan engagement        | - Brand risk if AI goes off-script<br>- Provider-controlled    | Partial: clear monetization, less user data sovereignty   |
+| **Synthesia**              | https://synthesia.io        | - High-quality video avatars<br>- Multilingual support<br>- Scripted at scale | - No two-way interaction<br>- User must provide scripts       | Partial: scales presence via broadcast, not autonomous     |
+| **Soul Machines**          | https://soulmachines.com    | - Lifelike 3D digital humans<br>- Emotion/empathy built-in<br>- 24/7 autonomous interaction | - Enterprise/bespoke projects<br>- High resource requirements | Partial: ultra-real avatars, less democratized access      |
+| **Replika**                | https://replika.com         | - Deep personalization & bonding<br>- Proven mass adoption   | - Inward-facing companion, not outward agent<br>- Time sink    | Low: companion focus, not delegation or monetization       |
+| **Character.ai**           | https://character.ai        | - Easy persona creation<br>- Massive user engagement        | - Fictional/not tied to real identity<br>- No ownership model | Low–Medium: good UX proof-point, lacks real-identity utility|
+| **ObEN / Project PAI**     | (Project PAI github/info)   | - Quick 3D avatar + voice clone<br>- Blockchain-backed ownership<br>- Tokenized ecosystem | - Early tech/messaging issues<br>- Low consumer traction      | Partial: pioneer of self-sovereign avatars, poor uptake    |
+
+❗ This table needs critical assessment. Let’s try these platforms out and see how they really work.
+
 # What is missing:
 
 1. For the time being we do not treat AI agents systematiclly at all, for example. However, there are some exceptions like https://www.wordware.ai/ that declares to be a natural language IDE also for agents.
