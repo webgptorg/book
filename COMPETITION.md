@@ -38,6 +38,7 @@ This is a preliminary list of our competitors. Gimme more, gimme more!
 | **Replika**                | https://replika.com         | - Deep personalization & bonding<br>- Proven mass adoption   | - Inward-facing companion, not outward agent<br>- Time sink    | Low: companion focus, not delegation or monetization       |
 | **Character.ai**           | https://character.ai        | - Easy persona creation<br>- Massive user engagement        | - Fictional/not tied to real identity<br>- No ownership model | Low–Medium: good UX proof-point, lacks real-identity utility|
 | **ObEN / Project PAI**     | https://github.com/projectpai   | - Quick 3D avatar + voice clone<br>- Blockchain-backed ownership<br>- Tokenized ecosystem | - Early tech/messaging issues<br>- Low consumer traction      | Partial: pioneer of self-sovereign avatars, poor uptake    |
+| **ElevenLabs**     | https://www.reddit.com/r/passive_income/comments/1ggaqhh/im_earning_250month_fully_passive_income_with/   | A potential competitor with its well prepared ecosystem for creating voice "avatars" | Not ready, yet! | Partial: seems to head in different direction    |
 
 ❗ This table needs critical assessment. Let’s try these platforms out and see how they really work.
 
