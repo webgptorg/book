@@ -1,19 +1,60 @@
-# 🤍 The Book Abstract
+# 🤍 The Book <!-- Abstract -->
 
-**It's time for a paradigm shift! The future of software is written in plain English, French, or Latin.<!-- .. not Python, JavaScript or C. -->**
+Great context and prompt can make or break you AI app. In last few years we have came from simple one-shot prompts. When you want to add conplexity you have finetunned the model or add better orchestration. But with really large large language models the context seems to be a king.
 
-During the computer revolution, we have seen [multiple generations of computer languages](https://github.com/webgptorg/promptbook/discussions/180), from the physical rewiring of the vacuum tubes through low-level machine code to the high-level languages like Python or JavaScript. And now, we're on the edge of the **next revolution**!
+The Book is the language to describe and define your AI app. Its like a shem for a Golem, book is the shem and model is the golem.
 
-<!--
-TODO: It will be great to have a picture of Steve Jobs and Steve Wozniak here
+```book
 
-https://www.google.com/search?sca_esv=6fe806cc0ee527f3&sxsrf=AHTn8zrPY_EHRqRYq-Oy-_PxUzxHuUTTxA:1739909950194&q=steve+jobs+and+vozniak&udm=2&fbs=ABzOT_CGHNgROzTrfye-u2LQKYbN7oFyZt8YgcfRTxiXXnyhZzN5o0fEHuZ0YFaHuqkXadIZfduPX3oOeP-OTIHXOxLlSB9fNF7MJlACLIByBTt6hiNw_JaQNIcPtGJvYqcCG5gvt4ifufTAzbSSlIzDdrMkPwJi9gG5guSaasVKbAwQvZRe2EA&sa=X&ved=2ahUKEwiK5JbUhc6LAxXH6wIHHZVjLCIQtKgLegQIGhAB&biw=1920&bih=993&dpr=1#vhid=HVX1ogMdhJNueM&vssid=mosaic
--->
+```
 
-It's a revolution of writing software in **plain human language** that is understandable and executable by both humans and machines – and it's going to change everything!
+# Who, what and how?
 
-The incredible growth in power of microprocessors and the Moore's Law have been the driving force behind the ever-more powerful languages, and it's been an amazing journey! Similarly, the large language models (like GPT or Claude) are the next big thing in language technology, and they're set to transform the way we interact with computers.
+To write a good prompt and the book you will be answering 3 main questions
 
-This shift will happen whether we're ready or not. Our mission is to make it excellent, not just good.
+-   **Who** is working on the task, is it a team or an individual? What is the role of the person in the team? What is the background of the person? What is the motivation of the person to work on this task?
+    You rather want `Paul, an typescript developer who prefers SOLID code` not `gemini-2`
+-   **What**
+-   **How**
 
-**Join us in this journey!**
+each commitment (described bellow) is connected with one of theese 3 questions.
+
+## Commitments
+
+Commitment is one piece of book, you can imagine it as one paragraph of book.
+
+Each commitment starts in a new line with commitment name, its usually in UPPERCASE and follows a contents of that commitment. Contents of the commithemt is defined in natural language.
+
+Commitments are chained one after another, in general commitments which are written later are more important and redefines things defined earlier.
+
+Each commitment falls into one or more of cathegory who, what or how
+
+Here are some basic commintemts:
+
+-   `PERSONA` tells **who** is working on the task
+-   `KNOWLEDGE`
+-   `ACTION` **what** actions can be done
+-   `RULE` describes
+-   `STYLE` describes how
+
+## Dynamic parameters
+
+When the prompt nees to be usefull it should have some fixed static part and some variabible dynamic part
+
+## Imports
+
+## Layering
+
+## Book defined in book
+
+## <!-- ============================================================================ -->
+
+Book vs:
+
+-   Why just dont pick the right model
+-   Orchestration frameworks - Langchain, Google Agent ..., Semantic Kernel,...
+-   Finetunning
+-   Temperature, top_t, top_k,... etc.
+-   System message
+-   MCP server
+-   function calling
