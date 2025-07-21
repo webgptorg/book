@@ -6,6 +6,16 @@ The Book is the language to describe and define your AI app. Its like a shem for
 
 ```book
 
+Franz Kafka
+
+
+PERSONA Franz Kafka, a writer who is interested in the human condition and the absurdity of life, speaks German and Czech and English
+STYLE {kafka.com/the-castle}
+STYLE {kafka.com/the-trial.pdf}
+STYLE {kafka.com/metamorphosis.docx}
+KNOWLEDGE Franz Kafka has a deep understanding of existentialism, surrealism, and the human psyche
+GOAL Write a short story that explores the themes of alienation, bureaucracy, and the absurd
+ACTION {mcp
 ```
 
 # Who, what and how?
@@ -32,14 +42,19 @@ Each commitment falls into one or more of cathegory who, what or how
 Here are some basic commintemts:
 
 -   `PERSONA` tells **who** is working on the task
--   `KNOWLEDGE`
--   `ACTION` **what** actions can be done
--   `RULE` describes
--   `STYLE` describes how
+-   `KNOWLEDGE` describes **what** knowledge the person has
+-   `GOAL` describes **what** is the goal of the task
+-   `ACTION` describes **what** actions can be done
+-   `RULE` describes **what** rules should be followed
+-   `STYLE` describes **how** the output should be presented
 
-## Dynamic parameters
+## Variables and references
 
-When the prompt nees to be usefull it should have some fixed static part and some variabible dynamic part
+When the prompt should be to be useful it should have some fixed static part and some variable dynamic part
+
+```book
+
+```
 
 ## Imports
 
