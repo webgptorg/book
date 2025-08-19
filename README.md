@@ -146,95 +146,13 @@ Join our growing community of developers and users:
       <td><a href="https://www.instagram.com/promptbook.studio/">📸 Instagram @promptbook.studio</a></td>
       <td>Visual updates, UI showcases, and design inspiration</td>
     </tr>
-    
+
   </tbody>
 </table>
 
 <!--/Import ./SIGNPOST.md-->
 
-<!--Import ./BLUEPRINT.md-->
-<!--⚠️ WARNING: This section was imported, make changes in source; any manual changes here will be overwritten-->
-
-## 📘 Book Language Blueprint
-
-_A concise, Markdown-based DSL for crafting AI workflows and automations._
-
-
-
-### Introduction
-
-Book is a Markdown-based language that simplifies the creation of AI applications, workflows, and automations. With human-readable commands, you can define inputs, outputs, personas, knowledge sources, and actions—without needing model-specific details.
-
-### Example
-
-```book
-# 🌟 My First Book
-
--   BOOK VERSION 1.0.0
--   URL https://promptbook.studio/hello.book
--   INPUT PARAMETER {topic}
--   OUTPUT PARAMETER {article}
-
-# Write an Article
-
--   PERSONA Jane, marketing specialist with prior experience in tech and AI writing
--   KNOWLEDGE https://wikipedia.org/
--   KNOWLEDGE ./journalist-ethics.pdf
--   EXPECT MIN 1 Sentence
--   EXPECT MAX 5 Pages
-
-> Write an article about {topic}
-
-→ {article}
-```
-
-Each part of the book defines one of three circles:
-
-### **1. What:** Workflows, Tasks and Parameters
-
-What work needs to be done. Each book defines a [workflow _(scenario or pipeline)_](https://github.com/webgptorg/promptbook/discussions/88), which is one or more tasks. Each workflow has a fixed input and output. For example, you have a book that generates an article from a topic. Once it generates an article about AI, once about marketing, once about cooking. The workflow (= your AI program) is the same, only the input and output change.
-
-**Related commands:**
-
--   [PARAMETER](https://github.com/webgptorg/promptbook/blob/main/documents/commands/PARAMETER.md)
-
-### **2. Who:** Personas
-
-Who does the work. Each task is performed by a persona. A persona is a description of your virtual employee. It is a higher abstraction than the model, tokens, temperature, top-k, top-p and other model parameters.
-
-You can describe what you want in human language like `Jane, creative writer with a sense of sharp humour` instead of `gpt-4-2024-13-31, temperature 1.2, top-k 40, STOP token ".\n",...`.
-
-Personas can have access to different knowledge, tools and actions. They can also consult their work with other personas or user, if allowed.
-
-**Related commands:**
-
--   [PERSONA](https://github.com/webgptorg/promptbook/blob/main/documents/commands/PERSONA.md)
-
-
-
-### **3. How:** Knowledge, Instruments and Actions
-
-The resources used by the personas are used to do the work.
-
-**Related commands:**
-
--   [KNOWLEDGE](https://github.com/webgptorg/promptbook/blob/main/documents/commands/KNOWLEDGE.md) of documents, websites, and other resources
--   [INSTRUMENT](https://github.com/webgptorg/promptbook/blob/main/documents/commands/INSTRUMENT.md) for real-time data like time, location, weather, stock prices, searching the internet, calculations, etc.
--   [ACTION](https://github.com/webgptorg/promptbook/blob/main/documents/commands/ACTION.md) for actions like sending emails, creating files, ending a workflow, etc.
-
-### General Principles
-
-Book language is based on markdown. It is subset of markdown. It is designed to be easy to read and write. It is designed to be understandable by both humans and machines and without specific knowledge of the language.
-
-The file has a `.book` extension and uses UTF-8 encoding without BOM.
-
-Books have two variants: flat — just a prompt without structure, and full — with tasks, commands, and prompts.
-
-As it is source code, it can leverage all the features of version control systems like git and does not suffer from the problems of binary formats, proprietary formats, or no-code solutions.
-
-But unlike programming languages, it is designed to be understandable by non-programmers and non-technical people.
-
-<!--/Import ./BLUEPRINT.md-->
+<!-- Note: Blueprint isnt here because is linked from abstract -->
 
 <!--Import ./DICTIONARY.md-->
 <!--⚠️ WARNING: This section was imported, make changes in source; any manual changes here will be overwritten-->
