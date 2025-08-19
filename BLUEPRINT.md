@@ -86,19 +86,37 @@ defines
 
 ### `STYLE`
 
+xxx
+
 ### `SAMPLE`
+
+xxx
 
 ### `KNOWLEDGE`
 
+xxx
+
 ### `EXPECT`
+
+xxx
 
 ### `FORMAT`
 
+xxx
+
 ### `JOKER`
+
+xxx
 
 ### `MODEL`
 
+xxx
+
 ### `ACTION`
+
+xxx
+
+### `META`
 
 ## Names
 
