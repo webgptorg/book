@@ -1,19 +1,63 @@
-# 🤍 The Book Abstract
+# 📖 The Book Whitepaper
 
-**It's time for a paradigm shift! The future of software is written in plain English, French, or Latin.<!-- .. not Python, JavaScript or C. -->**
+The world is changing, and in 5 years most of you won't do the work or job what you are doing now. When an agent can do your work for $5.74, it is economically unviable to not use the AI agent.
 
-During the computer revolution, we have seen [multiple generations of computer languages](https://github.com/webgptorg/promptbook/discussions/180), from the physical rewiring of the vacuum tubes through low-level machine code to the high-level languages like Python or JavaScript. And now, we're on the edge of the **next revolution**!
+For most business applications nowadays the biggest challenge isn't about the raw capabilities of AI models. Large language models like GPT-5 or Claude-4.1 are extremely capable.
 
-<!--
-TODO: It will be great to have a picture of Steve Jobs and Steve Wozniak here
+The main challenge is to narrow it down, constrain it, set the proper **context, rules, knowledge, and personality**. There are a lot of tools which can do exactly this. In one side, there are no-code platforms which can launch your agent in seconds. On the other side, there are heavy frameworks like Langchain or Semantic Kernel which can give you deep control.
 
-https://www.google.com/search?sca_esv=6fe806cc0ee527f3&sxsrf=AHTn8zrPY_EHRqRYq-Oy-_PxUzxHuUTTxA:1739909950194&q=steve+jobs+and+vozniak&udm=2&fbs=ABzOT_CGHNgROzTrfye-u2LQKYbN7oFyZt8YgcfRTxiXXnyhZzN5o0fEHuZ0YFaHuqkXadIZfduPX3oOeP-OTIHXOxLlSB9fNF7MJlACLIByBTt6hiNw_JaQNIcPtGJvYqcCG5gvt4ifufTAzbSSlIzDdrMkPwJi9gG5guSaasVKbAwQvZRe2EA&sa=X&ved=2ahUKEwiK5JbUhc6LAxXH6wIHHZVjLCIQtKgLegQIGhAB&biw=1920&bih=993&dpr=1#vhid=HVX1ogMdhJNueM&vssid=mosaic
--->
+Promptbook, takes the best from both worlds. You are defining your AI behavior by simple **books** which are very explicit. They are automatically enforced, but they are very easy to understand, very easy to write, and very reliable and portable.
 
-It's a revolution of writing software in **plain human language** that is understandable and executable by both humans and machines – and it's going to change everything!
+> **Creative writing assistant**
+>
+> `PERSONA` You are a creative writing assistant. You help users to write stories, poems, and other creative texts. You are imaginative, inspiring, and supportive. Always encourage creativity and originality.
 
-The incredible growth in power of microprocessors and the Moore's Law have been the driving force behind the ever-more powerful languages, and it's been an amazing journey! Similarly, the large language models (like GPT or Claude) are the next big thing in language technology, and they're set to transform the way we interact with computers.
+## Aspects of great AI agent
 
-This shift will happen whether we're ready or not. Our mission is to make it excellent, not just good.
+We have created language called **Book** which allows you just that - create truly your AI persona, It provides a guide to **define your AI personas**.
 
-**Join us in this journey!**
+This language is based on system message / prompting which are decorated by commitments.
+
+### `Persona` commitment
+
+Persona defines the character of your AI persona, its role, and how it should interact with users. It sets the tone and style of communication.
+
+> **Creative writing assistant**
+>
+> `PERSONA` You are a creative writing assistant. You help users to write stories, poems, and other creative texts. You are imaginative, inspiring, and supportive. Always encourage creativity and originality.
+
+### `Knowledge` commitment
+
+>
+
+### `Rule` commitment
+
+>
+
+[Read more about the language](./BLUEPRINT.md)
+
+## How to create your AI agent in book
+
+## Chat apps
+
+Like custommer support
+
+## Agents
+
+## Coding
+
+Book persona can even write books itself
+
+## Expertize
+
+Clasification, Summarization
+
+## Where to use your AI agent in book
+
+## From scratch
+
+## Your AI twin
+
+## AI persona workpool
+
+gallery
