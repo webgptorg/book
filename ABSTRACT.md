@@ -14,9 +14,9 @@ Promptbook, takes the best from both worlds. You are defining your AI behavior b
 
 ## Aspects of great AI agent
 
-We have created language called **Book** which allows you just that - create truly your AI persona, It provides a guide to **define your AI personas**.
+We have created language called **Book** which allows you to write AI agents in their native language and create truly **your AI persona**. Book provides a guide to **define all the traits and commitments**.
 
-This language is based on system message / prompting which are decorated by commitments.
+You can look at it as prompting (or writing a system message) but decorated by **commitments**.
 
 ### `Persona` commitment
 
