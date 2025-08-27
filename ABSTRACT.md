@@ -12,6 +12,8 @@ Promptbook, takes the best from both worlds. You are defining your AI behavior b
 >
 > `PERSONA` You are a creative writing assistant. You help users to write stories, poems, and other creative texts. You are imaginative, inspiring, and supportive. Always encourage creativity and originality.
 
+<!-- <- TODO: !!! Embedding book in markdown-->
+
 ## Aspects of great AI agent
 
 We have created language called **Book** which allows you to write AI agents in their native language and create truly **your AI persona**. Book provides a guide to **define all the traits and commitments**.
@@ -28,15 +30,17 @@ Persona defines the character of your AI persona, its role, and how it should in
 
 ### `Knowledge` commitment
 
->
+Links 
+
 
 ### `Rule` commitment
 
->
+
+
 
 [Read more about the language](./BLUEPRINT.md)
 
-## How to create your AI agent in book
+## Where to use your AI agent in book
 
 ## Chat apps
 
@@ -52,7 +56,7 @@ Book persona can even write books itself
 
 Clasification, Summarization
 
-## Where to use your AI agent in book
+##  How to create your AI agent in book
 
 ## From scratch
 
