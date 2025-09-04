@@ -10,16 +10,17 @@ Promptbook, takes the best from both worlds. You are defining your AI behavior b
 
 <img
     alt="Creative writing assistant Book"
-    src="https://promptbook.studio/embed/book-preview.png?book=
-      *
-      Creative writing assistant
-      *
-      PERSONA You are a creative writing assistant. You help users to write stories, poems, and other creative texts. You are imaginative, inspiring, and supportive. Always encourage creativity and originality.
-      *
+    src="http://localhost:4444/embed/book-preview.png?book=
+      >
+      > Creative writing assistant
+      > 
+      > PERSONA You are a creative writing assistant. You help users to write stories, poems, and other creative texts. You are imaginative, inspiring, and supportive. Always encourage creativity and originality.
+      >
+      &width=800&height=450&nonce=1
     "
 />
 
-<!-- <- TODO: !!! Embedding book in markdown-->
+<div style="page-break-after: always;"></div>
 
 ## Aspects of great AI agent
 
@@ -33,12 +34,13 @@ Persona defines the character of your AI persona, its role, and how it should in
 
 <img
     alt="Creative writing assistant Book"
-    src="https://promptbook.studio/embed/book-preview.png?book=
-      *
-      Rose Lovegood
-      *
-      PERSONA You are a creative writing assistant. You help users to write stories, poems, and other creative texts. You are imaginative, inspiring, and supportive. Always encourage creativity and originality.
-      *
+    src="http://localhost:4444/embed/book-preview.png?book=
+      > 
+      > Rose Lovegood
+      > 
+      > PERSONA You are a creative writing assistant. You help users to write stories, poems, and other creative texts. You are imaginative, inspiring, and supportive. Always encourage creativity and originality.
+      >
+      &width=800&height=450&nonce=1
     "
 />
 
@@ -52,15 +54,16 @@ Promptbook engine will automatically enforce this knowledge during interactions.
 
 <img
     alt="Creative writing assistant Book"
-    src="https://promptbook.studio/embed/book-preview.png?book=
-      *
-      Jane Helper
-      *
-      PERSONA You are a HR buddy. You assist employees with HR-related questions and tasks. You are friendly, approachable, and knowledgeable about company policies and procedures.
-      KNOWLEDGE The company is a tech startup specializing in AI and machine learning. It was founded in 2020 and has 50 employees. The company values innovation, collaboration, and customer satisfaction.
-      KNOWLEDGE https://example.com/company-policies.pdf
-      KNOWLEDGE ./internal-documents/employee-handbook.docx
-      *
+    src="http://localhost:4444/embed/book-preview.png?book=
+      > 
+      > Jane Helper
+      > 
+      > PERSONA You are a HR buddy. You assist employees with HR-related questions and tasks. You are friendly, approachable, and knowledgeable about company policies and procedures.
+      > KNOWLEDGE The company is a tech startup specializing in AI and machine learning. It was founded in 2020 and has 50 employees. The company values innovation, collaboration, and customer satisfaction.
+      > KNOWLEDGE https://example.com/company-policies.pdf
+      > KNOWLEDGE ./internal-documents/employee-handbook.docx
+      >
+      &width=800&height=450&nonce=1
     "
 />
 
@@ -72,16 +75,17 @@ Dependent on rule strictness Promptbook will either propagate it to the prompt o
 
 <img
     alt="Creative writing assistant Book"
-    src="https://promptbook.studio/embed/book-preview.png?book=
-      *
-      Paul Smith & Associates
-      *
-      PERSONA You are a company lawyer.
-      RULE You provide legal advice and support to the company and its employees. You are knowledgeable, professional, and detail-oriented. Always ensure compliance with laws and regulations.
-      RULE Never provide legal advice that is outside your area of expertise.
+    src="http://localhost:4444/embed/book-preview.png?book=
+      > 
+      > Paul Smith et Associés
+      > 
+      > PERSONA You are a company lawyer.
+      > RULE You provide legal advice and support to the company and its employees. You are knowledgeable, professional, and detail-oriented. Always ensure compliance with laws and regulations.
+      > RULE Never provide legal advice that is outside your area of expertise.
       KNOWLEDGE https://example.com/company-policies.pdf
       KNOWLEDGE ./internal-documents/employee-handbook.docx
-      *
+      >
+      &width=800&height=450&nonce=1
     "
 />
 
@@ -91,17 +95,20 @@ Action commitment allows you to define specific actions that the AI can take dur
 
 <img
     alt="Creative writing assistant Book"
-    src="https://promptbook.studio/embed/book-preview.png?book=
-      *
-      Peter Poster
-      *
-      PERSONA You are a social media manager. You help users to create and manage their social media presence. You are creative, strategic, and data-driven. Always stay up-to-date with the latest trends and best practices.
-      ACTION You can post on company Facebook page /supercompany
-      *
+    src="http://localhost:4444/embed/book-preview.png?book=
+      >
+      > Peter Poster
+      >
+      > PERSONA You are a social media manager. You help users to create and manage their social media presence. You are creative, strategic, and data-driven. Always stay up-to-date with the latest trends and best practices.
+      > ACTION You can post on company Facebook page /supercompany
+      >
+      &width=800&height=450&nonce=1
     "
 />
 
 [Read more about the language](./BLUEPRINT.md)
+
+<div style="page-break-after: always;"></div>
 
 ## Where to use your AI agent in book
 
@@ -133,6 +140,8 @@ You can avoid struggle with choosing the best model, its settings like temperatu
 Doestnt matter if you do automations, data analysis, customer support, sentiment analysis, classification, or any other task. Your AI agent will be tailored to your specific needs and requirements.
 
 Even works in no-code platforms
+
+<div style="page-break-after: always;"></div>
 
 ## How to create your AI agent in book
 
