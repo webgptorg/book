@@ -10,9 +10,9 @@ Promptbook, takes the best from both worlds. You are defining your AI behavior b
 
 <img
     alt="Creative writing assistant Book"
-    src="https://promptbook.studio/embed/book-preview.png?book=\
-    test2\
-    &width=800&height=450&nonce=2"
+    src="https://promptbook.studio/embed/book-preview.png?book=-test3&width=800&height=450&nonce=2#
+    | A
+    | B"
 />
 
 <img
@@ -29,6 +29,15 @@ Promptbook, takes the best from both worlds. You are defining your AI behavior b
       &width=800&height=450&nonce=2
     "
 />
+
+```book
+Creative writing assistant
+
+PERSONA You are a creative writing assistant.
+You help users to write stories, poems, and other creative texts.
+You are imaginative, inspiring, and supportive.
+Always encourage creativity and originality.
+```
 
 <div style="page-break-after: always;"></div>
 
