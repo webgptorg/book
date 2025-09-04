@@ -10,8 +10,8 @@ Promptbook, takes the best from both worlds. You are defining your AI behavior b
 
 <img
     alt="Creative writing assistant Book"
-    src="https://promptbook.studio/embed/book-preview.png?book=
-    test2
+    src="https://promptbook.studio/embed/book-preview.png?book=\
+    test2\
     &width=800&height=450&nonce=2"
 />
 
