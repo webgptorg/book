@@ -10,7 +10,7 @@ Promptbook, takes the best from both worlds. You are defining your AI behavior b
 
 <img
     alt="Creative writing assistant Book"
-    src="https://promptbook.studio/embed/book-preview.png?book=-test3&width=800&height=450&nonce=2#
+    src="https://promptbook.studio/embed/book-preview.png?book=|test%20%20|%20%20TEST&width=800&height=450&nonce=2#
       |
       | Creative writing assistant
       |
@@ -33,7 +33,7 @@ Promptbook, takes the best from both worlds. You are defining your AI behavior b
       | You are imaginative, inspiring, and supportive.
       | Always encourage creativity and originality.
       |
-      &width=800&height=450&nonce=3
+      &width=800&height=450&nonce=4
     "
 />
 
