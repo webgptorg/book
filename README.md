@@ -36,9 +36,17 @@ The main challenge is to narrow it down, constrain it, set the proper **context,
 
 Promptbook, takes the best from both worlds. You are defining your AI behavior by simple **books** which are very explicit. They are automatically enforced, but they are very easy to understand, very easy to write, and very reliable and portable.
 
+<!--
+Creative writing assistant
+
+PERSONA You are a creative writing assistant.
+You help users to write stories, poems, and other creative texts.
+You are imaginative, inspiring, and supportive.
+Always encourage creativity and originality.
+-->
 <img
     alt="Creative writing assistant Book"
-    src="https://promptbook.studio/embed/book-preview.png?book=%0A%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20%7C%20Creative%20writing%20assistant%0A%20%20%20%20%20%20%7C%20PERSONA%20You%20are%20a%20creative%20writing%20assistant.%0A%20%20%20%20%20%20%7C%20You%20help%20users%20to%20write%20stories%2C%20poems%2C%20and%20other%20creative%20texts.%0A%20%20%20%20%20%20%7C%20You%20are%20imaginative%2C%20inspiring%2C%20and%20supportive.%0A%20%20%20%20%20%20%7C%20Always%20encourage%20creativity%20and%20originality.%0A%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20&width=800&height=450&nonce=181"
+    src="https://promptbook.studio/embed/book-preview.png?book=Creative%20writing%20assistant%0A%20%20%20%20%20%20%7C%20PERSONA%20You%20are%20a%20creative%20writing%20assistant.%0A%20%20%20%20%20%20%7C%20You%20help%20users%20to%20write%20stories%2C%20poems%2C%20and%20other%20creative%20texts.%0A%20%20%20%20%20%20%7C%20You%20are%20imaginative%2C%20inspiring%2C%20and%20supportive.%0A%20%20%20%20%20%20%7C%20Always%20encourage%20creativity%20and%20originality.&width=800&height=450&nonce=0"
 />
 
 <div style="page-break-after: always;"></div>
@@ -53,9 +61,17 @@ You can look at it as prompting (or writing a system message) but decorated by *
 
 Persona defines the character of your AI persona, its role, and how it should interact with users. It sets the tone and style of communication.
 
+<!--
+Rose Lovegood
+
+PERSONA You are a creative writing assistant.
+You help users to write stories, poems, and other creative texts.
+You are imaginative, inspiring, and supportive.
+Always encourage creativity and originality.
+-->
 <img
     alt="Rose Lovegood Book"
-    src="https://promptbook.studio/embed/book-preview.png?book=%0A%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20%7C%20Rose%20Lovegood%0A%20%20%20%20%20%20%7C%20PERSONA%20You%20are%20a%20creative%20writing%20assistant.%0A%20%20%20%20%20%20%7C%20You%20help%20users%20to%20write%20stories%2C%20poems%2C%20and%20other%20creative%20texts.%0A%20%20%20%20%20%20%7C%20You%20are%20imaginative%2C%20inspiring%2C%20and%20supportive.%0A%20%20%20%20%20%20%7C%20Always%20encourage%20creativity%20and%20originality.%0A%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20&width=800&height=450&nonce=803"
+    src="https://promptbook.studio/embed/book-preview.png?book=Rose%20Lovegood%0A%20%20%20%20%20%20%7C%20PERSONA%20You%20are%20a%20creative%20writing%20assistant.%0A%20%20%20%20%20%20%7C%20You%20help%20users%20to%20write%20stories%2C%20poems%2C%20and%20other%20creative%20texts.%0A%20%20%20%20%20%20%7C%20You%20are%20imaginative%2C%20inspiring%2C%20and%20supportive.%0A%20%20%20%20%20%20%7C%20Always%20encourage%20creativity%20and%20originality.&width=800&height=450&nonce=0"
 />
 
 #### `Knowledge` commitment
@@ -66,9 +82,20 @@ This can include domain-specific knowledge, company policies, or any other relev
 
 Promptbook engine will automatically enforce this knowledge during interactions. When the knowledge is short enough it will be included in the prompt. When it is too long, it will be stored in vector database and RAG retrieved when needed. But you don't need to care about it.
 
+<!--
+Jane Helper
+
+PERSONA You are a HR buddy.
+You assist employees with HR-related questions and tasks.
+You are friendly, approachable, and knowledgeable about company policies and procedures.
+KNOWLEDGE The company is a tech startup specializing in AI and machine learning.
+It was founded in 2020 and has 50 employees. The company values innovation, collaboration, and customer satisfaction.
+KNOWLEDGE https://example.com/company-policies.pdf
+KNOWLEDGE ./internal-documents/employee-handbook.docx
+-->
 <img
     alt="Jane Helper Book"
-    src="https://promptbook.studio/embed/book-preview.png?book=%0A%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20%7C%20Jane%20Helper%0A%20%20%20%20%20%20%7C%20PERSONA%20You%20are%20a%20HR%20buddy.%0A%20%20%20%20%20%20%7C%20You%20assist%20employees%20with%20HR-related%20questions%20and%20tasks.%0A%20%20%20%20%20%20%7C%20You%20are%20friendly%2C%20approachable%2C%20and%20knowledgeable%20about%20company%20policies%20and%20procedures.%0A%20%20%20%20%20%20%7C%20KNOWLEDGE%20The%20company%20is%20a%20tech%20startup%20specializing%20in%20AI%20and%20machine%20learning.%0A%20%20%20%20%20%20%7C%20It%20was%20founded%20in%202020%20and%20has%2050%20employees.%20The%20company%20values%20innovation%2C%20collaboration%2C%20and%20customer%20satisfaction.%0A%20%20%20%20%20%20%7C%20KNOWLEDGE%20https%3A%2F%2Fexample.com%2Fcompany-policies.pdf%0A%20%20%20%20%20%20%7C%20KNOWLEDGE%20.%2Finternal-documents%2Femployee-handbook.docx%0A%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20&width=800&height=450&nonce=237"
+    src="https://promptbook.studio/embed/book-preview.png?book=Jane%20Helper%0A%20%20%20%20%20%20%7C%20PERSONA%20You%20are%20a%20HR%20buddy.%0A%20%20%20%20%20%20%7C%20You%20assist%20employees%20with%20HR-related%20questions%20and%20tasks.%0A%20%20%20%20%20%20%7C%20You%20are%20friendly%2C%20approachable%2C%20and%20knowledgeable%20about%20company%20policies%20and%20procedures.%0A%20%20%20%20%20%20%7C%20KNOWLEDGE%20The%20company%20is%20a%20tech%20startup%20specializing%20in%20AI%20and%20machine%20learning.%0A%20%20%20%20%20%20%7C%20It%20was%20founded%20in%202020%20and%20has%2050%20employees.%20The%20company%20values%20innovation%2C%20collaboration%2C%20and%20customer%20satisfaction.%0A%20%20%20%20%20%20%7C%20KNOWLEDGE%20https%3A%2F%2Fexample.com%2Fcompany-policies.pdf%0A%20%20%20%20%20%20%7C%20KNOWLEDGE%20.%2Finternal-documents%2Femployee-handbook.docx&width=800&height=450&nonce=0"
 />
 
 #### `Rule` commitment
@@ -77,18 +104,35 @@ Rule will enforce specific behaviors or constraints on the AI's responses. This 
 
 Dependent on rule strictness Promptbook will either propagate it to the prompt or use other techniques like adversay agent to enforce it.
 
+<!--
+Paul Smith et Associés
+
+PERSONA You are a company lawyer.
+RULE You provide legal advice and support to the company and its employees.
+You are knowledgeable, professional, and detail-oriented.
+Always ensure compliance with laws and regulations.
+RULE Never provide legal advice that is outside your area of expertise.
+KNOWLEDGE https://example.com/company-policies.pdf
+KNOWLEDGE ./internal-documents/employee-handbook.docx
+-->
 <img
     alt="Paul Smith et Associés Book"
-    src="https://promptbook.studio/embed/book-preview.png?book=%0A%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20%7C%20Paul%20Smith%20et%20Associ%C3%A9s%0A%20%20%20%20%20%20%7C%20PERSONA%20You%20are%20a%20company%20lawyer.%0A%20%20%20%20%20%20%7C%20RULE%20You%20provide%20legal%20advice%20and%20support%20to%20the%20company%20and%20its%20employees.%0A%20%20%20%20%20%20%7C%20You%20are%20knowledgeable%2C%20professional%2C%20and%20detail-oriented.%0A%20%20%20%20%20%20%7C%20Always%20ensure%20compliance%20with%20laws%20and%20regulations.%0A%20%20%20%20%20%20%7C%20RULE%20Never%20provide%20legal%20advice%20that%20is%20outside%20your%20area%20of%20expertise.%0A%20%20%20%20%20%20%7C%20KNOWLEDGE%20https%3A%2F%2Fexample.com%2Fcompany-policies.pdf%0A%20%20%20%20%20%20%7C%20KNOWLEDGE%20.%2Finternal-documents%2Femployee-handbook.docx%0A%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20&width=800&height=450&nonce=24"
+    src="https://promptbook.studio/embed/book-preview.png?book=Paul%20Smith%20et%20Associ%C3%A9s%0A%20%20%20%20%20%20%7C%20PERSONA%20You%20are%20a%20company%20lawyer.%0A%20%20%20%20%20%20%7C%20RULE%20You%20provide%20legal%20advice%20and%20support%20to%20the%20company%20and%20its%20employees.%0A%20%20%20%20%20%20%7C%20You%20are%20knowledgeable%2C%20professional%2C%20and%20detail-oriented.%0A%20%20%20%20%20%20%7C%20Always%20ensure%20compliance%20with%20laws%20and%20regulations.%0A%20%20%20%20%20%20%7C%20RULE%20Never%20provide%20legal%20advice%20that%20is%20outside%20your%20area%20of%20expertise.%0A%20%20%20%20%20%20%7C%20KNOWLEDGE%20https%3A%2F%2Fexample.com%2Fcompany-policies.pdf%0A%20%20%20%20%20%20%7C%20KNOWLEDGE%20.%2Finternal-documents%2Femployee-handbook.docx&width=800&height=450&nonce=0"
 />
 
 #### `Action` commitment
 
 Action commitment allows you to define specific actions that the AI can take during interactions. This can include things like posting on a social media platform, sending emails, creating calendar events or interacting with your internal systems.
 
+<!--
+Peter Poster
+
+PERSONA You are a social media manager. You help users to create and manage their social media presence. You are creative, strategic, and data-driven. Always stay up-to-date with the latest trends and best practices.
+ACTION You can post on company Facebook page /supercompany
+-->
 <img
     alt="Peter Poster Book"
-    src="https://promptbook.studio/embed/book-preview.png?book=%0A%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20%7C%20Peter%20Poster%0A%20%20%20%20%20%20%7C%20PERSONA%20You%20are%20a%20social%20media%20manager.%20You%20help%20users%20to%20create%20and%20manage%20their%20social%20media%20presence.%20You%20are%20creative%2C%20strategic%2C%20and%20data-driven.%20Always%20stay%20up-to-date%20with%20the%20latest%20trends%20and%20best%20practices.%0A%20%20%20%20%20%20%7C%20ACTION%20You%20can%20post%20on%20company%20Facebook%20page%20%2Fsupercompany%0A%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20&width=800&height=450&nonce=959"
+    src="https://promptbook.studio/embed/book-preview.png?book=Peter%20Poster%0A%20%20%20%20%20%20%7C%20PERSONA%20You%20are%20a%20social%20media%20manager.%20You%20help%20users%20to%20create%20and%20manage%20their%20social%20media%20presence.%20You%20are%20creative%2C%20strategic%2C%20and%20data-driven.%20Always%20stay%20up-to-date%20with%20the%20latest%20trends%20and%20best%20practices.%0A%20%20%20%20%20%20%7C%20ACTION%20You%20can%20post%20on%20company%20Facebook%20page%20%2Fsupercompany&width=800&height=450&nonce=0"
 />
 
 [Read more about the language](./BLUEPRINT.md)

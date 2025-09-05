@@ -1,3 +1,5 @@
+import { spaceTrim } from 'spacetrim';
+
 /**
  * Embeds book content as HTML img tags with preview URLs
  *
@@ -31,21 +33,22 @@ export function embedBooks(content: string): string {
             .join('\n      | ')
             .replace(/\n      \| $/, ''); // Remove trailing empty pipe
 
-        const bookParam = `
-      |
-      | ${formattedContent}
-      |
-      `;
-
         // Generate a simple nonce (could be more sophisticated)
-        const nonce = Math.floor(Math.random() * 1000);
+        const nonce = 0; // Math.floor(Math.random() * 1000);
 
         // Create the img tag
-        return `<img
-    alt="${title} Book"
-    src="https://promptbook.studio/embed/book-preview.png?book=${encodeURIComponent(
-        bookParam,
-    )}&width=800&height=450&nonce=${nonce}"
-/>`;
+        return spaceTrim(
+            (block) => `
+
+                <!--
+                ${block(bookContent)}
+                -->
+                <img
+                    alt="${title} Book"
+                    src="https://promptbook.studio/embed/book-preview.png?book=${encodeURIComponent(
+                        formattedContent,
+                    )}&width=800&height=450&nonce=${nonce}"
+                />`,
+        );
     });
 }
