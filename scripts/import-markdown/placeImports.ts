@@ -1,5 +1,6 @@
 import { spaceTrim } from 'spacetrim';
 import { GENERATOR_WARNING, IMPORT_REGEX } from '../config';
+import { embedBooks } from './embedBooks';
 import { increaseHeadings } from './increaseHeadings';
 import { removeComments } from './removeComments';
 
@@ -33,6 +34,7 @@ export async function placeImports(
 
         importedContent = removeComments(importedContent);
         importedContent = increaseHeadings(importedContent);
+        importedContent = embedBooks(importedContent);
 
         const placedContent = spaceTrim(
             (block) => `
