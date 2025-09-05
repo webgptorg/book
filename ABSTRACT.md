@@ -33,7 +33,7 @@ Promptbook, takes the best from both worlds. You are defining your AI behavior b
       | You are imaginative, inspiring, and supportive.
       | Always encourage creativity and originality.
       |
-      &width=800&height=450&nonce=2
+      &width=800&height=450&nonce=3
     "
 />
 
