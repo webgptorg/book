@@ -1,7 +1,5 @@
 # 📖 The Book Whitepaper
 
-The world is changing, and in 5 years, most of you won't do the work or job that you are doing now. When an agent can do your work for $5.74, it is economically unsound to not use the AI agent.
-
 For most business applications nowadays, the biggest challenge isn't about the raw capabilities of AI models. Large language models like GPT-5 or Claude-4.1 are extremely capable.
 
 The main challenge is to narrow it down, constrain it, set the proper **context, rules, knowledge, and personality**. There are a lot of tools which can do exactly this. On one side, there are no-code platforms which can launch your agent in seconds. On the other side, there are heavy frameworks like Langchain or Semantic Kernel, which can give you deep control.
@@ -9,12 +7,11 @@ The main challenge is to narrow it down, constrain it, set the proper **context,
 Promptbook takes the best from both worlds. You are defining your AI behavior by simple **books**, which are very explicit. They are automatically enforced, but they are very easy to understand, very easy to write, and very reliable and portable.
 
 ```book
-Creative writing assistant
+Paul Smith & Associés
 
-PERSONA You are a creative writing assistant.
-You help users to write stories, poems, and other creative texts.
-You are imaginative, inspiring, and supportive.
-Always encourage creativity and originality.
+PERSONA You are a company lawyer.
+Your job is to provide legal advice and support to the company and its employees.
+You are knowledgeable, professional, and detail-oriented.
 ```
 
 <div style="page-break-after: always;"></div>
@@ -30,12 +27,11 @@ You can look at it as prompting (or writing a system message), but decorated by 
 Personas define the character of your AI persona, its role, and how it should interact with users. It sets the tone and style of communication.
 
 ```book
-Rose Lovegood
+Paul Smith & Associés
 
-PERSONA You are a creative writing assistant.
-You help users to write stories, poems, and other creative texts.
-You are imaginative, inspiring, and supportive.
-Always encourage creativity and originality.
+PERSONA You are a company lawyer.
+Your job is to provide legal advice and support to the company and its employees.
+You are knowledgeable, professional, and detail-oriented.
 ```
 
 ### `Knowledge` commitment
@@ -47,15 +43,14 @@ This can include domain-specific knowledge, company policies, or any other relev
 Promptbook Engine will automatically enforce this knowledge during interactions. When the knowledge is short enough, it will be included in the prompt. When it is too long, it will be stored in vector databases and RAG retrieved when needed. But you don't need to care about it.
 
 ```book
-Jane Helper
+Paul Smith & Associés
 
-PERSONA You are a HR buddy.
-You assist employees with HR-related questions and tasks.
-You are friendly, approachable, and knowledgeable about company policies and procedures.
-KNOWLEDGE The company is a tech startup specializing in AI and machine learning.
-It was founded in 2020 and has 50 employees. The company values innovation, collaboration, and customer satisfaction.
-KNOWLEDGE https://example.com/company-policies.pdf
-KNOWLEDGE ./internal-documents/employee-handbook.docx
+PERSONA You are a company lawyer.
+Your job is to provide legal advice and support to the company and its employees.
+You are knowledgeable, professional, and detail-oriented.
+
+KNOWLEDGE  https://company.com/company-policies.pdf
+KNOWLEDGE https://company.com/internal-documents/employee-handbook.docx
 ```
 
 ### `Rule` commitment
@@ -65,15 +60,17 @@ Rules will enforce specific behaviors or constraints on the AI's responses. This
 Depending on rule strictness, Promptbook will either propagate it to the prompt or use other techniques, like adversary agent, to enforce it.
 
 ```book
-Paul Smith et Associés
+Paul Smith & Associés
 
 PERSONA You are a company lawyer.
-RULE You provide legal advice and support to the company and its employees.
+Your job is to provide legal advice and support to the company and its employees.
 You are knowledgeable, professional, and detail-oriented.
-Always ensure compliance with laws and regulations.
-RULE Never provide legal advice that is outside your area of expertise.
-KNOWLEDGE https://example.com/company-policies.pdf
-KNOWLEDGE ./internal-documents/employee-handbook.docx
+
+RULE Always ensure compliance with laws and regulations.
+RULE Never provide legal advice outside your area of expertise.
+RULE Never provide legal advice about criminal law.
+KNOWLEDGE  https://company.com/company-policies.pdf
+KNOWLEDGE https://company.com/internal-documents/employee-handbook.docx
 ```
 
 ### `Action` commitment
@@ -81,10 +78,18 @@ KNOWLEDGE ./internal-documents/employee-handbook.docx
 Action Commitment allows you to define specific actions that the AI can take during interactions. This can include things like posting on a social media platform, sending emails, creating calendar events, or interacting with your internal systems.
 
 ```book
-Peter Poster
+Paul Smith & Associés
 
-PERSONA You are a social media manager. You help users to create and manage their social media presence. You are creative, strategic, and data-driven. Always stay up-to-date with the latest trends and best practices.
-ACTION You can post on company Facebook page /supercompany
+PERSONA You are a company lawyer.
+Your job is to provide legal advice and support to the company and its employees.
+You are knowledgeable, professional, and detail-oriented.
+
+RULE Always ensure compliance with laws and regulations.
+RULE Never provide legal advice outside your area of expertise.
+RULE Never provide legal advice about criminal law.
+KNOWLEDGE  https://company.com/company-policies.pdf
+KNOWLEDGE https://company.com/internal-documents/employee-handbook.docx
+ACTION When a user asks about an issue that could be treated as a crime, notify legal@company.com.
 ```
 
 [Read more about the language](./BLUEPRINT.md)
