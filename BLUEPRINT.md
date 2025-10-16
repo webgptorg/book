@@ -1,200 +1,223 @@
 # 📘 Book Language Blueprint
 
-_A concise, Markdown-based DSL for crafting AI workflows and automations._
+<blockquote style="color:#FFE600">
+⚠ This file is a work in progress and may be incomplete or inaccurate.
+</blockquote>
 
-<!--
-TODO: [🥗][🧠] How to handle table of contents for imported markdowns
+---
 
-## 📑 Table of Contents
+Book is a simple format do define AI apps and agents. It is the source code the soul of AI apps and agents.. It's purpose is to avoid ambiguous UIs with multiple fields and low-level ways like programming in langchain.
 
--   [Introduction](#introduction)
--   [Example](#example)
--   [1. What: Workflows, Tasks & Parameters](#1-what-workflows-tasks--parameters)
--   [2. Who: Personas](#2-who-personas)
--   [3. How: Knowledge, Instruments & Actions](#3-how-knowledge-instruments-and-actions)
--   [General Principles](#general-principles)
+Book is defined in file with `.book` extension
 
--->
-
-## Introduction
-
-Book is a Markdown-based language that simplifies the creation of AI applications, workflows, and automations. With human-readable commands, you can define inputs, outputs, personas, knowledge sources, and actions—without needing model-specific details.
-
-## Example
+## Examples
 
 ```book
-# 🌟 My First Book
+Write an article about {topic}
 
--   BOOK VERSION 1.0.0
--   URL https://promptbook.studio/hello.book
--   INPUT PARAMETER {topic}
--   OUTPUT PARAMETER {article}
-
-# Write an Article
-
--   PERSONA Jane, marketing specialist with prior experience in tech and AI writing
--   KNOWLEDGE https://wikipedia.org/
--   KNOWLEDGE ./journalist-ethics.pdf
--   EXPECT MIN 1 Sentence
--   EXPECT MAX 5 Pages
-
-> Write an article about {topic}
-
-→ {article}
+PERSONA Jane, marketing specialist with prior experience in tech and AI writing
+KNOWLEDGE https://wikipedia.org/
+KNOWLEDGE ./journalist-ethics.pdf
+EXPECT 1 Sentence - 5 Pages
+RESULT {article}
 ```
 
-Each part of the book defines one of three circles:
+---
 
-## **1. What:** Workflows, Tasks and Parameters
+```book
+Make post on LinkedIn based on @Input.
+PERSONA @Jane, an experienced copywriter and HR expert
+KNOWLEDGE cetin.cz
+KNOWLEDGE linkedin.com/company/cetin/
+```
 
-What work needs to be done. Each book defines a [workflow _(scenario or pipeline)_](https://github.com/webgptorg/promptbook/discussions/88), which is one or more tasks. Each workflow has a fixed input and output. For example, you have a book that generates an article from a topic. Once it generates an article about AI, once about marketing, once about cooking. The workflow (= your AI program) is the same, only the input and output change.
+---
 
-**Related commands:**
+```book
+Odpověz na Email
 
--   [PARAMETER](https://github.com/webgptorg/promptbook/blob/main/documents/commands/PARAMETER.md)
+{Email content}
 
-## **2. Who:** Personas
+PERSONA @Pavol - pavolhejny.com
+KNOWLEDGE ./instructions.pdf
+STYLE Professional tone of voice
+```
 
-Who does the work. Each task is performed by a persona. A persona is a description of your virtual employee. It is a higher abstraction than the model, tokens, temperature, top-k, top-p and other model parameters.
+---
 
-You can describe what you want in human language like `Jane, creative writer with a sense of sharp humour` instead of `gpt-4-2024-13-31, temperature 1.2, top-k 40, STOP token ".\n",...`.
+```book
+Analyzuj {Případ}.
+{Detaily}
+PERSONA @Jiří, právník, který nikdy neodešle informace o klientech mimo EU
+KNOWLEDGE {89/2012 Sb. Občanský zákoník}
 
-Personas can have access to different knowledge, tools and actions. They can also consult their work with other personas or user, if allowed.
+```
 
-**Related commands:**
+iframe:
 
--   [PERSONA](https://github.com/webgptorg/promptbook/blob/main/documents/commands/PERSONA.md)
+<iframe frameborder="0" style="width:100%;height:455px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=#R%3Cmxfile%20scale%3D%221%22%20border%3D%220%22%20disableSvgWarning%3D%22true%22%20linkTarget%3D%22_blank%22%3E%3Cdiagram%20name%3D%22Page-1%22%20id%3D%22zo4WBBcyATChdUDADUly%22%3E7ZxtU%2BM2EMc%2FjWfaF2b8kMTwEkKOu%2Fa468BM77ViK4mKLLmy8nSfvitbihPiNEAaIHTfYHm1luzVT7vG%2F5l4cT9f3ChSTG5lRrkXBdnCi6%2B9KAo7YQ8OxrK0liBKastYsczaGsM9%2B0mdo7VOWUbLDUctJdes2DSmUgia6g0bUUrON91Gkm%2FOWpCxnTFoDPcp4XTL7QfL9KS2nnfXvD9TNp64mcPA9uTEOVtDOSGZnK%2BZ4oEX95WUum7liz7lJnouLvV1n3b0rm5MUaGfcoFdiRnhU%2Ftsf1KlGTwqWPtSaMIEVfZe9dIFoJyznBMBZ1fzCdP0viCp6ZrDgoNtonMOZyE07fgwKF3svMdw9eTADJU51WoJLvYCP7qw0bK8JPZ03sQ%2B7lnbZC3ukQs7ses9Xo3dhAQaNirtEbrYipAX9TjMcFUWRDSOvb%2BnZtGuMpmWPhOaKkG4b0j1R2EcdbNO6iej0cgfhufQGiaJnw7PaXIRJT2adpsBoDW2x2qaYiP0zovDuvjuYS%2FDs%2FgcjDlRYyZ8LQtjiwrd2IZSa5k35vX5goypzcG12n0%2F9rG3b2kEuPhltVkvwWE1UVB1jEjO%2BLLugmtIbkCxV95JuD0JHbdSyMedXtQ3Owd6ypqyq2pnc6nqwdR4%2BEtQO7nDr7XTkKQPYyWnIvPX%2FLUionT0rW5vRhQjcBTTnCqW1q5Cqhx2wrYXJaX2SQntPY6EVyBok63%2B1bGQJdNM7huP5vIvtu0zs5sW5mNjO8aQlNRQUntU29SvImiCwUlR2nUqFC2pmtFHUNSLfkseqPGRpYaDNAv%2FlYkHmn0RdorM2R0fsKFqRN4%2FNhe1Uxh060YUJi9AZ%2B52IRgSYBCh2gOV1wm%2BiGKqT5AYTDRHYuJsDwxgLl5WGTtRGHW3imOntTgGH7A2ht34YGgxxT0T5z8Gd%2Fffv11iWURmnlMWfzP%2FU50eMFgVj4VEFdBqwemigMhQkVZv3KkslnMFY6qq35g%2B3zmvfS9WB9TSoLddSwMspZgWj7cHfv%2F2%2FcfXwfXN4DSLKebGI3GRUs3EWfoTkx0muw8D9TGSXYjJ7uS54NVHV5PvIN9En%2BAvrP7StEwWNGLG87NgxmbI1P%2BYKbfoQ9VCyw6IWpjZcn6kFWq6MPY1TdA%2ByDWnI9PjHvDSmnOWZXyXtFgtOTWSW7CabI%2B62GtXF62Y2HmimBg64yFiohOw37XeGjod20bIf2qI%2FhO9NQxRcH3%2FL4eYlFFwxS%2FLpwIVCq7IBAqur4Usfjh5A5xRcEVmUHDFqoiCK5ZSTIsH7QEUXJGLNi5QcMVk9%2BGgRsEVuWjjAgVXZAoFV%2B9FgmsYtOuLb6K4RieouK504tdRXGNUXN%2F%2F2yFmZVRc8dPyqUCFiisygYrrayGLX07eAGdUXJEZVFyxKqLiiqUU0%2BJBewAVV%2BSijQtUXDHZfTioUXFFLtq4QMUVmULF1XuZ4hq9meIKp83PFVd9N82vPseDfwA%3D%3C%2Fdiagram%3E%3C%2Fmxfile%3E"></iframe>
+
+books.svg
+
+![Books](./books/diagram/books.svg)
+
+books.png
+
+![Books](./books/diagram/books.png)
+
+## Basic Commitments:
+
+Book is composed of commitments, which are the building blocks of the book. Each commitment defines a specific task or action to be performed by the AI agent. The commitments are defined in a structured format, allowing for easy parsing and execution.
 
 <!--
-<- Note: Not mentioning MODEL command, as it is low-level and not recommended to use directly
+TODO:
+## **1. What:** Workflows, Tasks and Parameters
+## **2. Who:** Personas
+## **3. How:** Knowledge, Instruments and Actions
 -->
 
-## **3. How:** Knowledge, Instruments and Actions
+### `PERSONA`
 
-The resources used by the personas are used to do the work.
+defines basic contour of
 
-**Related commands:**
+> PERSONA @Joe Average man with
 
--   [KNOWLEDGE](https://github.com/webgptorg/promptbook/blob/main/documents/commands/KNOWLEDGE.md) of documents, websites, and other resources
--   [INSTRUMENT](https://github.com/webgptorg/promptbook/blob/main/documents/commands/INSTRUMENT.md) for real-time data like time, location, weather, stock prices, searching the internet, calculations, etc.
--   [ACTION](https://github.com/webgptorg/promptbook/blob/main/documents/commands/ACTION.md) for actions like sending emails, creating files, ending a workflow, etc.
+also the PERSONA is
 
-## General Principles
+Describes
 
-Book language is based on markdown. It is subset of markdown. It is designed to be easy to read and write. It is designed to be understandable by both humans and machines and without specific knowledge of the language.
+### `RULE` or `RULES`
 
-The file has a `.book` extension and uses UTF-8 encoding without BOM.
+defines
 
-Books have two variants: flat — just a prompt without structure, and full — with tasks, commands, and prompts.
+### `STYLE`
 
-As it is source code, it can leverage all the features of version control systems like git and does not suffer from the problems of binary formats, proprietary formats, or no-code solutions.
+xxx
 
-But unlike programming languages, it is designed to be understandable by non-programmers and non-technical people.
+### `SAMPLE`
 
-<!--
-## 🏛 Organization
+xxx
 
-Organization groups together workflows, workforce, knowledge, instruments, and actions into one package. Entities in one organization can share resources _(i.e. import workflows, teams, personas, knowledge, instruments and actions from each other)_.
+### `KNOWLEDGE`
 
-Each organization has a unique URL; for example, `https://promptbook.studio/my-cool-project/`.
+xxx
 
-## 🏗 Workflow
+### `EXPECT`
 
-A workflow represents a piece of work that has specific input and output.
+xxx
 
-Private workflows can be imported within the organization, while public workflows can be imported inside the organization or used everywhere through their unique URLs. Each workflow has a unique URL; for example, `https://promptbook.studio/my-cool-project/workflows/generate-website`.
+### `FORMAT`
 
-As a programmer, you can imagine a workflow as an async function that can be used inside your code. It exposes an interface with a record of input and output parameters but hides the internal implementation.
+xxx
 
-You can use workflows in other workflows, use it in classic programming languages as async functions that can be called, [run workflow in CLI](https://github.com/webgptorg/hello-world), or use Promptbook Studio to **create instant miniapps**.
+### `JOKER`
 
-### Task
+xxx
 
-A task is one step in a workflow. Each task is divided into two parts: the actual task job and a check that the result of the job is correct.
+### `MODEL`
 
-Each task can use results from previous tasks. Tasks in a workflow form a directed acyclic graph.
+xxx
 
-#### Task job
+### `ACTION`
 
-A task job is the actual work that needs to be done. It can be:
+xxx
 
--   **Asking a persona** to do a job; this is a higher abstraction of the calling model
--   **Asking the user** to do a job
--   **Searching the knowledge base** for information
--   **Using an action** to perform external work and get the result
--   **Using an instrument**, for example, a calculator
--   **A simple template** to concatenate parameters to a hardcoded template
--   **Script execution** to run custom code _(Python/JavaScript/TypeScript/...)_
--   **Calling a model** directly to perform a job, bypassing the organization's workforce—for example, calling GPT's Assistant
+### `META`
 
-#### Task check
+## Names
 
-After the task job is done, the result can be checked to see if it is correct. If it is not correct, the task is repeated a certain number of times.
+each commitment is
 
-**You can expect:**
+`PERSONA`
 
--   **Result** is in the expected format; for example, an available domain name
--   **Result** is in the expected range; for example, **between 1 sentence and 2 paragraphs**
--   **Adversarial check** by another persona to approve the result
+Variable names
 
-## 🏋️‍♂️ Workforce
+## Types
 
-The workforce is an abstraction above LLM models, tokens, temperature, top-k, top-p, and other model parameters. You can describe what you desire in human language like `Jane, creative writer with a sense of sharp humor` instead of `gpt-4-2024-13-31, temperature 1.2, top-k 40, STOP token ".\n",...`.
+## Miscellaneous aspects of Book language
 
-### Persona
+### Named vs Anonymous commitments
 
-A persona is the basic unit of the workforce. It is defined by its description; for example, `Jane, creative writer with a sense of sharp humor`.
+### Single line vs multiline
 
-This persona description is used to select the best model and parameters for the job. If the persona has conflicting requirements, Promptbook will try to find the best compromise or even combine multiple models to achieve the best result.
+### Bookish vs Non-bookish definitions
 
-> For example, `Josh, lawyer with perfect language and logic capabilities and a strong sense of privacy` is not possible to achieve with one model. Big models like `GPT-4` or `Claude-3.5` are great for language and logic, but they send data to the cloud. On the other hand, `LLAMA-3` is great for privacy but not as strong in language and logic. Therefore, Promptbook will create an ad-hoc meta-model using `LLAMA-3` to strip all data, `GPT-4` for language and logic, and then back to `LLAMA-3` to reintroduce sensitive data.
+<!-- ============================================================================ -->
 
-Each persona can have access to different knowledge, instruments, and actions.
+---
 
-### Team
+# **\_\_\_\_**
 
-A team groups personas together. A team can also group other teams to form a complex responsibility hierarchy. Each team can have access to different knowledge, instruments, and actions.
+Great context and prompt can make or break you AI app. In last few years we have came from simple one-shot prompts. When you want to add conplexity you have finetunned the model or add better orchestration. But with really large large language models the context seems to be a king.
 
-### Role
+The Book is the language to describe and define your AI app. Its like a shem for a Golem, book is the shem and model is the golem.
 
-A role is an ad-hoc modification of a persona. A role can be defined for a specific task; for example, `Jane (email writer)`. Roles have access to the same knowledge, instruments, and actions as their parent persona.
+```book
 
-## 💡 Knowledge
+Franz Kafka
 
-Knowledge is external information that is used in task jobs. Knowledge can be:
 
--   `Explicit` as a text directly in the workflow, team, or persona
--   `File` which is referenced from the workflow, team, or persona
-    We support various file types like `pdf`, `docx`, `txt`, `md`, `odt`, `doc`, `rtf`, and it's possible to easily add support for other file types. The file is parsed and stored in the knowledge base
--   `Website` which is referenced from the workflow, team, or persona
-    The website is scraped and stored in the knowledge base
+PERSONA Franz Kafka, a writer who is interested in the human condition and the absurdity of life, speaks German and Czech and English
+STYLE {kafka.com/the-castle}
+STYLE {kafka.com/the-trial.pdf}
+STYLE {kafka.com/metamorphosis.docx}
+KNOWLEDGE Franz Kafka has a deep understanding of existentialism, surrealism, and the human psyche
+GOAL Write a short story that explores the themes of alienation, bureaucracy, and the absurd
+ACTION {mcp
+```
 
-### Knowledge piece
+# Who, what and how?
 
-A knowledge piece is the smallest unit of knowledge that makes sense on its own. Every type of knowledge—explicit text, file, or website—is parsed/scraped and divided into knowledge pieces. These pieces are indexed, put into the knowledge base, and can be used in task jobs via techniques like retrieval-augmented generation.
+To write a good prompt and the book you will be answering 3 main questions
 
-## 🛠 Instruments
+-   **Who** is working on the task, is it a team or an individual? What is the role of the person in the team? What is the background of the person? What is the motivation of the person to work on this task?
+    You rather want `Paul, an typescript developer who prefers SOLID code` not `gemini-2`
+-   **What**
+-   **How**
 
-Instruments are external information that cannot be pre-scraped and need to be fetched at the moment of the task job. For example:
+each commitment (described bellow) is connected with one of theese 3 questions.
 
--   Current **Time and date**
--   User's **Location**
--   **Searching** the internet
--   Computing some **mathematical expression**
--   **Weather** in some location
--   **Stock price** of some company
--   Availability of some **Domain name**
--   Calling a **GET** endpoint of an API
+## Commitments
 
-This is an abstraction above function calling and API calling in models.
+Commitment is one piece of book, you can imagine it as one paragraph of book.
 
-## ☎ Actions
+Each commitment starts in a new line with commitment name, its usually in UPPERCASE and follows a contents of that commitment. Contents of the commithemt is defined in natural language.
 
-Actions are similar to instruments but can change the state of the world. For example:
+Commitments are chained one after another, in general commitments which are written later are more important and redefines things defined earlier.
 
--   **Sending email**
--   **Creating a file**
--   **Ending a workflow**
--   Calling a **POST** endpoint of an API
+Each commitment falls into one or more of cathegory who, what or how
 
-<!-- GRM 2024-11 -->
+Here are some basic commintemts:
+
+-   `PERSONA` tells **who** is working on the task
+-   `KNOWLEDGE` describes **what** knowledge the person has
+-   `GOAL` describes **what** is the goal of the task
+-   `ACTION` describes **what** actions can be done
+-   `RULE` describes **what** rules should be followed
+-   `STYLE` describes **how** the output should be presented
+
+## Variables and references
+
+When the prompt should be to be useful it should have some fixed static part and some variable dynamic part
+
+```book
+
+```
+
+## Imports
+
+## Layering
+
+## Book defined in book
+
+## <!-- ============================================================================ -->
+
+Book vs:
+
+-   Why just dont pick the right model
+-   Orchestration frameworks - Langchain, Google Agent ..., Semantic Kernel,...
+-   Finetunning
+-   Temperature, top_t, top_k,... etc.
+-   System message
+-   MCP server
+-   function calling
