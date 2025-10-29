@@ -34,7 +34,7 @@ export function embedBooks(content: string): string {
             .replace(/\n      \| $/, ''); // Remove trailing empty pipe
 
         // Generate a simple nonce (could be more sophisticated)
-        const nonce = 1; // Math.floor(Math.random() * 1000);
+        const nonce = 0; // Math.floor(Math.random() * 1000);
 
         // Create the img tag
         return spaceTrim(
