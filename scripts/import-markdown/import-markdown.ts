@@ -6,10 +6,10 @@
  * and replaces it with the content of the imported file.
  */
 
-import colors from 'colors';
 import { walk } from 'https://deno.land/std/fs/mod.ts';
 import { readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
+import colors from 'yoctocolors';
 import { placeImports } from './placeImports';
 
 const cwd = process.cwd();
