@@ -26,12 +26,11 @@ export function embedBooks(content: string): string {
         return spaceTrim(
             (block) => `
 
-                <div style="outline: 1px solid #777; padding: 10px;">
+                <table><tr><td>
 
                 ${block(markdown)}
-                
-                </div>
-                
+
+                </td></tr></table>
             `,
         );
     });
