@@ -1,4 +1,5 @@
 import { spaceTrim } from 'spacetrim';
+import { FormattedBookInMarkdownTranspiler } from '../../../src/transpilers/formatted-book-in-markdown/FormattedBookInMarkdownTranspiler';
 
 /**
  * Embeds book content as HTML img tags with preview URLs
@@ -21,34 +22,17 @@ export function embedBooks(content: string): string {
     const bookRegex = /```book\s*\n([\s\S]*?)\n```/g;
 
     return content.replace(bookRegex, (match, bookContent) => {
-        // Clean up the book content and extract title
-        const lines = bookContent.trim().split('\n');
-        const title = lines[0]?.trim() || 'Untitled';
-
-        // Prepare the book content for URL encoding
-        // Add pipe separators for line breaks as shown in the example
-        const formattedContent = lines
-            .map((line: string) => line.trim())
-            .filter((line: string) => line.length > 0)
-            .join('\n      | ')
-            .replace(/\n      \| $/, ''); // Remove trailing empty pipe
-
-        // Generate a simple nonce (could be more sophisticated)
-        const nonce = 0; // Math.floor(Math.random() * 1000);
-
-        // Create the img tag
+        const markdown = FormattedBookInMarkdownTranspiler.transpileBook(bookContent, {}, {});
         return spaceTrim(
             (block) => `
 
-                <!--
-                ${block(bookContent)}
-                -->
-                <img
-                    alt="${title} Book"
-                    src="https://promptbook.studio/embed/book-preview.png?book=${encodeURIComponent(
-                        formattedContent,
-                    )}&width=800&height=450&nonce=${nonce}"
-                />`,
+                <div style="outline: 1px solid #777; padding: 10px;">
+
+                ${block(markdown)}
+                
+                </div>
+                
+            `,
         );
     });
 }
