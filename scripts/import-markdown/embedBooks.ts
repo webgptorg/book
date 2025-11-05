@@ -26,7 +26,7 @@ export function embedBooks(content: string): string {
         return spaceTrim(
             (block) => `
 
-                <table><tr><td>
+                <table style="border: 1px solid #777; border-radius: 10px;"><tr><td>
 
                 ${block(markdown)}
 
