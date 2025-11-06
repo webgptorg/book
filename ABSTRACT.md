@@ -1,10 +1,10 @@
 # 📖 The Book Whitepaper
 
-For most business applications nowadays, the biggest challenge isn't about the raw capabilities of AI models. Large language models like GPT-5 or Claude-4.1 are extremely capable.
+Nowadays, the biggest challenge for most business applications isn't the raw capabilities of AI models. Large language models such as GPT-5 and Claude-4.1 are highly capable.
 
-The main challenge is to narrow it down, constrain it, set the proper **context, rules, knowledge, and personality**. There are a lot of tools which can do exactly this. On one side, there are no-code platforms which can launch your agent in seconds. On the other side, there are heavy frameworks like Langchain or Semantic Kernel, which can give you deep control.
+The main challenge lies in **managing the context**, providing rules and knowledge, and narrowing the personality.
 
-Promptbook takes the best from both worlds. You are defining your AI behavior by simple **books**, which are very explicit. They are automatically enforced, but they are very easy to understand, very easy to write, and very reliable and portable.
+In Promptbook, you **define your AI context using simple books** that are very explicit, easy to understand and write, reliable, and extremely portable.
 
 ```book
 Paul Smith & Associés
