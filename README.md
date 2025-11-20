@@ -82,7 +82,7 @@ Promptbook Engine will automatically enforce this knowledge during interactions.
 Your job is to provide legal advice and support to the company and its employees.<br/>
 You are knowledgeable, professional, and detail-oriented.<br/>
 <br/>
-**KNOWLEDGE**  https://company.com/company-policies.pdf<br/>
+**KNOWLEDGE** https://company.com/company-policies.pdf<br/>
 **KNOWLEDGE** https://company.com/internal-documents/employee-handbook.docx<br/>
 
 </td></tr></table>
@@ -104,7 +104,7 @@ You are knowledgeable, professional, and detail-oriented.<br/>
 **RULE** Always ensure compliance with laws and regulations.<br/>
 **RULE** Never provide legal advice outside your area of expertise.<br/>
 **RULE** Never provide legal advice about criminal law.<br/>
-**KNOWLEDGE**  https://company.com/company-policies.pdf<br/>
+**KNOWLEDGE** https://company.com/company-policies.pdf<br/>
 **KNOWLEDGE** https://company.com/internal-documents/employee-handbook.docx<br/>
 
 </td></tr></table>
@@ -124,7 +124,7 @@ You are knowledgeable, professional, and detail-oriented.<br/>
 **RULE** Always ensure compliance with laws and regulations.<br/>
 **RULE** Never provide legal advice outside your area of expertise.<br/>
 **RULE** Never provide legal advice about criminal law.<br/>
-**KNOWLEDGE**  https://company.com/company-policies.pdf<br/>
+**KNOWLEDGE** https://company.com/company-policies.pdf<br/>
 **KNOWLEDGE** https://company.com/internal-documents/employee-handbook.docx<br/>
 **ACTION** When a user asks about an issue that could be treated as a crime, notify legal@company.com.<br/>
 
@@ -175,13 +175,9 @@ Now you want to use it. There are several ways how to write your first book:
 
 We have written ai asistant in book who can help you with writing your first book.
 
-
-
 #### Your AI twin
 
 Copy your own behavior, personality, and knowledge into book and create your AI twin. It can help you with your work, personal life, or any other task.
-
-
 
 #### AI persona workpool
 
@@ -297,7 +293,7 @@ Join our growing community of developers and users:
 
 <!--/Import ./SIGNPOST.md-->
 
-<!-- Note: Blueprint isnt here because is linked from abstract -->
+<!-- Note: Blueprint is not here because is linked from abstract -->
 
 <!--Import ./DICTIONARY.md-->
 <!--⚠️ WARNING: This section was imported, make changes in source; any manual changes here will be overwritten-->
@@ -318,8 +314,6 @@ The following glossary is used to clarify certain concepts:
 -   **Longtail** refers to non-common or rare events, items, or entities that are not well-represented in the training data of machine learning models. Longtail items are often challenging for models to predict accurately.
 
 _Note: This section is not a complete dictionary, more list of general AI / LLM terms that has connection with Promptbook_
-
-
 
 ### 💯 Core concepts
 
