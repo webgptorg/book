@@ -1,17 +1,18 @@
 # 📖 The Book Whitepaper
 
-Nowadays, the biggest challenge for most business applications isn't the raw capabilities of AI models. Large language models such as GPT-5 and Claude-4.1 are highly capable.
+Nowadays, the biggest challenge for most business applications isn't the raw capabilities of AI models. Large language models such as GPT-5.2 and Claude-4.5 are incredibly capable.
 
 The main challenge lies in **managing the context**, providing rules and knowledge, and narrowing the personality.
 
-In Promptbook, you **define your AI context using simple books** that are very explicit, easy to understand and write, reliable, and extremely portable.
+In Promptbook, you can define your context **using simple Books** that are very explicit, easy to understand and write, reliable, and highly portable.
 
 ```book
-Paul Smith & Associés
+Paul Smith
 
 PERSONA You are a company lawyer.
 Your job is to provide legal advice and support to the company and its employees.
-You are knowledgeable, professional, and detail-oriented.
+RULE You are knowledgeable, professional, and detail-oriented.
+TEAM You are part of the legal team of Paul Smith & Associés, you discuss with {Emily White}, the head of the compliance department. {George Brown} is expert in corporate law and {Sophia Black} is expert in labor law.
 ```
 
 <div style="page-break-after: always;"></div>
@@ -20,7 +21,9 @@ You are knowledgeable, professional, and detail-oriented.
 
 We have created a language called **Book**, which allows you to write AI agents in their native language and create your own AI persona. Book provides a guide to define all the traits and commitments.
 
-You can look at it as prompting (or writing a system message), but decorated by **commitments**.
+You can look at it as "prompting" _(or writing a system message)_, but decorated by **commitments**.
+
+**Commitments** are special syntax elements that define contracts between you and the AI agent. They are transformed by Promptbook Engine into low-level parameters like which model to use, its temperature, system message, RAG index, MCP servers, and many other parameters. For some commitments _(for example `RULE` commitment)_ Promptbook Engine can even create adversary agents and extra checks to enforce the rules.
 
 ### `Persona` commitment
 
@@ -30,8 +33,6 @@ Personas define the character of your AI persona, its role, and how it should in
 Paul Smith & Associés
 
 PERSONA You are a company lawyer.
-Your job is to provide legal advice and support to the company and its employees.
-You are knowledgeable, professional, and detail-oriented.
 ```
 
 ### `Knowledge` commitment
@@ -73,9 +74,9 @@ KNOWLEDGE  https://company.com/company-policies.pdf
 KNOWLEDGE https://company.com/internal-documents/employee-handbook.docx
 ```
 
-### `Action` commitment
+### `Team` commitment
 
-Action Commitment allows you to define specific actions that the AI can take during interactions. This can include things like posting on a social media platform, sending emails, creating calendar events, or interacting with your internal systems.
+Team commitment allows you to define the team structure and advisory fellow members the AI can consult with. This allows the AI to simulate collaboration and consultation with other experts, enhancing the quality of its responses.
 
 ```book
 Paul Smith & Associés
@@ -89,10 +90,28 @@ RULE Never provide legal advice outside your area of expertise.
 RULE Never provide legal advice about criminal law.
 KNOWLEDGE  https://company.com/company-policies.pdf
 KNOWLEDGE https://company.com/internal-documents/employee-handbook.docx
-ACTION When a user asks about an issue that could be treated as a crime, notify legal@company.com.
+TEAM You are part of the legal team of Paul Smith & Associés, you discuss with {Emily White}, the head of the compliance department. {George Brown} is expert in corporate law and {Sophia Black} is expert in labor law.
 ```
 
+<!--
+TODO: Link to dynamically generated dictionary of commitments
 [Read more about the language](./BLUEPRINT.md)
+-->
+
+## Promptbook Ecosystem
+
+!!!@@@
+
+### Promptbook Server
+
+!!!@@@
+
+### Promptbook Engine
+
+!!!@@@
+
+<!--
+TODO: Enhance or use
 
 <div style="page-break-after: always;"></div>
 
@@ -137,16 +156,18 @@ Now you want to use it. There are several ways how to write your first book:
 
 We have written ai asistant in book who can help you with writing your first book.
 
-<!-- TODO: Link -->
+<!-- TODO: Link -- >
 
 ### Your AI twin
 
 Copy your own behavior, personality, and knowledge into book and create your AI twin. It can help you with your work, personal life, or any other task.
 
-<!-- TODO: Link -->
+<!-- TODO: Link -- >
 
 ### AI persona workpool
 
 Or you can pick from our library of pre-written books for various roles and tasks. You can find books for customer support, coding, marketing, sales, HR, legal, and many other roles.
 
-<!-- TODO: Link -->
+<!-- TODO: Link -- >
+
+-->
