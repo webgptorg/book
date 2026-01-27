@@ -6,7 +6,7 @@
  * @returns The markdown with increased headings
  */
 export function increaseHeadings(content: string): string {
-    const lines = content.split('\n');
+    const lines = content.split(/\r?\n/);
     let inCodeBlock = false;
 
     for (let i = 0; i < lines.length; i++) {
