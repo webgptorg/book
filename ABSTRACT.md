@@ -1,17 +1,24 @@
 # 📖 The Book Whitepaper
 
+Promptbook lets you create **persistent AI agents** that work on real goals for your company. The [**Agents Server**](https://gallery.ptbk.io/) is the heart of the project — a place where your AI agents live, remember context, collaborate in teams, and get things done.
+
 Nowadays, the biggest challenge for most business applications isn't the raw capabilities of AI models. Large language models such as GPT-5.2 and Claude-4.5 are incredibly capable.
 
 The main challenge lies in **managing the context**, providing rules and knowledge, and narrowing the personality.
 
-In Promptbook, you can define your context **using simple Books** that are very explicit, easy to understand and write, reliable, and highly portable.
+In Promptbook, you define your agents **using simple Books** — a human-readable language that is explicit, easy to understand and write, reliable, and highly portable. You then deploy them to the **Agents Server**, where they run persistently and work toward their goals.
 
 ```book
 Paul Smith
 
 PERSONA You are a company lawyer.
 Your job is to provide legal advice and support to the company and its employees.
+GOAL Respond to incoming legal inquiries via email and keep the company website updated with the latest legal policies.
 RULE You are knowledgeable, professional, and detail-oriented.
+KNOWLEDGE https://company.com/company-policies.pdf
+KNOWLEDGE https://company.com/internal-documents/employee-handbook.docx
+USE EMAIL
+USE BROWSER
 TEAM You are part of the legal team of Paul Smith & Associés, you discuss with {Emily White}, the head of the compliance department. {George Brown} is expert in corporate law and {Sophia Black} is expert in labor law.
 ```
 
@@ -33,6 +40,20 @@ Personas define the character of your AI persona, its role, and how it should in
 Paul Smith & Associés
 
 PERSONA You are a company lawyer.
+Your job is to provide legal advice and support to the company and its employees.
+```
+
+### `Goal` commitment
+
+Goals define what the agent should actively work toward. Unlike a chatbot that only responds when asked, an agent with goals takes initiative and works on tasks persistently on the Agents Server.
+
+```book
+Paul Smith & Associés
+
+PERSONA You are a company lawyer.
+Your job is to provide legal advice and support to the company and its employees.
+GOAL Respond to incoming legal inquiries via email within 24 hours.
+GOAL Keep the company website updated with the latest legal policies and compliance information.
 ```
 
 ### `Knowledge` commitment
@@ -48,9 +69,9 @@ Paul Smith & Associés
 
 PERSONA You are a company lawyer.
 Your job is to provide legal advice and support to the company and its employees.
-You are knowledgeable, professional, and detail-oriented.
-
-KNOWLEDGE  https://company.com/company-policies.pdf
+GOAL Respond to incoming legal inquiries via email within 24 hours.
+GOAL Keep the company website updated with the latest legal policies and compliance information.
+KNOWLEDGE https://company.com/company-policies.pdf
 KNOWLEDGE https://company.com/internal-documents/employee-handbook.docx
 ```
 
@@ -65,13 +86,36 @@ Paul Smith & Associés
 
 PERSONA You are a company lawyer.
 Your job is to provide legal advice and support to the company and its employees.
-You are knowledgeable, professional, and detail-oriented.
-
-RULE Always ensure compliance with laws and regulations.
+GOAL Respond to incoming legal inquiries via email within 24 hours.
+GOAL Keep the company website updated with the latest legal policies and compliance information.
+RULE Always ensure compliance with local laws and regulations.
 RULE Never provide legal advice outside your area of expertise.
 RULE Never provide legal advice about criminal law.
-KNOWLEDGE  https://company.com/company-policies.pdf
+KNOWLEDGE https://company.com/company-policies.pdf
 KNOWLEDGE https://company.com/internal-documents/employee-handbook.docx
+```
+
+### `Use` commitments
+
+Use commitments grant the agent real capabilities — tools it can use to interact with the outside world. `USE EMAIL` lets the agent send emails, `USE BROWSER` lets it access and read web content, `USE SEARCH ENGINE` lets it search the web, and many more.
+
+These are what turn a chatbot into a persistent agent that actually does work.
+
+```book
+Paul Smith & Associés
+
+PERSONA You are a company lawyer.
+Your job is to provide legal advice and support to the company and its employees.
+GOAL Respond to incoming legal inquiries via email within 24 hours.
+GOAL Keep the company website updated with the latest legal policies and compliance information.
+RULE Always ensure compliance with local laws and regulations.
+RULE Never provide legal advice outside your area of expertise.
+RULE Never provide legal advice about criminal law.
+KNOWLEDGE https://company.com/company-policies.pdf
+KNOWLEDGE https://company.com/internal-documents/employee-handbook.docx
+USE EMAIL
+USE BROWSER
+USE SEARCH ENGINE
 ```
 
 ### `Team` commitment
@@ -83,13 +127,16 @@ Paul Smith & Associés
 
 PERSONA You are a company lawyer.
 Your job is to provide legal advice and support to the company and its employees.
-You are knowledgeable, professional, and detail-oriented.
-
-RULE Always ensure compliance with laws and regulations.
+GOAL Respond to incoming legal inquiries via email within 24 hours.
+GOAL Keep the company website updated with the latest legal policies and compliance information.
+RULE Always ensure compliance with local laws and regulations.
 RULE Never provide legal advice outside your area of expertise.
 RULE Never provide legal advice about criminal law.
-KNOWLEDGE  https://company.com/company-policies.pdf
+KNOWLEDGE https://company.com/company-policies.pdf
 KNOWLEDGE https://company.com/internal-documents/employee-handbook.docx
+USE EMAIL
+USE BROWSER
+USE SEARCH ENGINE
 TEAM You are part of the legal team of Paul Smith & Associés, you discuss with {Emily White}, the head of the compliance department. {George Brown} is expert in corporate law and {Sophia Black} is expert in labor law.
 ```
 
@@ -100,15 +147,15 @@ TODO: Link to dynamically generated dictionary of commitments
 
 ## Promptbook Ecosystem
 
-!!!@@@
+Promptbook is an ecosystem of tools centered around the **Agents Server** — a production-ready platform for running persistent AI agents.
 
-### Promptbook Server
+### Agents Server
 
-!!!@@@
+The [**Agents Server**](https://gallery.ptbk.io/) is the primary way to use Promptbook. It is a web application where your AI agents live and work. You can create agents, give them knowledge and rules using the Book language, organize them into teams, and let them work on goals persistently. The Agents Server provides a UI for managing agents, an API for integrating them into your applications, and can be self-hosted via [Docker](https://hub.docker.com/r/hejny/promptbook/) or deployed on Vercel.
 
 ### Promptbook Engine
 
-!!!@@@
+The [Promptbook Engine](https://github.com/webgptorg/promptbook) is the open-source core that powers everything. It parses the Book language, applies commitments, manages LLM provider integrations, and executes agents. The Agents Server is built on top of the Engine. If you need to embed agent capabilities directly into your own application, you can use the Engine as a standalone TypeScript/JavaScript library via [NPM packages](https://www.npmjs.com/package/@promptbook/core).
 
 <!--
 TODO: Enhance or use

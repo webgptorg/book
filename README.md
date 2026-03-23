@@ -28,11 +28,13 @@ TODO: [🥗][🧠] Maybe do table of contents in both `book` and `promptbook`
 
 ## 📖 The Book Whitepaper
 
+Promptbook lets you create **persistent AI agents** that work on real goals for your company. The [**Agents Server**](https://gallery.ptbk.io/) is the heart of the project — a place where your AI agents live, remember context, collaborate in teams, and get things done.
+
 Nowadays, the biggest challenge for most business applications isn't the raw capabilities of AI models. Large language models such as GPT-5.2 and Claude-4.5 are incredibly capable.
 
 The main challenge lies in **managing the context**, providing rules and knowledge, and narrowing the personality.
 
-In Promptbook, you can define your context **using simple Books** that are very explicit, easy to understand and write, reliable, and highly portable.
+In Promptbook, you define your agents **using simple Books** — a human-readable language that is explicit, easy to understand and write, reliable, and highly portable. You then deploy them to the **Agents Server**, where they run persistently and work toward their goals.
 
 <table style="border: 1px solid #777; border-radius: 10px;"><tr><td>
 
@@ -135,15 +137,15 @@ TEAM You are part of the legal team of Paul Smith & Associés, you discuss with 
 
 ### Promptbook Ecosystem
 
-!!!@@@
+Promptbook is an ecosystem of tools centered around the **Agents Server** — a production-ready platform for running persistent AI agents.
 
-#### Promptbook Server
+#### Agents Server
 
-!!!@@@
+The [**Agents Server**](https://gallery.ptbk.io/) is the primary way to use Promptbook. It is a web application where your AI agents live and work. You can create agents, give them knowledge and rules using the Book language, organize them into teams, and let them work on goals persistently. The Agents Server provides a UI for managing agents, an API for integrating them into your applications, and can be self-hosted via [Docker](https://hub.docker.com/r/hejny/promptbook/) or deployed on Vercel.
 
 #### Promptbook Engine
 
-!!!@@@
+The [Promptbook Engine](https://github.com/webgptorg/promptbook) is the open-source core that powers everything. It parses the Book language, applies commitments, manages LLM provider integrations, and executes agents. The Agents Server is built on top of the Engine. If you need to embed agent capabilities directly into your own application, you can use the Engine as a standalone TypeScript/JavaScript library via [NPM packages](https://www.npmjs.com/package/@promptbook/core).
 
 <!--/Import ./ABSTRACT.md-->
 
@@ -159,7 +161,7 @@ TEAM You are part of the legal team of Paul Smith & Associés, you discuss with 
 
 ## 💜 The Promptbook Project
 
-Promptbook project is ecosystem of multiple projects and tools, following is a list of most important pieces of the project:
+Promptbook project is an ecosystem centered around the **Agents Server** — a platform for creating, deploying, and running persistent AI agents. Following is a list of the most important pieces of the project:
 
 <table>
   <thead>
@@ -170,9 +172,9 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://gallery.ptbk.io/">Agents Server</a></td>
+      <td><a href="https://gallery.ptbk.io/"><strong>⭐ Agents Server</strong></a></td>
       <td>
-          Place where you "AI agents live". It allows to create, manage, deploy, and interact with AI agents created in Book language.
+          The primary way to use Promptbook. A production-ready platform where your AI agents live — create, manage, deploy, and interact with persistent agents that work on goals. Available as a hosted service or <a href="https://hub.docker.com/r/hejny/promptbook/">self-hosted via Docker</a>.
       </td>
     </tr>
     <tr>
@@ -186,9 +188,8 @@ Promptbook project is ecosystem of multiple projects and tools, following is a l
     <tr>
       <td><a href="https://github.com/webgptorg/promptbook">Promptbook Engine</a></td>
       <td>
-          Promptbook engine can run AI agents based on Book language.
-          It is released as <a href="https://www.npmjs.com/package/@promptbook/core#-packages-for-developers">multiple NPM packages</a> and <a href="https://hub.docker.com/r/hejny/promptbook">Promptbook Agent Server as Docker Package</a>
-          Agent Server is based on Promptbook Engine.
+          The open-source core that powers the Agents Server. Can also be used as a standalone TypeScript/JavaScript library to embed agent capabilities into your own applications.
+          Released as <a href="https://www.npmjs.com/package/@promptbook/core#-packages-for-developers">multiple NPM packages</a>.
       </td>
     </tr>
     
