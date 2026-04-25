@@ -1,6 +1,6 @@
 # 💜 The Promptbook Project
 
-Promptbook project is an ecosystem centered around the **Agents Server** — a platform for creating, deploying, and running persistent AI agents. Following is a list of the most important pieces of the project:
+Promptbook project is an ecosystem centered around the **Agents Server** - a platform for creating, deploying, and running persistent AI agents. Following is a list of the most important pieces of the project:
 
 <table>
   <thead>
@@ -13,7 +13,7 @@ Promptbook project is an ecosystem centered around the **Agents Server** — a p
     <tr>
       <td><a href="https://gallery.ptbk.io/"><strong>⭐ Agents Server</strong></a></td>
       <td>
-          The primary way to use Promptbook. A production-ready platform where your AI agents live — create, manage, deploy, and interact with persistent agents that work on goals. Available as a hosted service or <a href="https://hub.docker.com/r/hejny/promptbook/">self-hosted via Docker</a>.
+          The primary way to use Promptbook. A production-ready platform where your AI agents live - create, manage, deploy, and interact with persistent agents that work on goals. Available as a hosted service or <a href="https://hub.docker.com/r/hejny/promptbook/">self-hosted via Docker</a>.
       </td>
     </tr>
     <tr>

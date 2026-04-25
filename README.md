@@ -28,13 +28,13 @@ TODO: [🥗][🧠] Maybe do table of contents in both `book` and `promptbook`
 
 ## 📖 The Book Whitepaper
 
-Promptbook lets you create **persistent AI agents** that work on real goals for your company. The [**Agents Server**](https://gallery.ptbk.io/) is the heart of the project — a place where your AI agents live, remember context, collaborate in teams, and get things done.
+Promptbook lets you create **persistent AI agents** that work on real goals for your company. The [**Agents Server**](https://gallery.ptbk.io/) is the heart of the project - a place where your AI agents live, remember context, collaborate in teams, and get things done.
 
 Nowadays, the biggest challenge for most business applications isn't the raw capabilities of AI models. Large language models such as GPT-5.2 and Claude-4.5 are incredibly capable.
 
 The main challenge lies in **managing the context**, providing rules and knowledge, and narrowing the personality.
 
-In Promptbook, you define your agents **using simple Books** — a human-readable language that is explicit, easy to understand and write, reliable, and highly portable. You then deploy them to the **Agents Server**, where they run persistently and work toward their goals.
+In Promptbook, you define your agents **using simple Books** - a human-readable language that is explicit, easy to understand and write, reliable, and highly portable. You then deploy them to the **Agents Server**, where they run persistently and work toward their goals.
 
 <table style="border: 1px solid #777; border-radius: 10px;"><tr><td>
 
@@ -85,7 +85,7 @@ Promptbook Engine will automatically enforce this knowledge during interactions.
 Your job is to provide legal advice and support to the company and its employees.<br/>
 You are knowledgeable, professional, and detail-oriented.<br/>
 <br/>
-**KNOWLEDGE**  https://company.com/company-policies.pdf<br/>
+**KNOWLEDGE** https://company.com/company-policies.pdf<br/>
 **KNOWLEDGE** https://company.com/internal-documents/employee-handbook.docx<br/>
 
 </td></tr></table>
@@ -107,7 +107,7 @@ You are knowledgeable, professional, and detail-oriented.<br/>
 **RULE** Always ensure compliance with laws and regulations.<br/>
 **RULE** Never provide legal advice outside your area of expertise.<br/>
 **RULE** Never provide legal advice about criminal law.<br/>
-**KNOWLEDGE**  https://company.com/company-policies.pdf<br/>
+**KNOWLEDGE** https://company.com/company-policies.pdf<br/>
 **KNOWLEDGE** https://company.com/internal-documents/employee-handbook.docx<br/>
 
 </td></tr></table>
@@ -127,17 +127,15 @@ You are knowledgeable, professional, and detail-oriented.<br/>
 **RULE** Always ensure compliance with laws and regulations.<br/>
 **RULE** Never provide legal advice outside your area of expertise.<br/>
 **RULE** Never provide legal advice about criminal law.<br/>
-**KNOWLEDGE**  https://company.com/company-policies.pdf<br/>
+**KNOWLEDGE** https://company.com/company-policies.pdf<br/>
 **KNOWLEDGE** https://company.com/internal-documents/employee-handbook.docx<br/>
 TEAM You are part of the legal team of Paul Smith & Associés, you discuss with {Emily White}, the head of the compliance department. {George Brown} is expert in corporate law and {Sophia Black} is expert in labor law.<br/>
 
 </td></tr></table>
 
-
-
 ### Promptbook Ecosystem
 
-Promptbook is an ecosystem of tools centered around the **Agents Server** — a production-ready platform for running persistent AI agents.
+Promptbook is an ecosystem of tools centered around the **Agents Server** - a production-ready platform for running persistent AI agents.
 
 #### Agents Server
 
@@ -152,8 +150,6 @@ The [Promptbook Engine](https://github.com/webgptorg/promptbook) is the open-sou
 <!--Import ./GET_STARTED.md-->
 <!--⚠️ WARNING: This section was imported, make changes in source; any manual changes here will be overwritten-->
 
-
-
 <!--/Import ./GET_STARTED.md-->
 
 <!--Import ./SIGNPOST.md-->
@@ -161,7 +157,7 @@ The [Promptbook Engine](https://github.com/webgptorg/promptbook) is the open-sou
 
 ## 💜 The Promptbook Project
 
-Promptbook project is an ecosystem centered around the **Agents Server** — a platform for creating, deploying, and running persistent AI agents. Following is a list of the most important pieces of the project:
+Promptbook project is an ecosystem centered around the **Agents Server** - a platform for creating, deploying, and running persistent AI agents. Following is a list of the most important pieces of the project:
 
 <table>
   <thead>
@@ -174,7 +170,7 @@ Promptbook project is an ecosystem centered around the **Agents Server** — a p
     <tr>
       <td><a href="https://gallery.ptbk.io/"><strong>⭐ Agents Server</strong></a></td>
       <td>
-          The primary way to use Promptbook. A production-ready platform where your AI agents live — create, manage, deploy, and interact with persistent agents that work on goals. Available as a hosted service or <a href="https://hub.docker.com/r/hejny/promptbook/">self-hosted via Docker</a>.
+          The primary way to use Promptbook. A production-ready platform where your AI agents live - create, manage, deploy, and interact with persistent agents that work on goals. Available as a hosted service or <a href="https://hub.docker.com/r/hejny/promptbook/">self-hosted via Docker</a>.
       </td>
     </tr>
     <tr>
@@ -195,8 +191,6 @@ Promptbook project is an ecosystem centered around the **Agents Server** — a p
     
   </tbody>
 </table>
-
-
 
 ### 🌐 Community & Social Media
 
@@ -270,8 +264,6 @@ The following glossary is used to clarify certain concepts:
 -   **Longtail** refers to non-common or rare events, items, or entities that are not well-represented in the training data of machine learning models. Longtail items are often challenging for models to predict accurately.
 
 _Note: This section is not a complete dictionary, more list of general AI / LLM terms that has connection with Promptbook_
-
-
 
 ### 💯 Core concepts
 

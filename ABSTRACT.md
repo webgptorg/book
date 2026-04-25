@@ -1,12 +1,12 @@
 # 📖 The Book Whitepaper
 
-Promptbook lets you create **persistent AI agents** that work on real goals for your company. The [**Agents Server**](https://gallery.ptbk.io/) is the heart of the project — a place where your AI agents live, remember context, collaborate in teams, and get things done.
+Promptbook lets you create **persistent AI agents** that work on real goals for your company. The [**Agents Server**](https://gallery.ptbk.io/) is the heart of the project - a place where your AI agents live, remember context, collaborate in teams, and get things done.
 
 Nowadays, the biggest challenge for most business applications isn't the raw capabilities of AI models. Large language models such as GPT-5.2 and Claude-4.5 are incredibly capable.
 
 The main challenge lies in **managing the context**, providing rules and knowledge, and narrowing the personality.
 
-In Promptbook, you define your agents **using simple Books** — a human-readable language that is explicit, easy to understand and write, reliable, and highly portable. You then deploy them to the **Agents Server**, where they run persistently and work toward their goals.
+In Promptbook, you define your agents **using simple Books** - a human-readable language that is explicit, easy to understand and write, reliable, and highly portable. You then deploy them to the **Agents Server**, where they run persistently and work toward their goals.
 
 ```book
 Paul Smith
@@ -97,7 +97,7 @@ KNOWLEDGE https://company.com/internal-documents/employee-handbook.docx
 
 ### `Use` commitments
 
-Use commitments grant the agent real capabilities — tools it can use to interact with the outside world. `USE EMAIL` lets the agent send emails, `USE BROWSER` lets it access and read web content, `USE SEARCH ENGINE` lets it search the web, and many more.
+Use commitments grant the agent real capabilities - tools it can use to interact with the outside world. `USE EMAIL` lets the agent send emails, `USE BROWSER` lets it access and read web content, `USE SEARCH ENGINE` lets it search the web, and many more.
 
 These are what turn a chatbot into a persistent agent that actually does work.
 
@@ -147,7 +147,7 @@ TODO: Link to dynamically generated dictionary of commitments
 
 ## Promptbook Ecosystem
 
-Promptbook is an ecosystem of tools centered around the **Agents Server** — a production-ready platform for running persistent AI agents.
+Promptbook is an ecosystem of tools centered around the **Agents Server** - a production-ready platform for running persistent AI agents.
 
 ### Agents Server
 

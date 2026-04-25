@@ -21,7 +21,7 @@ This is something entirely new. We are exploring an entire new world of personal
 > We say: Enough.
 >
 > With Promptbook Digital Avatars, you don’t have to spread yourself thin.
-> You don’t have to be there—you can send yourself.
+> You don’t have to be there-you can send yourself.
 >
 > And if a platform wants the real you?
 >
