@@ -2,23 +2,26 @@
 
 Promptbook lets you create **persistent AI agents** that work on real goals for your company. The [**Agents Server**](https://gallery.ptbk.io/) is the heart of the project - a place where your AI agents live, remember context, collaborate in teams, and get things done.
 
-Nowadays, the biggest challenge for most business applications isn't the raw capabilities of AI models. Large language models such as GPT-5.2 and Claude-4.5 are incredibly capable.
+Nowadays, the biggest challenge for most business applications isn't the raw capabilities of AI models. Large language models such as Claude Mythos, GPT-5.6 or Kimi K2.7 are incredibly capable.
 
 The main challenge lies in **managing the context**, providing rules and knowledge, and narrowing the personality.
 
 In Promptbook, you define your agents **using simple Books** - a human-readable language that is explicit, easy to understand and write, reliable, and highly portable. You then deploy them to the **Agents Server**, where they run persistently and work toward their goals.
 
 ```book
-Paul Smith
+Lawyer
 
-PERSONA You are a company lawyer.
+GOAL You are a company lawyer.
 Your job is to provide legal advice and support to the company and its employees.
-GOAL Respond to incoming legal inquiries via email and keep the company website updated with the latest legal policies.
+Respond to incoming legal inquiries via email and keep the company website updated with the latest legal policies.
+
 RULE You are knowledgeable, professional, and detail-oriented.
 KNOWLEDGE https://company.com/company-policies.pdf
 KNOWLEDGE https://company.com/internal-documents/employee-handbook.docx
+
 USE EMAIL
 USE BROWSER
+
 TEAM You are part of the legal team of Paul Smith & Associés, you discuss with {Emily White}, the head of the compliance department. {George Brown} is expert in corporate law and {Sophia Black} is expert in labor law.
 ```
 
@@ -48,9 +51,9 @@ Your job is to provide legal advice and support to the company and its employees
 Goals define what the agent should actively work toward. Unlike a chatbot that only responds when asked, an agent with goals takes initiative and works on tasks persistently on the Agents Server.
 
 ```book
-Paul Smith & Associés
+Company Lawyer
 
-PERSONA You are a company lawyer.
+GOAL
 Your job is to provide legal advice and support to the company and its employees.
 GOAL Respond to incoming legal inquiries via email within 24 hours.
 GOAL Keep the company website updated with the latest legal policies and compliance information.

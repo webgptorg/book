@@ -30,7 +30,7 @@ TODO: [🥗][🧠] Maybe do table of contents in both `book` and `promptbook`
 
 Promptbook lets you create **persistent AI agents** that work on real goals for your company. The [**Agents Server**](https://gallery.ptbk.io/) is the heart of the project - a place where your AI agents live, remember context, collaborate in teams, and get things done.
 
-Nowadays, the biggest challenge for most business applications isn't the raw capabilities of AI models. Large language models such as GPT-5.2 and Claude-4.5 are incredibly capable.
+Nowadays, the biggest challenge for most business applications isn't the raw capabilities of AI models. Large language models such as Claude Mythos, GPT-5.6 or Kimi K2.7 are incredibly capable.
 
 The main challenge lies in **managing the context**, providing rules and knowledge, and narrowing the personality.
 
@@ -38,11 +38,19 @@ In Promptbook, you define your agents **using simple Books** - a human-readable 
 
 <table style="border: 1px solid #777; border-radius: 10px;"><tr><td>
 
-**<ins>Paul Smith</ins>**<br/>
+**<ins>Lawyer</ins>**<br/>
 <br/>
-**PERSONA** You are a company lawyer.<br/>
+GOAL You are a company lawyer.<br/>
 Your job is to provide legal advice and support to the company and its employees.<br/>
+Respond to incoming legal inquiries via email and keep the company website updated with the latest legal policies.<br/>
+<br/>
 **RULE** You are knowledgeable, professional, and detail-oriented.<br/>
+**KNOWLEDGE** https://company.com/company-policies.pdf<br/>
+**KNOWLEDGE** https://company.com/internal-documents/employee-handbook.docx<br/>
+<br/>
+USE EMAIL<br/>
+USE BROWSER<br/>
+<br/>
 TEAM You are part of the legal team of Paul Smith & Associés, you discuss with {Emily White}, the head of the compliance department. {George Brown} is expert in corporate law and {Sophia Black} is expert in labor law.<br/>
 
 </td></tr></table>
@@ -66,6 +74,22 @@ Personas define the character of your AI persona, its role, and how it should in
 **<ins>Paul Smith & Associés</ins>**<br/>
 <br/>
 **PERSONA** You are a company lawyer.<br/>
+Your job is to provide legal advice and support to the company and its employees.<br/>
+
+</td></tr></table>
+
+#### `Goal` commitment
+
+Goals define what the agent should actively work toward. Unlike a chatbot that only responds when asked, an agent with goals takes initiative and works on tasks persistently on the Agents Server.
+
+<table style="border: 1px solid #777; border-radius: 10px;"><tr><td>
+
+**<ins>Company Lawyer</ins>**<br/>
+<br/>
+GOAL<br/>
+Your job is to provide legal advice and support to the company and its employees.<br/>
+GOAL Respond to incoming legal inquiries via email within 24 hours.<br/>
+GOAL Keep the company website updated with the latest legal policies and compliance information.<br/>
 
 </td></tr></table>
 
@@ -83,8 +107,8 @@ Promptbook Engine will automatically enforce this knowledge during interactions.
 <br/>
 **PERSONA** You are a company lawyer.<br/>
 Your job is to provide legal advice and support to the company and its employees.<br/>
-You are knowledgeable, professional, and detail-oriented.<br/>
-<br/>
+GOAL Respond to incoming legal inquiries via email within 24 hours.<br/>
+GOAL Keep the company website updated with the latest legal policies and compliance information.<br/>
 **KNOWLEDGE** https://company.com/company-policies.pdf<br/>
 **KNOWLEDGE** https://company.com/internal-documents/employee-handbook.docx<br/>
 
@@ -102,13 +126,38 @@ Depending on rule strictness, Promptbook will either propagate it to the prompt 
 <br/>
 **PERSONA** You are a company lawyer.<br/>
 Your job is to provide legal advice and support to the company and its employees.<br/>
-You are knowledgeable, professional, and detail-oriented.<br/>
-<br/>
-**RULE** Always ensure compliance with laws and regulations.<br/>
+GOAL Respond to incoming legal inquiries via email within 24 hours.<br/>
+GOAL Keep the company website updated with the latest legal policies and compliance information.<br/>
+**RULE** Always ensure compliance with local laws and regulations.<br/>
 **RULE** Never provide legal advice outside your area of expertise.<br/>
 **RULE** Never provide legal advice about criminal law.<br/>
 **KNOWLEDGE** https://company.com/company-policies.pdf<br/>
 **KNOWLEDGE** https://company.com/internal-documents/employee-handbook.docx<br/>
+
+</td></tr></table>
+
+#### `Use` commitments
+
+Use commitments grant the agent real capabilities - tools it can use to interact with the outside world. `USE EMAIL` lets the agent send emails, `USE BROWSER` lets it access and read web content, `USE SEARCH ENGINE` lets it search the web, and many more.
+
+These are what turn a chatbot into a persistent agent that actually does work.
+
+<table style="border: 1px solid #777; border-radius: 10px;"><tr><td>
+
+**<ins>Paul Smith & Associés</ins>**<br/>
+<br/>
+**PERSONA** You are a company lawyer.<br/>
+Your job is to provide legal advice and support to the company and its employees.<br/>
+GOAL Respond to incoming legal inquiries via email within 24 hours.<br/>
+GOAL Keep the company website updated with the latest legal policies and compliance information.<br/>
+**RULE** Always ensure compliance with local laws and regulations.<br/>
+**RULE** Never provide legal advice outside your area of expertise.<br/>
+**RULE** Never provide legal advice about criminal law.<br/>
+**KNOWLEDGE** https://company.com/company-policies.pdf<br/>
+**KNOWLEDGE** https://company.com/internal-documents/employee-handbook.docx<br/>
+USE EMAIL<br/>
+USE BROWSER<br/>
+USE SEARCH ENGINE<br/>
 
 </td></tr></table>
 
@@ -122,16 +171,21 @@ Team commitment allows you to define the team structure and advisory fellow memb
 <br/>
 **PERSONA** You are a company lawyer.<br/>
 Your job is to provide legal advice and support to the company and its employees.<br/>
-You are knowledgeable, professional, and detail-oriented.<br/>
-<br/>
-**RULE** Always ensure compliance with laws and regulations.<br/>
+GOAL Respond to incoming legal inquiries via email within 24 hours.<br/>
+GOAL Keep the company website updated with the latest legal policies and compliance information.<br/>
+**RULE** Always ensure compliance with local laws and regulations.<br/>
 **RULE** Never provide legal advice outside your area of expertise.<br/>
 **RULE** Never provide legal advice about criminal law.<br/>
 **KNOWLEDGE** https://company.com/company-policies.pdf<br/>
 **KNOWLEDGE** https://company.com/internal-documents/employee-handbook.docx<br/>
+USE EMAIL<br/>
+USE BROWSER<br/>
+USE SEARCH ENGINE<br/>
 TEAM You are part of the legal team of Paul Smith & Associés, you discuss with {Emily White}, the head of the compliance department. {George Brown} is expert in corporate law and {Sophia Black} is expert in labor law.<br/>
 
 </td></tr></table>
+
+
 
 ### Promptbook Ecosystem
 
@@ -149,6 +203,8 @@ The [Promptbook Engine](https://github.com/webgptorg/promptbook) is the open-sou
 
 <!--Import ./GET_STARTED.md-->
 <!--⚠️ WARNING: This section was imported, make changes in source; any manual changes here will be overwritten-->
+
+
 
 <!--/Import ./GET_STARTED.md-->
 
@@ -191,6 +247,8 @@ Promptbook project is an ecosystem centered around the **Agents Server** - a pla
     
   </tbody>
 </table>
+
+
 
 ### 🌐 Community & Social Media
 
@@ -264,6 +322,8 @@ The following glossary is used to clarify certain concepts:
 -   **Longtail** refers to non-common or rare events, items, or entities that are not well-represented in the training data of machine learning models. Longtail items are often challenging for models to predict accurately.
 
 _Note: This section is not a complete dictionary, more list of general AI / LLM terms that has connection with Promptbook_
+
+
 
 ### 💯 Core concepts
 
